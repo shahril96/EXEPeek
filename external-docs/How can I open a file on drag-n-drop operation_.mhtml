@@ -1,0 +1,2569 @@
+From: <Saved by Blink>
+Subject: How can I open a file on drag-n-drop operation?
+Date: Mon, 30 Jul 2017 09:25:44 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----"
+
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/html
+Content-ID: <frame-1968-a7eb67fd-5f0c-436e-8af3-234c96d1e403@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.equestionanswers.com/vcpp/drag-n-drop-operation.php
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html class=
+=3D"gr__equestionanswers_com"><head><meta http-equiv=3D"Content-Type" conte=
+nt=3D"text/html; charset=3Dwindows-1252">
+<title>How can I open a file on drag-n-drop operation?</title>
+<meta name=3D"TITLE" content=3D"drag-n-drop operation">
+<meta name=3D"Description" content=3D"drag-n-drop operation">
+<meta name=3D"KEYWORDS" content=3D"drag-n-drop operation">
+
+<meta http-equiv=3D"Content-Style-Type" content=3D"text/css; charset=3Diso-=
+8859-1">
+<link rel=3D"stylesheet" href=3D"http://www.equestionanswers.com/style2.css=
+"><link rel=3D"shortcut icon" href=3D"http://www.equestionanswers.com/image=
+s/logo_small.gif">
+  <style type=3D"text/css">.fb_hidden{position:absolute;top:-10000px;z-inde=
+x:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{disp=
+lay:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cur=
+sor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial,=
+ sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weigh=
+t:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padd=
+ing:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;t=
+ext-transform:none;visibility:visible;white-space:normal;word-spacing:norma=
+l}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_tran=
+sform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}=
+.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z=
+-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanc=
+ed{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-rad=
+ius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon=
+{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png=
+) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px=
+;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dia=
+log_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-co=
+lor:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_ico=
+n:hover{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z=
+1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{=
+background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png)=
+ no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f=
+6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_l=
+eft,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{hei=
+ght:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{b=
+ackground:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) =
+no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http=
+://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;=
+right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.x=
+x.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10p=
+x;left:-10px}.fb_dialog_bottom_right{background:url(http://static.xx.fbcdn.=
+net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:=
+-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_d=
+ialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacit=
+y=3D70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;he=
+ight:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{righ=
+t:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:1=
+00%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bott=
+om{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_=
+content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#ff=
+f;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title=
+>span{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK5=
+2.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-=
+webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolu=
+te;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{backg=
+round:url(http://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) whit=
+e no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position=
+:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{=
+width:auto;height:auto;min-height:initial;min-width:initial;background:none=
+}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{wid=
+th:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{bac=
+kground:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:b=
+lock;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_ov=
+erlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right=
+:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_=
+overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visi=
+bility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 =
+1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from=
+(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:=
+#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsi=
+s;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white=
+-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothin=
+g:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_he=
+ader td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;w=
+idth:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;=
+padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touc=
+hable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966=
+A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit=
+-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:r=
+gba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0=
+;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;paddin=
+g:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_b=
+utton input{border:none;background:none;color:#fff;font:12px Helvetica, san=
+s-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shad=
+ow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .hea=
+der_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text=
+-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{back=
+ground:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-=
+repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:15=
+0px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #=
+555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.f=
+b_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 8=
+4, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visi=
+bility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear=
+ infinite;background-color:transparent;background-image:url(http://static.x=
+x.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;b=
+ackground-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{=
+0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget =
+span{display:inline-block;position:relative;text-align:justify}.fb_iframe_w=
+idget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_w=
+idget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:1=
+00%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relativ=
+e}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relativ=
+e;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-b=
+lock}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{wi=
+dth:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.=
+fb_iframe_widget_loader .FB_Loader{background:url(http://static.xx.fbcdn.ne=
+t/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin=
+-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+  <body style=3D"" data-gr-c-s-loaded=3D"true">
+      <table style=3D"WIDTH: 800px; HEIGHT: 100%; BORDER-RIGHT: #f0f0f0 1px=
+ solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px s=
+olid;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" summary=3D"Body">
+      <tbody><tr>
+        <td style=3D"HEIGHT: 60px">
+          <table width=3D"100%" border=3D"0" cellspacing=3D"3" cellpadding=
+=3D"3" summary=3D"Top Banner">
+            <tbody><tr>
+
+              <td style=3D"width: 190px">
+                <img src=3D"http://www.equestionanswers.com/images/logo.gif=
+" alt=3D"EQuestionAnswers.com">
+              </td>
+              <td style=3D"width: 320px" align=3D"left">Computer/Electronic=
+s Questions and Answers <br>C, C++, VC++, COM/DCOM, DLL and more<br></td>
+              <td align=3D"right" style=3D"width: 290px">
+<table align=3D"right" border=3D"0" style=3D"width: 290px">
+<tbody><tr><td>
+			  <form action=3D"http://www.google.co.in/cse" id=3D"cse-search-box">
+
+
+<table align=3D"right" cellspacing=3D"1" cellpadding=3D"1" class=3D"search_=
+box">
+<tbody><tr>
+<td valign=3D"bottom">
+
+<input name=3D"q" id=3D"q" size=3D"15" type=3D"text" value=3D"Search" style=
+=3D"  background: transparent;
+  border: 0;
+  border-style: none;
+  border-color: transparent;
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none; valign: top; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Tah=
+oma, Arial, Helvetica, sans-serif; COLOR: #404040;" disabled=3D"">
+</td>
+<td>
+<input name=3D"sa" value=3D"Search" type=3D"image" src=3D"http://www.equest=
+ionanswers.com/images/search.png" alt=3D"#" disabled=3D"">
+
+</td>
+</tr>
+</tbody></table>
+</form>
+=20
+</td></tr>
+<tr><td>
+<table align=3D"right" border=3D"0" style=3D"width: 290px"><tbody><tr><td a=
+lign=3D"right"><a href=3D"https://www.equestionanswers.com/login.php#150140=
+1301" title=3D" for members"><img src=3D"http://www.equestionanswers.com/im=
+ages/link.gif" border=3D"0" alt=3D"#">Login</a>&nbsp;<a href=3D"https://www=
+.equestionanswers.com/signup.php#1501401301" title=3D"Sign up New members">=
+<img src=3D"http://www.equestionanswers.com/images/link.gif" border=3D"0" a=
+lt=3D"#">Sign up</a>&nbsp;</td><td>
+<a href=3D"https://www.facebook.com/sharer/sharer.php?u=3Dhttp%3A%2F%2Fwww.=
+equestionanswers.com%2Fvcpp%2Fdrag-n-drop-operation.php&amp;t=3DLike%20this=
+%page" target=3D"_blank" title=3D"Share on Facebook"><img src=3D"http://www=
+.equestionanswers.com/images/fblike.png" alt=3D"Facebook">
+</a>
+</td><td>
+<a href=3D"https://twitter.com/share?url=3Dhttp%3A%2F%2Fwww.equestionanswer=
+s.com%2Fvcpp%2Fdrag-n-drop-operation.php&amp;text=3DLike%20this%20page" tar=
+get=3D"_blank" title=3D"Share on Twitter"><img src=3D"http://www.equestiona=
+nswers.com/images/tweet.png" alt=3D"Twitter">
+</a>
+</td>
+<td>
+<a href=3D"https://plus.google.com/share?url=3Dhttp%3A%2F%2Fwww.equestionan=
+swers.com%2Fvcpp%2Fdrag-n-drop-operation.php" target=3D"_blank" title=3D"Sh=
+are on Google+"><img src=3D"http://www.equestionanswers.com/images/gplus.pn=
+g" alt=3D"TGoogle+">
+</a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+			  </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td style=3D"HEIGHT: 25px">
+          <table cellspacing=3D"0" cellpadding=3D"0" style=3D"WIDTH: 800px;=
+ HEIGHT: 24px" border=3D"0" summary=3D"Menus">
+            <tbody><tr>
+              <td align=3D"center" class=3D"menu2">
+                <a href=3D"http://www.equestionanswers.com/index.php" title=
+=3D"Home" class=3D"menu_link"><font color=3D"black">Home</font></a>
+              </td>
+              <td align=3D"center" class=3D"menu2">
+                <a href=3D"http://www.equestionanswers.com/electronics.php"=
+ title=3D"Electronics" class=3D"menu_link"><font color=3D"black">Electronic=
+s</font></a>
+              </td>
+
+              <td align=3D"center" class=3D"menu2">
+                <a href=3D"http://www.equestionanswers.com/computer-science=
+.php" title=3D"Computer" class=3D"menu_link"><font color=3D"black">Computer=
+</font></a>
+              </td>
+              <td align=3D"center" class=3D"menu0">
+                <a href=3D"http://www.equestionanswers.com/questions.php" t=
+itle=3D"Questions" class=3D"menu_link"><font color=3D"black">Questions</fon=
+t></a>
+              </td>
+              <td align=3D"center" class=3D"menu1">
+                <a href=3D"https://www.equestionanswers.com/login.php#15014=
+01301" title=3D"Member's Area" class=3D"menu_link"><font color=3D"black">Me=
+mber's Area</font></a>
+              </td>
+              <td align=3D"center" class=3D"menu2">
+
+                <a href=3D"http://www.equestionanswers.com/news.php" title=
+=3D"News" class=3D"menu_link"><font color=3D"black">News</font></a>
+              </td>
+              <td align=3D"center" class=3D"menu2">
+                <a href=3D"http://www.equestionanswers.com/sitemap.php" tit=
+le=3D"Site Map" class=3D"menu_link"><font color=3D"black">Site Map</font></=
+a>
+              </td>
+              <td align=3D"center" class=3D"menu3">
+                <a href=3D"http://www.equestionanswers.com/about.php" title=
+=3D"About" class=3D"menu_link"><font color=3D"black">About</font></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+	 =20
+     =20
+	  <tr>
+        <td align=3D"center">
+          &nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td align=3D"center" style=3D"valign: top;">
+
+          <table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=
+=3D"0" summary=3D"Left Menu">
+            <tbody><tr>
+              <td class=3D"menuleft" valign=3D"top">
+
+
+<p>
+<a href=3D"http://www.alexarankchart.com/d/equestionanswers.com" target=3D"=
+_blank"><img alt=3D"View our site's Alexa Rank Chart!" src=3D"http://www.al=
+exarankchart.com/img/alexaWidget2.png" style=3D"border: 0px none;"></a>
+</p>
+                <p align=3D"left" style=3D"Margin: 10px;">
+                  <a href=3D"http://www.equestionanswers.com/news.php" titl=
+e=3D"News &amp; Updates">News</a><br>
+                  <a href=3D"http://www.equestionanswers.com/privacy.php" t=
+itle=3D"View our Privacy Policy">Privacy Policy</a><br>
+                  <a href=3D"http://www.equestionanswers.com/terms.php" tit=
+le=3D"View our Terms and conditions">Terms and conditions</a><br>
+
+                  <a href=3D"http://www.equestionanswers.com/downloads.php"=
+ title=3D"Download Projects, Notes, Programs">Downloads</a><br>
+                  <a href=3D"http://www.equestionanswers.com/share.php" tit=
+le=3D"Submit/Share your thoughts, Ideas, Projects, Papers, Programs">Submit=
+/Share</a><br>
+				  <a target=3D"_blank" href=3D"http://www.alexa.com/siteinfo/equestiona=
+nswers.com" title=3D"Our site at Alexa.com">Alexa</a><br>
+                  <a target=3D"_blank" href=3D"http://www.google.com/search=
+?q=3Dsite%3Awww.equestionanswers.com" title=3D"Links listed at Google">Goog=
+le</a><br>
+</p>
+              </td>
+              <td valign=3D"top" style=3D"width: 10px"></td>
+              <td valign=3D"top">=09
+		=09
+
+<p>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" clas=
+s=3D"menutop2" summary=3D"Headings">
+<tbody><tr>
+<td>
+<h1>
+How can I open a file on drag-n-drop operation?</h1>
+</td>
+</tr>
+</tbody></table>
+</p><table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr><td align=3D"left"><img src=3D"http://www.equestionanswers.com/i=
+mages/link.gif" border=3D"0" alt=3D"#"><a href=3D"http://www.equestionanswe=
+rs.com/vcpp/cstudiofile-cfile.php" title=3D"What is the advantage of using =
+CStudioFile class over CFile?">Previous question</a></td>=20
+<td align=3D"center"><img src=3D"http://www.equestionanswers.com/images/lin=
+k.gif" border=3D"0" alt=3D"#"><a href=3D"http://www.equestionanswers.com/mf=
+c_questions.php" title=3D"Index of VC++/WIN32/MFC Questions!">Index of VC++=
+/WIN32/MFC Questions</a></td>=20
+<td align=3D"right"><img src=3D"http://www.equestionanswers.com/images/link=
+.gif" border=3D"0" alt=3D"#"><a href=3D"http://www.equestionanswers.com/vcp=
+p/serializtion.php" title=3D"How can I write a class that supports serializ=
+tion?">Next question</a></td></tr>
+</tbody></table>
+
+
+
+
+<h2>Drag and Drop</h2>
+<p>
+Win32 subsystem facilitates files and object transfer between two applicati=
+ons using drag and drop.
+Drag and drop is a mouse operation. User clicks on some file(s) in file exp=
+lorer or some OLE object in application like Word and moves mouse cursor to=
+ other application window with out realising left mouse button.
+This operation is called drag. Now releaseing left mouse button in the othe=
+r application window is called drop operation.
+When drag and drop operations are made in conjunction, a drag-n-drop operat=
+ion happens. This creates a visual effect and object seems moves between tw=
+o windows and mouse cursor changes.
+An application should prepare its window to accept drop operations.
+</p>
+<p>
+There are Win32 APIs to enble this operation and Windows sends event when d=
+rop operation is performed.
+drag-n-drop is mainly with two types -
+</p><ol>
+<li>file/folder drag and drom from windows exploler or other file manager a=
+pplications.</li>
+<li>OLE objects like simple text, rich edit text, html, bitmaps, pictures e=
+tc drag and drop from other aplications. </li>
+</ol>
+
+<p></p>
+<p>
+We are discussing file drag and drop events here. Before going the the demo=
+ aplication we should know the Win32 APIs and Windows attributes related to=
+ drag and drop.
+=20
+</p>
+
+<h2>WS_EX_ACCEPTFILES</h2>
+<p>WS_EX_ACCEPTFILES is the extended windows style to pass the parameter in=
+ CreateWindowEx() to give the capability of accepting dropped files from wi=
+ndows explorer or file manager applications.
+An active and visible window receives the file drop event (WM_DROPFILES) wh=
+en this extended style is applied.
+</p>
+
+<h2>Accept files</h2>
+<p align=3D"center"><img src=3D"http://www.equestionanswers.com/vcpp/images=
+/Ext_Style_Accept_files.png" alt=3D"Extended Window/Dialog style Accept fil=
+es"></p>
+<p>While create a dialog in resource editor, WS_EX_ACCEPTFILES can be appli=
+ed by selecting "Accept files" checkbox.</p>
+
+<h2>DragAcceptFiles</h2>
+<p>
+Registers whether a window accepts dropped files nor not. DragAcceptFiles f=
+unction call changes windows style/capability of WS_EX_ACCEPTFILES
+at runtime.=20
+</p>
+<pre>VOID DragAcceptFiles(
+   HWND hWnd,
+   BOOL fAccept
+);
+</pre>
+
+Parameters
+
+hWnd - Handle to the window=20
+fAccept- TRUE to accept dropped files or FALSE to discontinue accepting dro=
+pped files.
+
+Return value
+
+No return value.
+
+Remarks
+DragAcceptFiles() can be called with FALSE to disable file drop operation.
+
+
+<h2>WM_DROPFILES</h2>
+<p>Window receives this event during drag-n-drop operation. Windows with WS=
+_EX_ACCEPTFILES can only receives this event.
+
+Windows explorer and file manager applications are sender and our demo appl=
+ication is the receiver part of this message.
+File manager application detects the mouse drag even and calls PostMessage(=
+) with message id WM_DROPFILES
+and one or more file path information as a handle in wParam papameter.
+
+</p><pre>PostMessage(
+    (HWND) hWndControl,   // handle to destination control
+    (UINT) WM_DROPFILES,  // message ID
+    (WPARAM) wParam,      // =3D (WPARAM) (HDROP) hDrop;
+    (LPARAM) lParam       // =3D 0; not used, must be zero=20
+);
+</pre>
+           =20
+
+<h3>Parameters</h3>
+
+hWndControl - Handle to the target control=20
+msgID - WM_DROPFILES
+hDrop - A handle to an internal structure describing the dropped files. Pas=
+s this handle DragFinish, DragQueryFile, or DragQueryPoint to retrieve info=
+rmation about the dropped files.
+lParam - ust be zero.
+
+<h3>Return value</h3>
+
+An application should return zero if it processes this message.
+<h3>Remarks</h3>
+<p>
+The HDROP handle is declared in Shellapi.h. You must include this header in=
+ your build to use WM_DROPFILES. For further discussion of how to use drag-=
+and-drop to transfer Shell data, see Transferring Shell Dat
+</p>
+
+
+
+<h2>DragQueryFile function</h2>
+<p>
+Retrieves the names of dropped files that result from a successful drag-and=
+-drop operation.
+</p>
+
+<pre>UINT DragQueryFile(
+  HDROP  hDrop,
+  UINT   iFile,
+  LPTSTR lpszFile,
+  UINT   cch
+);
+</pre>
+<h3>Parameters</h3>
+<ul>
+<li>hDrop - Handle of the structure that contains the file names of the dro=
+pped files.</li>
+<li>iFile - Index of the file to query. If the value of this parameter is 0=
+xFFFFFFFF, DragQueryFile returns a count of the files dropped. If the value=
+ of this parameter is between zero and the total number of files dropped, D=
+ragQueryFile copies the file name with the corresponding value to the buffe=
+r pointed to by the lpszFile parameter.</li>
+<li>lpszFile- The address of a buffer that receives the file name of a drop=
+ped file when the function returns. This file name is a null-terminated str=
+ing.</li>
+If this parameter is NULL, DragQueryFile returns the required size, in char=
+acters, of this buffer.
+<li>cch - The size of the lpszFile buffer.</li>
+</ul>
+<h3>Return value</h3>
+<p>
+A nonzero value indicates a successful call.
+</p>
+<ul>
+<li>Returns number of dropped files - Pass iFile as 0xFFFFFFFF to know how =
+many files are dropped to this window.</li>
+<li>Returns length of the file path - Pass lpszFile as NULL to index as iFi=
+le to know the size of the buffer needed.</li>
+<li>Returns file path string in lpszFile - Pass iFile index between 0 to co=
+unt -1 and lpszFile as a pointer to a buffer and cch as the length of the b=
+uffer.</li>
+</ul>
+
+<h2>DragFinish function</h2>
+<p>
+Releases memory that the system allocated for use in transferring file name=
+s to the application.
+</p>
+<pre>VOID DragFinish(
+   HDROP hDrop
+);
+</pre>
+<h3>Parameters</h3>
+<ul>
+<li>hDrop- Handle that describes dropped files. This handle is retrieved fr=
+om the wParam parameter of the WM_DROPFILES message.</li>
+</ul>
+<table width=3D"100%" style=3D"display: block; font-family: monospace; whit=
+e-space: pre; margin: 1em 0; font-size: 14px;" cellspacing=3D"0"><tbody><tr=
+><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-TOP: #c8c8c8 =
+1px solid; BORDER-LEFT: #c8c8c8 1px solid;" align=3D"right"> 1&nbsp;</td><t=
+d align=3D"left" style=3D"BORDER-TOP: #c8c8c8 1px solid; BORDER-RIGHT: #c8c=
+8c8 1px solid;" width=3D"100%"> <font color=3D"blue"><b>class</b></font>&nb=
+sp;CDragNDropDlg&nbsp;:&nbsp;<font color=3D"blue"><b>public</b></font>&nbsp=
+;CDialog
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 2&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"bl=
+ack">{</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 3&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 4&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> public:
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 5&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;CDrag=
+NDropDlg<font color=3D"black">(</font>CWnd<font color=3D"darkred">*</font>&=
+nbsp;pParent&nbsp;<font color=3D"brown">=3D</font>&nbsp;NULL<font color=3D"=
+black">)</font><font color=3D"black">;</font>&nbsp;&nbsp;<font color=3D"gre=
+en">/* standard constructor */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 6&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 7&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<font=
+ color=3D"blue"><b>enum</b></font>&nbsp;<font color=3D"black">{</font>&nbsp=
+;IDD&nbsp;<font color=3D"brown">=3D</font>&nbsp;IDD_DRAGNDROP_DIALOG&nbsp;<=
+font color=3D"black">}</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 8&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;CList=
+Box&nbsp;&nbsp;m_List<font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 9&nbsp;</td><td align=3D"left" s=
+tyle=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 10&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;prot=
+ected:
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 11&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"blue"><b>virtual</b></font>&nbsp;<font color=3D"blue"><b>void</b=
+></font>&nbsp;DoDataExchange<font color=3D"black">(</font>CDataExchange<fon=
+t color=3D"darkred">*</font>&nbsp;pDX<font color=3D"black">)</font><font co=
+lor=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 12&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 13&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> protected:
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 14&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 15&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"blue"><b>virtual</b></font>&nbsp;BOOL&nbsp;OnInitDialog<font col=
+or=3D"black">(</font><font color=3D"black">)</font><font color=3D"black">;<=
+/font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 16&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 17&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"green">/* Event handler for ON_WM_DROPFILES */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 18&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;afx_=
+msg&nbsp;<font color=3D"blue"><b>void</b></font>&nbsp;OnDropFiles<font colo=
+r=3D"black">(</font>HDROP&nbsp;hDropInfo<font color=3D"black">)</font><font=
+ color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 19&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 20&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;DECL=
+ARE_MESSAGE_MAP<font color=3D"black">(</font><font color=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 21&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">}</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 22&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> BEGIN_MESSAGE_MA=
+P<font color=3D"black">(</font>CDragNDropDlg<font color=3D"black">,</font>&=
+nbsp;CDialog<font color=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 23&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;ON_W=
+M_DROPFILES<font color=3D"black">(</font><font color=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 24&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> END_MESSAGE_MAP<=
+font color=3D"black">(</font><font color=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 25&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 26&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 27&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> BOOL&nbsp;CDragN=
+DropDlg::OnInitDialog<font color=3D"black">(</font><font color=3D"black">)<=
+/font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 28&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">{</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 29&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;CDia=
+log::OnInitDialog<font color=3D"black">(</font><font color=3D"black">)</fon=
+t><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 30&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"green">/* Enable Window to accept drop files */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 31&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;Drag=
+AcceptFiles<font color=3D"black">(</font>TRUE<font color=3D"black">)</font>=
+<font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 32&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 33&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"blue"><b>return</b></font>&nbsp;TRUE<font color=3D"black">;</fon=
+t>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 34&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">}</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 35&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%">=20
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 36&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lue"><b>void</b></font>&nbsp;CDragNDropDlg::DoDataExchange<font color=3D"bl=
+ack">(</font>CDataExchange<font color=3D"darkred">*</font>&nbsp;pDX<font co=
+lor=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 37&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">{</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 38&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;CDia=
+log::DoDataExchange<font color=3D"black">(</font>pDX<font color=3D"black">)=
+</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 39&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;DDX_=
+Control<font color=3D"black">(</font>pDX<font color=3D"black">,</font>&nbsp=
+;IDC_LIST1<font color=3D"black">,</font>&nbsp;m_List<font color=3D"black">)=
+</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 40&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">}</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 41&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"g=
+reen">/* MFC Event handler for ON_WM_DROPFILES */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 42&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lue"><b>void</b></font>&nbsp;CDialogsDlg::OnDropFiles<font color=3D"black">=
+(</font>HDROP&nbsp;hDropInfo<font color=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 43&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">{</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 44&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;TCHA=
+R&nbsp;buffer<font color=3D"black">[</font>MAX_PATH&nbsp;+&nbsp;1<font colo=
+r=3D"black">]</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 45&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"green">/* Get the number of files dropped */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 46&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;UINT=
+&nbsp;nCount&nbsp;<font color=3D"brown">=3D</font>&nbsp;::DragQueryFile<fon=
+t color=3D"black">(</font>hDropInfo<font color=3D"black">,</font>&nbsp;0xFF=
+FFFFFF<font color=3D"black">,</font>&nbsp;NULL<font color=3D"black">,</font=
+>&nbsp;0<font color=3D"black">)</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 47&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;m_Li=
+st<font color=3D"brown">.</font>ResetContent<font color=3D"black">(</font><=
+font color=3D"black">)</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 48&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"blue"><b>for</b></font>&nbsp;<font color=3D"black">(</font>UINT&=
+nbsp;index&nbsp;<font color=3D"brown">=3D</font>&nbsp;0<font color=3D"black=
+">;</font>&nbsp;index&nbsp;<font color=3D"brown">&lt;</font>&nbsp;nCount<fo=
+nt color=3D"black">;</font>&nbsp;index++<font color=3D"black">)</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 49&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"black">{</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 50&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;&nbs=
+p;&nbsp;<font color=3D"green">/* Get the path of file #n */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 51&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;&nbs=
+p;&nbsp;::DragQueryFile<font color=3D"black">(</font>hDropInfo<font color=
+=3D"black">,</font>&nbsp;index<font color=3D"black">,</font>&nbsp;buffer<fo=
+nt color=3D"black">,</font>&nbsp;MAX_PATH&nbsp;+&nbsp;1<font color=3D"black=
+">)</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 52&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;&nbs=
+p;&nbsp;<font color=3D"green">/* Add the string in list box */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 53&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;&nbs=
+p;&nbsp;m_List<font color=3D"brown">.</font>AddString<font color=3D"black">=
+(</font>buffer<font color=3D"black">)</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 54&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"black">}</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 55&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;CDia=
+log::OnDropFiles<font color=3D"black">(</font>hDropInfo<font color=3D"black=
+">)</font><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 56&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;<fon=
+t color=3D"green">/* Free buffer and close handle */</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 57&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> &nbsp;&nbsp;::Dr=
+agFinish<font color=3D"black">(</font>hDropInfo<font color=3D"black">)</fon=
+t><font color=3D"black">;</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+LEFT: #c8c8c8 1px solid;" align=3D"right"> 58&nbsp;</td><td align=3D"left" =
+style=3D"BORDER-RIGHT: #c8c8c8 1px solid;" width=3D"100%"> <font color=3D"b=
+lack">}</font>
+</td></tr><tr><td style=3D"color: grey; background-color: #E7E7E7;  BORDER-=
+BOTTOM: #c8c8c8 1px solid; BORDER-LEFT: #c8c8c8 1px solid;"> 59&nbsp;</td><=
+td style=3D"BORDER-BOTTOM: #c8c8c8 1px solid; BORDER-RIGHT: #c8c8c8 1px sol=
+id;"> </td></tr></tbody></table>
+<h2>Program output </h2>
+<p>During drag from windows explorer </p>
+<p align=3D"center"><img src=3D"http://www.equestionanswers.com/vcpp/images=
+/MFCDragNDrop.png" alt=3D"Files dragged from Windows explorer"></p>
+<p>After files are dropped to dialog </p>
+<p align=3D"center"><img src=3D"http://www.equestionanswers.com/vcpp/images=
+/DragNDrop2.png" alt=3D"List of files after drop"></p>
+
+<p>You have viewed 1 page out of 110. Your VC++ learning is 0.00% complete.=
+ Login to check your learning progress. </p>
+<p></p><form action=3D"http://www.equestionanswers.com/vcpp/drag-n-drop-ope=
+ration.php?refresh=3D1501401301" method=3D"post"><input type=3D"submit" val=
+ue=3D"I like" class=3D"flat_button" style=3D"cursor: hand;" disabled=3D""> =
+&nbsp;<img src=3D"http://www.equestionanswers.com/images/like.gif" alt=3D"V=
+ote" title=3D"Vote">=20
+0</form><p></p>
+
+<div id=3D"fb-root" class=3D" fb_reset"><div style=3D"position: absolute; t=
+op: -10000px; height: 0px; width: 0px;"><div><iframe name=3D"fb_xdm_frame_h=
+ttp" frameborder=3D"0" allowtransparency=3D"true" allowfullscreen=3D"true" =
+scrolling=3D"no" id=3D"fb_xdm_frame_http" aria-hidden=3D"true" title=3D"Fac=
+ebook Cross Domain Communication Frame" tabindex=3D"-1" src=3D"cid:frame-19=
+70-7472f197-027f-4008-9105-7f0b58794587@mhtml.blink" style=3D"border: none;=
+"></iframe><iframe name=3D"fb_xdm_frame_https" frameborder=3D"0" allowtrans=
+parency=3D"true" allowfullscreen=3D"true" scrolling=3D"no" id=3D"fb_xdm_fra=
+me_https" aria-hidden=3D"true" title=3D"Facebook Cross Domain Communication=
+ Frame" tabindex=3D"-1" src=3D"cid:frame-1971-86d208d2-9793-4be0-b925-7e851=
+fd4f05d@mhtml.blink" style=3D"border: none;"></iframe></div></div><div styl=
+e=3D"position: absolute; top: -10000px; height: 0px; width: 0px;"><div></di=
+v></div></div>
+
+<div class=3D"fb-like fb_iframe_widget" data-href=3D"http://www.equestionan=
+swers.com/vcpp/drag-n-drop-operation.php" data-send=3D"true" data-width=3D"=
+450" data-show-faces=3D"false" fb-xfbml-state=3D"rendered" fb-iframe-plugin=
+-query=3D"app_id=3D&amp;container_width=3D639&amp;href=3Dhttp%3A%2F%2Fwww.e=
+questionanswers.com%2Fvcpp%2Fdrag-n-drop-operation.php&amp;locale=3Den_US&a=
+mp;sdk=3Djoey&amp;send=3Dtrue&amp;show_faces=3Dfalse&amp;width=3D450"><span=
+ style=3D"vertical-align: bottom; width: 450px; height: 20px;"><iframe name=
+=3D"f19804d1526dbd4" width=3D"450px" height=3D"1000px" frameborder=3D"0" al=
+lowtransparency=3D"true" allowfullscreen=3D"true" scrolling=3D"no" title=3D=
+"fb:like Facebook Social Plugin" src=3D"cid:frame-1976-b739c7a9-4cd7-4c98-a=
+c58-d046e9ce37ca@mhtml.blink" style=3D"border: none; visibility: visible; w=
+idth: 450px; height: 20px;" class=3D""></iframe></span></div><p>
+
+<div id=3D"___plusone_0" style=3D"text-indent: 0px; margin: 0px; padding: 0=
+px; background: transparent; border-style: none; float: none; line-height: =
+normal; font-size: 1px; vertical-align: baseline; display: inline-block; wi=
+dth: 38px; height: 24px;"><iframe ng-non-bindable=3D"" frameborder=3D"0" hs=
+pace=3D"0" marginheight=3D"0" marginwidth=3D"0" scrolling=3D"no" style=3D"p=
+osition: static; top: 0px; width: 38px; margin: 0px; border-style: none; le=
+ft: 0px; visibility: visible; height: 24px;" tabindex=3D"0" vspace=3D"0" wi=
+dth=3D"100%" id=3D"I0_1501401804325" name=3D"I0_1501401804325" src=3D"cid:f=
+rame-1969-869b2612-05c8-4709-bffb-1f2ee2886dc7@mhtml.blink" data-gapiattach=
+ed=3D"true" title=3D"G+"></iframe></div>
+
+
+
+</p>
+<p>
+<b>Similar topics related to this section</b>=20
+</p>
+<p><a href=3D"http://www.amazon.com/Programming-Windows%C2%AE-Edition-Devel=
+oper-Reference/dp/157231995X" title=3D"Programming Windows, Fifth Edition (=
+Developer Reference)" target=3D"_blank"><img src=3D"http://www.equestionans=
+wers.com/images/link.gif" border=3D"0" alt=3D"#">Programming Windows, Fifth=
+ Edition (Developer Reference)</a><br>
+<a href=3D"http://www.amazon.com/Programming-Applications-Microsoft-Windows=
+-Series/dp/1572319968" title=3D"Programming Applications for Microsoft Wind=
+ows (Microsoft Programming Series) " target=3D"_blank"><img src=3D"http://w=
+ww.equestionanswers.com/images/link.gif" border=3D"0" alt=3D"#">Programming=
+ Applications for Microsoft Windows (Microsoft Programming Series) </a><br>
+<a href=3D"http://www.amazon.com/Programming-Windows-MFC-Second-Edition/dp/=
+1572316950" title=3D"Programming Windows with MFC, Second Edition" target=
+=3D"_blank"><img src=3D"http://www.equestionanswers.com/images/link.gif" bo=
+rder=3D"0" alt=3D"#">Programming Windows with MFC, Second Edition</a><br>
+<a href=3D"http://www.amazon.in/Visual-Programming-Yashavant-P-Kanetkar/dp/=
+8170299713" title=3D"Visual C++ Programming" target=3D"_blank"><img src=3D"=
+http://www.equestionanswers.com/images/link.gif" border=3D"0" alt=3D"#">Vis=
+ual C++ Programming </a><br>
+<a href=3D"http://www.amazon.in/Programming-Microsoft-Visual-Fifth-Edition/=
+dp/9350041065" title=3D"Programming Microsoft Visual C++, Fifth Edition" ta=
+rget=3D"_blank"><img src=3D"http://www.equestionanswers.com/images/link.gif=
+" border=3D"0" alt=3D"#">Programming Microsoft Visual C++, Fifth Edition</a=
+><br>
+</p>
+<p align=3D"left">
+
+
+</p><table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+class=3D"menutop2" summary=3D"Headings">
+<tbody><tr>
+<td>
+<h1>
+Discussion forum</h1>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+<p><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"><tbody><tr><td><=
+img src=3D"http://www.equestionanswers.com/images/forum_note.gif" alt=3D"*"=
+ style=3D"valign: bottom">&nbsp;#1&nbsp;webmaster Fri 02 May/2014 02:15:34(=
+GMT) &nbsp;</td><td><img src=3D"http://www.equestionanswers.com/images/like=
+.gif" alt=3D"Like">&nbsp;0&nbsp;</td><td><img src=3D"http://www.equestionan=
+swers.com/images/unlike.gif" alt=3D"Unlike">&nbsp;0</td></tr></tbody></tabl=
+e></p><p style=3D"line-height: '20px';">Dear Users,<br><br>We are pleased t=
+o inform you that a forum/blog has been incorporated with www.mybestnotes.c=
+o.in. You are welcomed to add your comments, requests, codes, solutions and=
+ feedback to it. Please login(if already a member) or signup(for free) to a=
+vail to this facility.<br><br>Regards,<br>Webmaster=20
+</p>
+<p><b>Your message goes here:
+</b></p><p><b>
+
+
+</b></p><form method=3D"post" action=3D"http://www.equestionanswers.com/vcp=
+p/drag-n-drop-operation.php" enctype=3D"multipart/form-data" name=3D"forum_=
+form" id=3D"forum_form"><b> <table cellspacing=3D"3" cellpadding=3D"3" bord=
+er=3D"0"> <tbody><tr>
+<td valign=3D"top">Name:</td><td>Guest</td></tr>
+<tr><td valign=3D"top">Email:</td><td>anonymous@unknown.com</td></tr>
+<tr><td valign=3D"top">My Post:</td><td><textarea class=3D"flat_text" id=3D=
+"note" name=3D"note" rows=3D"20" cols=3D"60" wrap=3D"off" disabled=3D""></t=
+extarea>*</td></tr>
+<tr><td valign=3D"top">Secutiry Code:</td><td>
+<img src=3D"http://www.equestionanswers.com/images/1.gif" border=3D"0" alt=
+=3D"*"><img src=3D"http://www.equestionanswers.com/images/0.gif" border=3D"=
+0" alt=3D"*"><img src=3D"http://www.equestionanswers.com/images/3.gif" bord=
+er=3D"0" alt=3D"*"><img src=3D"http://www.equestionanswers.com/images/1.gif=
+" border=3D"0" alt=3D"*"><img src=3D"http://www.equestionanswers.com/images=
+/0.gif" border=3D"0" alt=3D"*"><img src=3D"http://www.equestionanswers.com/=
+images/4.gif" border=3D"0" alt=3D"*">&nbsp;&nbsp;<input class=3D"flat_text"=
+ type=3D"text" name=3D"U_SECURITY" id=3D"U_SECURITY" disabled=3D"">*</td></=
+tr>
+<tr><td></td><td align=3D"left">
+
+<input id=3D"preview" name=3D"preview" type=3D"checkbox" checked=3D"" disab=
+led=3D"">Preview this compose before posting this in discussion forum.
+
+
+</td></tr>
+<tr><td align=3D"center" colspan=3D"2"><input class=3D"flat_button" type=3D=
+"submit" value=3D"Submit" disabled=3D"">&nbsp;<input class=3D"flat_button" =
+type=3D"reset" value=3D"Reset" disabled=3D""></td></tr>
+<tr><td align=3D"left" colspan=3D"2"><font color=3D"gray">
+Note: <br>
+<ol>
+<li>Use [Sxx] code to show smiles. Example [S02] </li>
+<li>Use [URL <your link=3D"">], example [URL http://www.google.com/]</your>=
+</li>=20
+<li>To display code or un formatted text use [CODE] [/CODE]. Example:  [COD=
+E] printf("Hello world"); [/CODE]</li>
+</ol></font>
+<table align=3D"center" cellpadding=3D"2" cellspacing=3D"2" border=3D"0"><t=
+body><tr><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s1.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button>
+<font color=3D"gray">&nbsp;[S01]&nbsp;</font>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s2.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S02]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s3.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S03]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s4.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S04]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s5.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S05]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s6.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S06]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s7.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S07]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s8.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S08]&nbsp;</fon=
+t>
+</td></tr>
+<tr><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s9.gif'); background-color:#ffffff; curs=
+or:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S09]&nbsp;</fon=
+t>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s10.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S10]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s11.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S11]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s12.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S12]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s13.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S13]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s14.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S14]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s15.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S15]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s16.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S16]&nbsp;</fo=
+nt>
+</td></tr>
+<tr><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s17.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S17]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s18.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S18]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s19.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S19]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s20.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S20]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s21.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S21]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s22.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S22]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s23.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S23]&nbsp;</fo=
+nt>
+</td><td>
+<button type=3D"image" style=3D"width: 15px; height: 17px; border:none; bac=
+kground-image:url('../images/forum/s24.gif'); background-color:#ffffff; cur=
+sor:hand" disabled=3D""></button><font color=3D"gray">&nbsp;[S24]&nbsp;</fo=
+nt>
+</td></tr></tbody></table>
+
+
+</td></tr>
+</tbody></table><p></p>
+<p><font color=3D"RED">Note: Only members are allowed, * fields are mandato=
+ry. </font></p><table border=3D"0" width=3D"100%" cellspacing=3D"2" cellpad=
+ding=3D"2" class=3D"menutop3">
+<tbody><tr><td align=3D"left"><img src=3D"http://www.equestionanswers.com/i=
+mages/link.gif" border=3D"0" alt=3D"#"><a href=3D"http://www.equestionanswe=
+rs.com/vcpp/cstudiofile-cfile.php" title=3D"What is the advantage of using =
+CStudioFile class over CFile? ">Previous question</a></td>=20
+<td align=3D"center"><img src=3D"http://www.equestionanswers.com/images/lin=
+k.gif" border=3D"0" alt=3D"#"><a href=3D"http://www.equestionanswers.com/mf=
+c_questions.php" title=3D"Index of VC++/WIN32/MFC Questions!">Index of VC++=
+/WIN32/MFC Questions</a></td>=20
+<td align=3D"right"><img src=3D"http://www.equestionanswers.com/images/link=
+.gif" border=3D"0" alt=3D"#"><a href=3D"http://www.equestionanswers.com/vcp=
+p/serializtion.php" title=3D"How can I write a class that supports serializ=
+tion? ">Next question</a></td></tr>
+</tbody></table><font color=3D"RED">
+
+
+
+
+		=09
+              </font></b></form></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr>
+
+        <td align=3D"center">
+          &nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td align=3D"center" class=3D"menu4">
+          Copyright =A9 2014 EQuestionAnswers Inc
+        </td>
+      </tr>
+
+    </tbody></table>
+ =20
+
+
+<iframe name=3D"oauth2relay903045431" id=3D"oauth2relay903045431" src=3D"ci=
+d:frame-1972-f42b6112-2ecb-4bbc-9ea9-a49e1279635f@mhtml.blink" tabindex=3D"=
+-1" aria-hidden=3D"true" style=3D"width: 1px; height: 1px; position: absolu=
+te; top: -100px;"></iframe></body></html>
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.equestionanswers.com/style2.css
+
+@charset "windows-1252";
+
+td { font-size: 11px; font-family: Verdana, Tahoma, Arial, Helvetica, sans-=
+serif; color: rgb(64, 64, 64); line-height: 175%; }
+
+body { background-color: rgb(255, 255, 255); margin: 0px; }
+
+a:link { color: rgb(70, 130, 180); text-decoration: none; }
+
+a:visited { color: steelblue; text-decoration: none; }
+
+h1 { font-size: 14px; font-family: Verdana, Tahoma, Arial, Helvetica, sans-=
+serif; color: rgb(64, 64, 64); line-height: 175%; }
+
+h2 { font-size: 12px; font-family: Verdana, Tahoma, Arial, Helvetica, sans-=
+serif; color: rgb(64, 64, 64); line-height: 175%; }
+
+p { line-height: 175%; }
+
+ol { line-height: 175%; }
+
+ul { line-height: 175%; }
+
+.menu_link { color: black; text-decoration: none; }
+
+.menu0 { background-image: url("../images/td3.gif"); color: black; border-w=
+idth: initial; border-style: none; border-color: initial; background-color:=
+ white; width: 100px; margin: 2px; height: 20px; }
+
+.menu1 { background-image: url("../images/td1.gif"); background-color: rgb(=
+240, 240, 240); color: black; border-width: 1px; border-style: solid; borde=
+r-color: rgb(200, 200, 200) rgb(200, 200, 200) rgb(160, 160, 160); width: 1=
+00px; margin: 2px; height: 20px; }
+
+.menu2 { background-image: url("../images/td1.gif"); background-color: rgb(=
+240, 240, 240); color: black; border-width: 1px; border-style: solid; borde=
+r-color: rgb(200, 200, 200) rgb(200, 200, 200) rgb(160, 160, 160); width: 1=
+00px; margin: 2px; height: 20px; }
+
+.menu3 { background-image: url("../images/td1.gif"); background-color: rgb(=
+240, 240, 240); color: black; border-width: 1px; border-style: solid; borde=
+r-color: rgb(200, 200, 200) rgb(200, 200, 200) rgb(160, 160, 160); width: 1=
+00px; margin: 2px; height: 20px; }
+
+.menu4 { background-image: url("../images/td1.gif"); background-color: rgb(=
+240, 240, 240); color: black; border-right: 1px solid rgb(200, 200, 200); b=
+order-top: 1px solid rgb(224, 224, 224); border-left: 1px solid rgb(200, 20=
+0, 200); border-bottom: none; margin: 2px; height: 20px; }
+
+.menuleft { border-image: initial; border-radius: 5px; background-image: ur=
+l("../images/lines.gif"); color: black; border-right: 1px solid rgb(208, 20=
+8, 208); border-top: 1px solid rgb(224, 224, 224); border-left: none; borde=
+r-bottom: 1px solid rgb(208, 208, 208); background-color: rgb(240, 240, 240=
+); width: 150px; height: 720px; margin: 2px; }
+
+.menuform { border-image: initial; border-radius: 5px; background-image: ur=
+l("../images/lines.gif"); color: black; border-width: 1px; border-style: so=
+lid; border-color: rgb(224, 224, 224) rgb(208, 208, 208) rgb(208, 208, 208)=
+ rgb(224, 224, 224); background-color: rgb(240, 240, 240); width: 150px; he=
+ight: 720px; margin: 2px; }
+
+.menutop { border-image: initial; border-radius: 5px 0px 0px 5px; font-size=
+: 11px; background-image: url("../images/td0.gif"); color: black; border-wi=
+dth: 1px; border-style: solid; border-color: rgb(224, 224, 224) rgb(176, 17=
+6, 176) rgb(176, 176, 176) rgb(224, 224, 224); background-color: rgb(240, 2=
+40, 240); height: 20px; }
+
+.menutop2 { border-image: initial; border-radius: 5px 0px 0px 5px; padding:=
+ 2px; border-width: 1px 0px 1px 1px; border-style: solid none solid solid; =
+border-color: rgb(218, 218, 208) rgb(176, 176, 176); background-color: rgb(=
+250, 250, 240); }
+
+.menutop3 { border-image: initial; border-radius: 5px 0px 0px 5px; padding:=
+ 2px; border-width: 1px 0px 1px 1px; border-style: solid none solid solid; =
+border-color: rgb(202, 202, 192) rgb(176, 176, 176); background-color: rgb(=
+250, 250, 240); }
+
+.menutop4 { border-radius: 5px; padding: 2px; border-width: 1px; border-sty=
+le: solid; border-color: rgb(234, 234, 224); background-color: rgb(250, 250=
+, 240); }
+
+.menuform { border-radius: 5px; background-image: url("../images/lines.gif"=
+); color: black; border-width: 1px; border-style: solid; border-color: rgb(=
+224, 224, 224) rgb(208, 208, 208) rgb(208, 208, 208) rgb(224, 224, 224); ba=
+ckground-color: rgb(248, 248, 240); }
+
+.search_box { border-radius: 3px; background-color: rgb(255, 255, 255); col=
+or: black; border-width: 1px; border-style: solid; border-color: rgb(200, 2=
+00, 200); width: 100px; margin: 0px; }
+
+.flat_button { font-size: 11px; font-family: Verdana, Tahoma, Arial, Helvet=
+ica, sans-serif; cursor: pointer; background-image: url("images/td1.gif"); =
+background-color: rgb(255, 255, 255); border-width: 1px; border-style: soli=
+d; border-color: gray; border-radius: 3px; }
+
+.flat_text { font-size: 11px; font-family: Verdana, Tahoma, Arial, Helvetic=
+a, sans-serif; background-color: rgb(255, 255, 255); border-width: 1px; bor=
+der-style: solid; border-color: gray; border-radius: 3px; }
+
+.flat_button2 { background-image: url("../images/td0.gif"); cursor: pointer=
+; font-size: 11px; font-family: Verdana, Tahoma, Arial, Helvetica, sans-ser=
+if; color: rgb(70, 130, 180); background-color: rgb(255, 255, 255); border-=
+width: initial; border-style: none; border-color: initial; }
+
+.flat_text2 { font-size: 11px; font-family: Verdana, Tahoma, Arial, Helveti=
+ca, sans-serif; color: rgb(70, 130, 180); background-color: rgb(255, 255, 2=
+55); border-width: 1px; border-style: solid; border-color: rgb(224, 224, 22=
+4); border-radius: 3px; }
+
+pre { margin: 0px; padding: 10px; color: rgb(40, 40, 40); background-color:=
+ rgb(250, 250, 240); border-width: 1px; border-style: solid; border-color: =
+rgb(202, 202, 192) rgb(234, 234, 224) rgb(234, 234, 224) rgb(202, 202, 192)=
+; }
+
+@media print {
+  #header, #footer, #menu { display: none; }
+  body { font-style: normal; font-variant: normal; font-weight: normal; fon=
+t-stretch: normal; font-size: 11pt; line-height: normal; font-family: georg=
+ia, serif; }
+  h1 { font-size: 13pt; }
+  h2 { font-size: 12pt; color: rgb(0, 0, 0); }
+}
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/td3.gif
+
+UklGRnYAAABXRUJQVlA4IGoAAABQBQCdASpkABgAPs1YpEunpSOhtJVYAPAZiWkAACiHtoO6m3NM
+1Va33r9MXeJoeQ3DM0AA/vI09c+Xk3JSJL49ZC0/9vCMyArr7tUuTaPZ3rkJg/+PneIMydD6ngh2
+sFfeT/DzPGDAAAAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/td1.gif
+
+UklGRjwAAABXRUJQVlA4IDAAAACwAgCdASoCABgAPtFUo0uoJKMhsAgBABoJZwAAeyAA/vAu/5to
+wUuDoZabyS8AAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/lines.gif
+
+R0lGODlhAwADAJEAAP////Dw5vr6+gAAACH5BAAAAAAALAAAAAADAAMAAAIEjAx3BQA7
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/logo.gif
+
+UklGRkgJAABXRUJQVlA4IDwJAAAQJQCdASquACwAPr1KnUunJCKhuje6qOAXiWwAzBmW2b6BZmeM
+5O71w/r6F9sj5mPNy9D28f/ud7Bnl0+y9/dP+7hDXUN8H/DJ6j9w+UL0z5m/xr7Yfqf7rxN8AL2H
+vFYAPqv+ufi86kfgX2AP1Z4n2gP4qOhh659hT9duuEKx1nYUdS1u4ccEJ8xcCqBJFd47bb77SW4C
+ChGz6Ga5iN64vqC1cysr4du2q6Jk0PsJLuaOSKPQYTkYHzvFgZdEzi/nF7oAC0VQKJlvntGWRimw
+n7YZXYDIrt8PM5w99o6I5L0eCdPlveYEVLEHOPHhkHmpIzD5cWiykjSd6aYDuzu00rcInx2xW77v
+68FuZkxloKPuu7iLk3RfEKi68YLd0M6dXo4LBqKtLKZ68+g39gjqAAD+012RVknKoW6pBFKCYhIs
+FO93ntSdxgXgpPzldXhIbd1AQPy+UNSoAd1TuMQ7EhQvWIbMrV6XP9FEdSDrW4Nts5lKgbvkcdLf
+zUmmIDl0IAp5qkyheGyO+F5tHhapMKKrbe198pAeHdbFgwBlp0mlC9OYI+dZWKcEtH5Mage2EbVS
+iZOnMP7dTNdr6FDZIf9P1aUUulBHuPgGidtKAEHHdtD/4zD01WUfXa0hgzJ8GvhrtTo9kL9behLt
+4OZYue6iEGm2XlhGqdt1DjoY3UTZO9QHsbW6f3QQtDja20LmCPvW+1SNYE9wDTuBu1+X5Wo3RkGE
+1nx+l3a4y922VY0AQ/RloR3JiA+2/PjG4No7pp5wsEqaNzQ5Fl89/5wTFPmczfhX3OfH2n2jjrap
+m9+XuodpPFCW67o/9P3mMXsUaAhrJcVe6fVdAlX4jAoUi89C18ZPPPx/w2e7eE5Y8a/Jg83BZi86
+vq6UUrvxi1nF/O5ppt8fGyk9vYY7k3qP1u0sktZIL0MQt+t6ZoarWPivA0+Ej26N+rOl4Fq180ff
+vnvM4cMFNjkwEu1B0ZLb1RzLmWo+RNhBJulRU1/iBUnvUB5lp4iwfCWvhf4xyFIZ6jxe+3Z/FdgW
+v31R22fywbIPU1Ul8MakpceGkmdNmGWOSbHR4S9Mau3xHV3POTkYzHjSdQ/JIsiQy8BQnYnbALSM
+Qj81l2F5cQmU/haX4AZddpxQ6L8aFs0emys8vqcr424jUCTjai72r/1k2dF5THaO90Gaxu9iWRsZ
+26BzOcWhpNQt+59cEga7ivRX/CEbi++hALMS3PJGK++notnq5fx7GARiJ32uvntBgpDjDlzkLwYJ
+Z/ZSoo9Orj8vH68HB0JlaZm4u4eVlRHdtiSyWGKQH2wsBOSx/yH0isktUHuhpphO3SpzjM3oGt0p
+PfBELz8OhWUQ/Fl7xoSx4J6L+iy58sGcx0EMe5cGPrrARfQFJ41Te+uMtN+vE8i7ILJ8xHevhA9h
+3wv6Q/+096d7/sqI8mq7LcjH/D1KQfzQTWfeI3K6vypO62ivZNtZPI9EIRhatYM8R0dNfT58M9U3
+dPIAvKK06PEIx2lrsFjTix/Sb7+MeLLH/UVgkSCDEzE0SJIzWOlqXSDwdi2vj061HO3ZaqYI3Rci
+5LFxpbIYa4dXOxcPXYkn9U4Ykt4igKI9uS8CXSIWU8JIPD1olvD3jv2L8/AaSELFVtC8+ND/ekh9
+fc0myR3HrV1QlxToOZ1bIdy0Q9t5fg0/dHZeF5n2fiPjr/z8p0/uO7dCGw9mCli9j+8EeHbPnGxL
+w7pOKwWaFYzEwzvUsAftsbRysm2VgoEPYSQ+z47HPkw2JEIiKm0T38NLK5cViD0nGiv4qmDgReX0
+jyxQnpq+mbUfQ6hBtSaBpWD0R70EggjdnZrpxJk8y3xC2vEel1cQUz0hQ9qpkOMtex5z/HoTpeYu
+utKXoEMMPu5JAkH2Kqv/CNhoVLszmToNxZePsostq4Q7xtyfsDOn1AAjSmXx/hJl9KJw+yrBcZSe
+FZkLoK/OSmP8rFGu3LmUuJemfK1xK7iE+ZWTZ2E02CgSEANNcaCTUbf/ouvS49RUl2o3yU8rM034
+NIGFimVzkR2jf7ZT0QDxGTS4k0KXzT3f+WqAKzkUFmdRPseAQmViozANaBhPQb0WXKN9kJlJLUDH
+AYpsvxMzuiyWCb2JaBYLscyFHnGXskhzOFsq/z7cDcmtiNuCuDez1/YLaNdXpJN7cUYgW0JG9Jm9
+/ZziOGBWBBwhXLFZ69j1bhCRpHJPYBSoCxOUs7zPr/ydnbtbZe4ZJeIUYcavTqVYC/CT4ANuqwVL
+gt703IHxgiqPnO/MuUR4jLLagg9EJUrhRY5PhQuFRyNtKp3FhN5T/gFxaUl5wbFf17nAKBo/E0zb
+bNO9cB927UjY+o/yQn9K6/9pIqiXsj2tD4OoWcZA/GnWb50+GoIhXGr4FNx3SL5VUwHlUTWR+SUc
+/B2jIbyzVZW3HXZmQ1xmY4SBPBQEQt5HD+UddkC9NVtAFWOEY2AP/zSra+W7Axg34xkKzjCqG9eF
+fepJ0XC2tzPOa/dHhPCRqUztoMlRgVzjwx2SwmbBJWd+mtmqczkXqjQi9xun5rhOsfUycUVMous+
+rSh/SsDusHMb/jl2mJy2b7xj/D2NuRUP7Jn14XgUKKREwJ9KetQy6Ci/osSrzJ6A2HXFqP2BgQFi
+Ryp7jzfcjeZI7dZ2RhTTlvr9KriFAjA9oOLZh4qmAuhyb5IO0IMYtrH524c8fV23eBo6TseQ/OtY
+xoUVJtFetAD3U22W/zaA2bbLLp18Q8UV3WdpW/nlQ9mSrzWVzAcRVT8y4fgqHwTmV5BgkmxRIswg
+P6yKhnzfLzg7X23XCx13VlgiqmqCygDJJc0e1hyB8pP+NAyrGaHXPmA3bZVpPU6mLDwWFy1EAFM0
+1m4tn1eQmeITR+suV0nriWpjohjGe3tAQg9vx4LWZGwQv2kl/GedAQWIpxnmWN2nEqxLT44wgMRT
+G3OJAvYDYn/4zc6LL9JkZtnKoAk+sWPSSNQU1UCKcYHiHLx48fDgl97QcTMy5E89dPHqvmgLz+Zw
+EV3n524vrzqm+4UPdZU727f7GO8ahgoi5i77QlgMDtWIKpYHcjaB05XyhLo/6XZ05JzIhACXb1FC
+3Fw0Mvfh2Faoi8g2enTF1qnuZLn+o40qXDRIWpkDctYrL1fu/1CoArOcgAAAAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/search.png
+
+UklGRpAAAABXRUJQVlA4IIQAAABwBACdASoWABMAPs1UpUunpKOhsBgMAPAZiUAZwb/8A9EIaZGi
+4R7t4MpTQAD+9glzwcutR/h3wLzbSm0VSjfZrZIJtD3D/pfTT8nJvjpMop7Qvu72Jtsq+QSwpFNu
+BI677LbUkPkSQdLv8APrvi+jRMA5oi2H7vMgbzEnVVCd5KleAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/link.gif
+
+UklGRpgAAABXRUJQVlA4WAoAAAAQAAAADQAADwAAQUxQSCQAAAABDzD/ERHCUNsod4eBCwLAvzuC
+AH54iOj/BOCdtsv5bEvSBQBWUDggTgAAABACAJ0BKg4AEAACwEwlsAJ0VAC7AN5MB2AA/aqk35ym
+5C6DHi6pM6xOQBUwZ4SKJ6Tl0Rpvs+F+RVHRViRGvEV5Af1xdQXqjSgdJ8gAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/fblike.png
+
+UklGRl4BAABXRUJQVlA4IFIBAADwBwCdASoxABQAPsVOoUunpCMhsBv9+PAYiWoAwrlBV947rQAt
+MHOLmbdQAUpPZ8Tm/X0Ql6sXpbRwvVVryK5hVmQ3GLhagwAA/XZOeA+T+yMqkPOtrmx5weCbN+OU
++j6h7uKhwNX5HFYPwkCV1vhXMCa/7DD+nfrN/ZgR0sFTjStsfvWth9JvDw0YVmtjv9wBgakEy9c6
+a+GPwjGuykAnSZ/juW/Xc42fjqp9kKzbnUZ16LnX/0CLqTmc8sdBrJD+V9o3rLk6MGaPdJlq82wB
+Fcz0lm32efGihBLIMFdcXXcLnzMNVQL7h3uJpCkte6vpiLsVcRdW4Glu6jStqlZptjshOBkm18k7
+U7xciThagSnFADbbSAHQXlne9GQiBTT9XVHrIKsxn54C7CndR8DXQKodb8ImqBjkr132Tf8GAA8W
+P7z02BQi9Q+8dKh4DAAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/tweet.png
+
+UklGRpQBAABXRUJQVlA4IIgBAACQCACdASo7ABQAPtFapk6oJKMiKBgMAQAaCWYABdu2RoZ5lQP9
+UP1K7Kv6zA6Evo2AJ3+nLMfomKiIOjtu2XlfIHXxiWuKyA+A2jtv4AD+8mDSqC7OA39gGSCYwaHl
+gfv5SMMvMCkYPHk4cUyHsH5Ag7ZU9z6UdHgtTVsst4MdFjrHogf/bBQO2SR8mfAj1nWx6V2b+H7s
+Gl8TuZ59HYbO4olTy+B2+qLPsXlmjSIWvEollHfDAmEPFA5mv5ypNJ2GVAzIfCTbCHIktzAh/nt+
+SIEhLmAcktKjarcbp/9ndgjTTk+f/ZOVN3n1pFkBJCunIhbJaDbeYuDfwc2lCcz2e2HtDXQx+vjU
+XtRwQa38TOlLqsAZcVifhbcItDkShkU1cu5NDJepS+ZBzCxLQMa3oijFBqPt7cp+zgWijv47Ldf7
+XwW26ONJQ/kP2fiLPZh2o+AjFUhOA7eJg/qXigIDgyb6HnKkRUuoWbjYBedKevgCUt0E1OIqxyM5
+sgHTdrCI4ZrDlAAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/gplus.png
+
+UklGRvgAAABXRUJQVlA4IOwAAAAwBgCdASogABQAPtFSokwoJCMiMBgMAQAaCWoAy0vBMAB2AreY
+5EvjpnYz7cvisRlBC5p6HPghzHKAAP7z7gKZpg8+CPpRP06Syqj1Pp09VMIqHDalurw5d8mDhkRo
+cBbE6nS27cfKHTv4SqaQV3krWLcn6X4319rkFtOXUnibZmj/4lJeES/ZB8jzk+yeQOU8q835Ii7a
+UfnpfqJDakWfmIxFH9/hrYPZ/NtU5Kfg9LgwruOBVz5OC8ov4aJVD2vgxvUtUoCsDSqw0fkNIM9c
+PigSlY35dXI0xIHB9ifwJG9XtWXGlnAgwAAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.alexarankchart.com/img/alexaWidget2.png
+
+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
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/vcpp/images/Ext_Style_Accept_files.png
+
+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
+Geu+36xr5AAAAABJRU5ErkJggg==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/vcpp/images/MFCDragNDrop.png
+
+UklGRiIJAABXRUJQVlA4IBYJAADQXwCdASriAXgBPtForFIoJakjoPUZ2SAaCWlu471fb5r47W8D
+tjegDbNc7H0TPUAfzj/VcCR/s8lz9AdQXluJiRIv+p8pe+Has/zG/0cl/m3fffuHpF9W+hj/MeNj
+8s9Br+q/9X06P+j/NegD6b9gv+Vf2Dq3+i1+sABDvl2xr+exBM/TN2R5r6CDRuJikJmLB5/M2P3p
+2kOtKR6egmKcAlvj6Ii4UqL4+iIoeCafgQlHlADDYEjx2kGyjsK8n/OHA3yAHx+8JH+LVjBKPeP9
+3Dwv7uHhf3cPC/usR8Ve2+I4u4jZdVeHLJrDOzVCP0qkCWdmqEfpQLV66+6ZUyTMBYs5hAi1IFHx
+Yi4UqL4+iIuFKi/sZyMajFAqQZN2CUuyQdmYQUhSii2HV20pUXx9ER58zN0AwfYAVasuYxVsMf10
+vdPH2ztKVF8fREXClRfLAi3F2x8ep8oJpLQHY2cVh1dtKVF8fRF/H7Nj9s7SlRfH0RFwpUXzA7to
+5/JGxFFsOrtpSovj6yvl/KNM4i4UqL4+iIuFKjZR1djFmRfoiLhSovj6Ii4mii2ApVniL4+iIuFK
+i+Pot5j9ivFiLhSovj6Ii4UqMAnV2x3tk+iIuFKi+PoiLhXjFYbgOxs4rDq7aUqL4+iL+P2bH2rM
+H+N6/u4eF/dw8L+7h4X9fd/VQnYbgOxs4rDq9xeKtC42uwK7aUqL49tKs8RfH0Mqax7aJflQGjiW
+rkICMnG1JDXZoNh1dtKVBtcooth1eNt8AvCQCi24p1FfJTjQ+sRm7AjbdbDq7aUoQ7MRRbDrLdlt
+4COb2GcK4hXnMcXnNOFKi+PoeGn86L9ER/b8WIp82Nz4a4pfalKPtGP7xX00Es4BxF8fRDylbSND
+xLOzVCP0qiNXo76XhuRWUL0rkufL6i3abtAbyRVSBLOzVCP0qkA8sGtKaWwYfNc56FzWqheAHPWs
+y81tDeMGy4oo1fNLzqeb1wXNawzs1Qj0DBxWbqnyh9J+ggSxTp4MTE/4vFI74ab93Dwv7VqAAP7q
+1W/Jus/ptkbubL7IoqGx/dh3/uf8VtI5J2oJYNJ+Z/5XdjTK6mZse485eb/8vN00LXGGmXd0nfzY
+YZTRfOW4PRx//uPhWbmZhtPuhPRr4/0fwxtFnMQ8EzBklqoDQKjNmI/31tYV5TG2a5o3C5KIzaLG
+cr1kEBF0p45f61pergA4k+jowTHrUekk3Ojpsx5ucI2eK2mm8N+3IempO7BUZs7tRFoy1wtN5XVX
+9Vcuyp8ip6f7Yec7zjJRxmHNvfiGGYSP20YdtytdCCDbLVaGIZ48/Rakt/ZnHmDRWV3ffKcACgsP
+iVKk9z/79YgfIXYRLQkP9QRMyIRh8LNrvVt1IS+fjTFCJl6qYyRal6X5/aedxsl+3546MwJ2p1/4
+7gOR4fE0xTlTI36xT8I83sznTv7Ue+2BQd/YtByHcVc5TyuEvaO0mj7rgAEPCRHyj3Y8DzWvr9r2
+sbn+Mtz8LlxYnjC0il+tWkpk6fItFIjlGxFv7yFGVKMD8QpWa0ig+Vru4tFwXunDLGrc4kS31c5P
+jC6ylowo7aVFi491LYuzJ9ixY4vV6MZVpL9RJXCN+JNkoXFBAJX1O50+8wqBsddWmiU+s/I3e7WF
+ZYU4zAmYQQClkzj4oHnsrKYHWpC1kWzEeIlpCWPP6a+aYwyw04usgx1RcmaWrsUHmU96zMR+5LZV
+QRg13MG8fzWR6QRoxNpgV+miZFD0oaG4g9wX/lfeojHCMRo8FCQVjnHpAW+ddC6LQAFThBMpzwse
+2ZRJb3kDgmPcLJro80O8nKUq2vgWzIS26NEWbf9NEM0dpoFrfGdY3gYHjB9pSff8MlBamdys7apw
+0CmThnlTcPLu8uok013kh0EOBrbqfNDkbZOs8O1p9QeJUiwmnk56OnB/J3NN4dLn8yH19ItB34Py
+S/wgGg50vTVNQX4x+/Hqv5SSES8RxrSBpUr6Uc+eKz0sPntwf9zMws8pb/Q8O1f1RhS9zM1oATGO
+kJeNjx1ShucSp2O6qu1OCmjurmirCH7RZhOqBqjrum++nK/pHHeM6BrAsawMqCtsgi+2pnJ1YAU4
+yxnT7+YdpqGveKrr3xu/Hlm5I75LRxi8cDnxixHOOD/BmA4my4aal9By/WVVpRUDroL7tTYsBYTx
+7cdhUCHyT3NjAqw07Ve8C0UAt8ePYyD5tmV7svo2b6vvELkHTZHsLE9YCt//NHx1zlZCgtJmiUPN
+Yh9PzmH5dP/+kjcCdLPXc9xgnFm7OSW+XjwguPT7t3191o0HpbkZVngYfvYFYvbVLcMgSt5jvm3f
+HDM8r4YsdBe4pHmo/QJOV7Fj3G74vTJ+LrEuygKhQPL/Hgy84IcySjS9TYS+3Q8XRjwBn6/AAAAA
+AAAACoy42qmOnHdewMewGjOkdHmK//fSQwGX0/LUP3J61tuscGKIXXWk7PAvLYg1k13Cx4XG5q/A
+NYhZ5tmj6BzPdGxI97uCpGzBbgXp06lCXEENB5VWN0nKsfp7RO9YM6gSbvtrYDDBgMMebzdYh4yi
+BXRfn8HqwjkoA1+y3HPd72zE9RjNKOiuEcQD20uUhlgAkyKQT1dBvhwtX/63kZokp2i4kAuqXlgG
+xd5s1m0/2zSTaZGW7UbUvfN2rHA7dsersAzBE4p7vvyTdsEobssH+WzdTBw7AJ/I3a/0j2aII94L
+IPky2MB8sNDdDFU34+WG//yX7A6agmGHKgDffveI3JjhE53gM6ELf1IKlhqsB4o1ftg3GT4E23Km
+7FEr22XxydRH02OX1B+PKoGzL9tmIidK9TBtcF52hpP002QJ6D81IapPCds0BMKaffzN53sMfmcR
+kGEnQhbpVbw8azCCjMr0wJgq7DlvdI92y0Xmn/BglQam6bhATxzevTUkGg7SLHTiojQPV5r0bneu
+q4g+mLhd+t43DwJsK6uputS9s6/XcGuqzLV7F2k7nQ0XzL+Ge7036efPkyctrHHscb1H8C2mma5/
+5xYccK59NSldNVztG3BX9+KWefJQs5Q06oBweD5vV6IdiNoALjKvCTbnPT07fhsrVcdfwi+XqE7m
+Z56hVHaAQAAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/vcpp/images/DragNDrop2.png
+
+iVBORw0KGgoAAAANSUhEUgAAAeIAAAFgCAIAAADo8+0nAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADWPSURBVHhe7d0xkiVJciXaYkbmL6PW0VQtpYgv
+LTIL+HwTIIbsHTRWAbY20DsA0QQ28DEMAAFRc92vxU1NVTN7/vz5i/C0ukdKYlSvqdmLTEQpsrpa
+MD/9f//0v/2X//Jf/st/3favbU3/bmZmt+Q1bWZ2a17TZma35jVtZnZreU3/9NNf0l+//vrP//jH
+P/72t99+/jkf4a92zczM3mO2prmg28GuLut2YGZm71HX9G8//fTP7a/ff//111+1qf/2t7/9/PPP
+P/30y8eA17SZ2dvVNc3929b0z7/++tNPP2FV7wuasKa/rfJ27Zt/+XMb2/zpr//a4jP2p/78L63b
+IOGTF36KmdnbYVP9/e9/b02AEEetGej+aZp/bWt6++u337av3+hP09tYu/aNNinrtGefsj31pz/F
+B+KavupTzMzeDuv4f/zP/ydt6m5Y1TX9j/2vfVOj/ctftr/ymtYqn6/p33//179+t2afsz/1L3/9
+07f3umv6xU8xM/sMaSmndqKu6fbXr7/+4+d/YF/vwpr++edfcLTPbAu9Xfvm+wX6bYNu+Z///Cf+
+uRdNo+26DW7+9Ne/pl0cXlQZsk3/U/QmfHzOfhGrfw/jE2Zm74alzNWsoh1Mddb0/m8Nv//Xhvua
+RoGWOQa4rIvJAq1rUcPbKTfpduFb+LCg7qdsddvO27kufkx8C83MPsnf9wV9fEdDXtP7ik7/Jby/
+/fLLL3FH076pf23NN3WBaj+GfN+Wuz3UVDsrV1BuG7d3tOl9CrKPLQ3tge8vfoRmZp8E2/nVNb39
+wfljWX/8N/B2+79I/OW3DRc043btm+8X6Ldd2V2gqPbw4//daTI+xTvdo4efssHB3tQ3WZuZvd3f
+r/kPPfb/fKP8a8P2H0//8pe/4A/VDKhd+ybuQdTagyFX+a/Yk6y+TW7Zt1BPtYPe0be7w3y7y3IL
+28S30Mzs7f7+/WpO7UT/T9Pbmk60tb8/ate+2fbgh7Bkv1ug24Lcz//8Z/0p+uNe/VeIsl/TkcSZ
+7698fE6Y2Qb2f8e48ZI2s8/RXcrdsBr/afp7+EM0/ii9VQ/W9Mu23fq+/ZlXv5nZJ8C27K5jhA8X
+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
+taA0BvN6kqCoSSzUwsOkFlSvyPFJqAkwHF1UXcOHidqUtyrUNRxdgflArScJipRArGF0VOsjiRwZ
+rsnlvKYXdnJNA37aRAkLiUfChFLCFtSygJgLEx4Rc2lpeQdaH16OX0cFqWUBNdzmwgDFpHsqLXoG
+b/E6MafY8pS6Cb+K2v28YUKx5SmkFpgIEx4Rc2np9Cm1CpkQE4ptPaLWH0hiIUyg9bvavoPX9MLO
+r2lb0uV75H2L6aHP+egv/AVGXtML85q29/5Z7x1vTvBXQS16s0/7oDmv6YV5TZutwGt6YV7TZivw
+ml6Y17TZCrymF+Y1bbYCr+mFeU2brcBremFe02Yr8JpemNe02Qq8phfmNW22Aq/phXlNm63Aa3ph
+XtNmK/CaXpjXtNkKvKYX5jVttgKv6YV5TZutwGt6YV7TZivwml6Y17TZCrymF+Y1bbYCr+mFeU2b
+rcBremFe02Yr8JpemNe02Qq8phfmNW22Aq/phXlNm63Aa3phXtNmK/CaXpjXtNkKvKYX5jVttgKv
+6YV5TZutwGt6YV7TZivwml6Y17TZCrymF+Y1bbYCr+mFeU2brcBremFPrGn8HJjZbXlNr+romt7/
+F7aZ3Vr729XWcnRNm5nZl/CaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9p
+M7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOz
+W/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vz
+mjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2
+M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7
+Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWv
+aTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kz
+s1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb
+85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/Oa
+NjO7Na9pM7Nb85o2M7s1r2kzs1vzmjYzuzWvaTOzW/OaNjO7Na9pM7Nba2vaf/kv/+W//NdN//qn
+//1/AcWPLSpr1ttrAAAAAElFTkSuQmCC
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/like.gif
+
+R0lGODlhDQAMAHAAACH5BAEAAA0ALAAAAAANAAwAg////ztZmE9qo2J6rf//uZ+uzHaLt3qOuZGi
+xcTN4FpzqOvu9LbB2AAAAAAAAAAAAAQ2EMgpg6AYDHLzDETgSYURjgAYBoExsDAhzyxSqDPdGni+
+GjyfDtjLsYjHRE7xYi0WDB5LsYgAADs=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum_note.gif
+
+R0lGODlhDQAKAHAAACH5BAEAAAQALAAAAAANAAoAgv///0aCtO/v78DAwAAAAAAAAAAAAAAAAAMl
+CLHcoUHIOZmiFYJLn96R5H3AEAXD9qXKxi6lKqcLK6sm5DRAAgA7
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/unlike.gif
+
+R0lGODlhDQAMAHAAACH5BAEAAA0ALAAAAAANAAwAg+vu9FpzqDtZmHaLt7bB2GJ6rf/d3cTN4JGi
+xXqOuf///5+uzE9qowAAAAAAAAAAAAQ2EARBxwGAihKMN8egDaLwnYZAUuinlq33srGAIPSpUUVp
+poqgUGgaLIZIkwCJZBgCzCFjGY0AADs=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/1.gif
+
+UklGRpgAAABXRUJQVlA4WAoAAAAQAAAABgAADAAAQUxQSBcAAAABDzD/ERGCINs2J/IM5UNbRP9j
+10NgAQBWUDggWgAAABACAJ0BKgcADQACwEwllAJ0BRgC110mOAAA/mfRxLYMLqwDjwvEtlVB/ruP
+xXNXbtJ1pFH14+tB2Ia8h7GO/TmUYrvfnN7KMEWf6D4bV/1Mk8gqMKFFaAAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/0.gif
+
+UklGRroAAABXRUJQVlA4WAoAAAAQAAAACgAADAAAQUxQSCMAAAABDzD/ERFCQSNJDX3lvwQkYad3
+RET0P7qaetmIfAshMW0nawBWUDggcAAAABACAJ0BKgsADQACwEwlAE6AxcPgmCwUJSAA/tgML/eW
+aUqf4rBdVoxomZwUaxG7Y2+bhmQgYV1w2yxtSa069OJOtGDyHfpSD/w90d244Wa9gKnuK1inq+Er
+J51a0/ghyG3oMdR4J1IMAUiRRygJQAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/3.gif
+
+UklGRrYAAABXRUJQVlA4WAoAAAAQAAAACAAADAAAQUxQSCEAAAABDzD/ERHCbCQZf42rVSYzCni0
+EdH/CL2eZjDWkxTPYQEAVlA4IG4AAAAwAgCdASoJAA0AAsBMJYwCdH8GJ/gYe7nqwAD+15Dtfu29
+21lYQuSFgJY+r+P/O2jgdYXJLACwsrx4CeUHcICR8CLoNLHEhhVLKs55BNjyo2o+KdTjz29RMPQ3
+eZ4BbsLAL4UkoALH3sAE9wAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/4.gif
+
+UklGRrAAAABXRUJQVlA4WAoAAAAQAAAACgAADAAAQUxQSCYAAAABDzD/ERFCUSSpETf+HSFlJfDM
+HRsR/Q9Qc/Pgw8ef//z5EgwuBlZQOCBkAAAAEAIAnQEqCwANAALATCWUAnQGLD22j42fsgD+teld
+4AHe8P4aQ2H22un1CLlBWCMLm7xyyDfim8yUq06TjQSCj/2of1GxqNORq/TiEjrgzsRqd8FUQBax
+lY3Ffe4igJNU/VYAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s1.gif
+
+UklGRiQBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDYAAAAkAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+wDPeGSIU/WbUK/1mE8/Y+iLkdK+onAAA/rVX/1d8uD0fXcxPBrMEXkqGpPU51D79ASnfwRFNGDd0
+IAbDWW64s9Uta9PbY2S2/gwRWSoins1SA1op/aBS3lj4dfFnUp2c4VLaGiWz2YfVH+n0p2nBkQ3p
+RuRZLNrmegQcVHSxq/ZOT/24/sUXfh3Lm14tF8VFUHHlllU8zXhD63MqOKBWoxya4MQI38Jfn/rf
+B+bzHeZiJT5S1FHPwYAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s2.gif
+
+UklGRjABAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDkAAAAEAYAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+n1UlTHiR+b9QA/TMffb9UFxfwBotKjTIk02gAP6XCr3H9teEzUqYeGtLwozA1KpuEQLbPv4z992E
+dWZ6SI9m2b++AaELz927Otj4BEK5VGXy1CNvNFx0GZrZa2gOtIt2/p60XmtV4TmRcd49zIS+Z/LF
+lAjmAekspd58xt223Z0djAW8pqEVjbTKoEH+dDP9LGQRygW09/x76MblP0mhdbtp3cfmx+ohfAfi
+vGJi9Abxt3ASawJbn/rfB+bzHeBS5BQ/aYAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s3.gif
+
+UklGRhABAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDEAAAAUAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+n0AiFf2A0gAbSPK21hKYbBN20SmAAP61WA9XgBMB57dNX9mnUlU6F7hI9kg4VqIbcg01a03d9leD
+KKW9kW2zdAFI/pwucK53BtMQd3fLdi3iOeBms+YKVFk9uS26NcaPprf9+ew4ekztt4QjfrS9l6sL
+W/9xotgaYbPm8HRt1mfrd2Ri71axF8or9HTb7gmg6WCQHlvrf/W+D83mO8ClyCh+0wAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s4.gif
+
+UklGRiABAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDUAAAAUAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+wDPeHiIV/XfUIB8fEkFrfEbmp8SgAP61WA9Xf5iifXiEahyUY4UObzekPGantBmABVeNuIUPwlPb
+WgZK8txanj9DR+w6Jfu9PuA2K+wmbvnEEkp2jHvv+tMiJR0tXTBI1/iyB19qbqiuh5GVO3Svc0Zz
+MfzYg1+ftSGCKQwj/9Njj//7Vf/A/u9Xqt93WjlY3kSHkT6Nlhjy4viZHxfyTnIgh/CW5/631uxd
+16IjyU1s48MAAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s5.gif
+
+UklGRioBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDeAAAAcAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+nxs5gHe55u2IAPsKlqYLV7pKEqPEoAD+tVbTMuXtPbRa6/tA/dmHLhtl9MndO9dYmO1/yUdWVW1R
+d2zC3wnSONZ0/daJ/jB/iukybb2Pl24St9s+aHNMj6rJ063ZPZcTEgyAj8dxPSYR0fnf76M3kBz6
+Z41YMeVnoF1UXWhWLgSNfjxO1+QNA5lb9SYOGsdoTwSp6ci/RTSPbZSYT2hsl63rnxKNHNxy5UJb
+dwEaCjxP/rfB+aY7wKXIKH7TAAAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s6.gif
+
+UklGRiABAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDUAAAA0AQAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+FzHZnWIAPsKZWRSvOnfRKYAA/rVXyDYfvgf70ri2elGTeY2sW6BJOsQdCriK+vXNHtnR3R37T8FV
+9Hx8MQzbz7O7TyeZb+oteL9YKxZ+XoQNvpGWV7zR3N/Zd78+oSCP8qemzD5xnguoFztg8qXeBCGQ
+Yl+lXiBNqRGX//D1cIfp6y7+De+BtOeiB9jdU75Et3XuRlgT3uPej9nWjTcavhuplbzDWlv/rfmc
+t5jvApcgoftMAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s7.gif
+
+UklGRh4BAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDSAAAA0AUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+nzIlO/jl+d9Qr/WYfYUxfb81O67xJ9ROAAD+tVhNhLkduRGmgSPR8o9ypP+u9M7RJX1He9dNJqIQ
+kyDKCGnW11LfHCX4k8h6ni4tqph4D/QtMFJ/3fNOWdtJdfQZ1vwpRgXmLi+JYofnLmaa3HFJ9yzm
+HK+CPi49hwn/7fLS+/qDjcgpajl5S+mFWBoAiFlRpwv1tYJiIsxHsMlgmJ//m+t/9b0yDd16RzJ+
+Yija6qD2gAAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s8.gif
+
+UklGRiQBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDYAAAA8AQAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+nxUiEf2D0kATmot7nt/whSywAP61V+qeTtkBVzybTxjCctTk8IWq4Y2Vf3zv8Tm3rNIW+P80i94c
+1E8nHEgmEYq7a1E6pR7XQGopz+LnlvBbS6Y/QDHJ4RtzH0XItYFI2j0vt2/pkh+fl88NUQw6rSXb
+pUxWKgP5Lg19DqlvT5c8/9xoeIWwUc7sWd0FZ7aU6TdQnArd+Vr+6LXxMklUjFRFKMlgBAYKpgb/
+635nLeY8NIJZgazPwYAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s9.gif
+
+UklGRigBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDcAAAAEAYAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+n0QvWL9J1YLOtzAP2AH1zYOm1ay74jKI7IwAAP5YEPTSo7BUon2tjMapPMT5tUJLsCW7UW6nw12q
+VLc/rHsUK8x56Zqrv//pvQYwyFA//1PhBU85FEKmP98lG1GZxy28B7+nTtoyOXpbrcwvlFHqxpNU
+5GpLl9ncx+m2U+9R6QKSYU/RP3AjetksDT/3/4r5OoEKJ+6T1vffAb39GtZMHrFCnz5Ja/SHwsfA
+3/Lid3f/W+D83mO8ClyCh+0wAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s10.gif
+
+UklGRkoBAABXRUJQVlA4WAoAAAAQAAAAEAAAEQAAQUxQSC4AAAABDzD/ERFCVW3b0DHHEEW0J5pI
+Pme+yBDR/6iRlljCudyrvpx3CUtoiRopgWwAVlA4IPYAAADQBQCdASoRABIAPtFgqE+oJSOiKAgB
+ABoJbAAdqkSnvxI6gHMgexz+kofceuIZ/bY9A8dEbA4AAPzUauXS7EcRGv2a2Hr9eV88v9WdfloK
+vUWosOEWQmX9gqtKQa/mapS7mNTE+9iWvU9ocX2DDT+KZClbRJU0W2D7Oo1aGNX08YE5KwEXI1Vd
+HonzS2NPWNv+jw0aVpYt7hsXi+1SgaEOv6dE/WAWo/0+jzLrudgX/+cqwRg0rqae6SyAcch5bMUO
+1hneCN20IKmLq+Zeqwoy95/vGv2J/pUxlFphbPgidGVe2vnadX/59OQ26sH8Bb2mImoCAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s11.gif
+
+UklGRi4BAABXRUJQVlA4WAoAAAAQAAAAEAAAEAAAQUxQSC0AAAABDzD/ERFCUSRJzfBCxkk5aVhD
+Es+cg4aI/kcQolIdfTxjmE8f9EF1JypB8BYAVlA4INoAAAAwBQCdASoRABEAPtFeqE+oJKOiKAgB
+ABoJbAA1AE0jkpr8SKZB+pIfca4NFUYJwanTgAD90zvOsn2Rj+0D6rUVsqZvdp4xcoLFiJ3GnkaH
+CHrHTwWAAqE1qpa2H0FJ3BcTVpqDfbZU2GnyrvX8Gl+h3g1eISYMZkiPf5KHzWe5kpF2nE/uzEYi
+H/uNH9qD9S5TArgaLW7OyNuON9DcRNtnpZGX8UrP/+qIUcPMixvyRIV7kL9rueBBiQT3cdXEb+Ro
+/D7sn3s/0bJYVk7YYkARKWva4crjzyAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s12.gif
+
+UklGRjoBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDuAAAA0AUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnQwS
+0vQJfJ4kdBD+kdCB7Ev6ADzOS4rcjVjesAD85YBipyLMjLojNvoDWI7PdVUZFYUnFPnqKMvh5Zaw
+P2dO63Q1MNSDD7Jt/NWsqQQ1b/4VGlp4JhrDbvgx69dX6gM1vqVWP+Gfpf7nHRFPoRVtUZf+jCAj
+LjbAD1lVaA3SLKzdSCCp6Gk3Rh+dNsYZ9tl3UdcDaBrgEC2aDfUv35xKdrpIHwFDv87P3B/XbM/z
+896WRjtIYQyhCq/7cKRp6O3f/W+D83mO/lABkpHqIWqg9oAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s13.gif
+
+UklGRiYBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCQAAAABDzD/ERFCMQAgTgMghFBCCiHV
+MMat7yFE9D+Wv/i7dm1rSTJWUDgg3AAAANAEAJ0BKg8AEQA+0VSjS6gkoyGwCAEAGglsAJ0vAJ8a
+IgXQAB99sj8ZXJnRYROAAM4/KB3xgIEROitrFb9geiP8Gnub2Y2qAM+o+dEpWyLf8wsG5Tx1dHTU
+/54/bU9VD/1Y53rVUoJyoI/iNOhh8KiN78FfDKy/9Zz+j9Hzdw01xhiz7bo/vuGsgs1HvGFDAAxu
+4+f5fEF/SAy8TTwc7tWeR6BuK/9lbrAimxfgtbrGP53K63cjFSdTDvWFluQfsydHmFelrW4yUhQ7
+j6Dn/W+D83mO/OvTBaCoXAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s14.gif
+
+UklGRsIBAABXRUJQVlA4WAoAAAASAAAADgAAEAAAQU5JTQYAAAD/////AABBTk1GFAEAAAAAAAAA
+AA4AABAAAAAAAAJBTFBIJgAAAAEPMP8REUJRJCkOQQASkLLSsIqMcOl5FiL6H2XbL178Ly62l6UC
+VlA4IM4AAABwBQCdASoPABEAPtFUo0uoJKMhsAgBABoJbACdLwDAK94cJTr4u0QAfYLlwp7XEsRA
+8QAAAP61V/9XYuNAOUGqi1uzjdKoXDgqjQrNQY0+VNyplBIbEizOlOhbz9fsE+an+fsNq143Xp0n
+WkcABTDJPULJvIbMsSwUOaE6T9fJ3Yi92uSfQo95JjyYOJ6vqjduHkHcNlKDK3/uNEXYze1erqHE
+K4re9UjjWQKJlilRHNY9fMP0DY8WsuW4gLKF5/63wfm8x3gUuQUP2mAAAEFOTUZ6AAAAAQAAAgAA
+CQAABAAAAAAAAFZQOCBiAAAA9AEAnQEqCgAFAAAATCWwAnQBF2a/+OUgAP7obSevIjTqYo25/X/k
+/6nHE4rPbUVtx9GKesJqKOlvfWrd7X0Cs/7V/DkvwG/0N/yz9fcVv+jddMvlS4mcF8uAN4W6/0lA
+AAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s15.gif
+
+UklGRjABAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCQAAAABDzD/ERFCMQAgTgMghFBCCiHV
+MMat7yFE9D+Wv/i7dm1rSTJWUDgg5gAAABAFAJ0BKg8AEQA+0VSjS6gkoyGwCAEAGglsAJ0vAJ8c
+JUX4oEwAfPZA4Lc1F4ia75AAzj8oHfHWOkac1Dc7NZ6REk9A5w1STsYoSR3To8E0aCH9io4VSY69
+4Q5+n/PH7anrVP+IwGIV+IKFQUvnFO/M+vnmaWfp7sz6fWZQbqbPwRGsLDh5H/7VvBVb/lTWuu2V
+a/tr3V+22e4klOjqf/duHHRwXcTr0uNtKEf//ZW6wIqdf4LW6xjiJk8Jpxq4o1cdEjdfQPknR5hZ
+n59vOrx9PPiD5Vtpz/rfW7F3Xng1Cga4ZtAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s16.gif
+
+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
+eJokAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s17.gif
+
+UklGRiYBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDaAAAAcAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+wDPeLiU6+MpMA/QAfYVFaXmwAQfmcgD+tVggl2luDNjTbxplON1lZn3rg2eWI2NYeYbrvF4zkb+8
+t3JI3XuX639KJx+Pf2zxpQhpZLA4J9LaJEWGKIym0rtJtRlDZTyIV2/pFSqtugL/Y5jWVnNs2TGC
+UI0/mJHbcqQ1AhemUwms5NSQArr//caJzTi8nB2PZ3SDOlDI0txvX8ohaD+ocgk5+ek812oFtBDm
+Bv/rfB+bzHfnXpgtBULgAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s18.gif
+
+UklGRhwBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCQAAAABDzD/ERFCTSMpUEmJBKScNKwi
+44cSCxH9D+eWxem/WLQ4GwFWUDgg0gAAAHAFAJ0BKg8AEQA+0VSjS6gkoyGwCAEAGglsAB2kBPmf
+pX5p/oDfq/sAIGVjLErL0OurKAAAzXCvAhT2LtT3GVrs34T0rnkSm3sy/z/rFsHcepJWfEW0SoFT
+uIt7ZzNxat8WlHySim4SKYazM7dWjvYvATkfvD22qEyCJtP4MpVYWMKX8uo2Fq5d5/WwtVgPkQOY
+humWFWVLWJfMGAIpHFS4JEfj/jn/7vxt9kH+mT5rzd5mlM1DU7PSKT7174Q/OM/D5T/2T86w3Xk0
+UbYngIAAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s19.gif
+
+UklGRtAEAABXRUJQVlA4WAoAAAASAAAADgAAEAAAQU5JTQYAAAD/////AABBTk1GGAEAAAAAAAAA
+AA4AABAAAPQBAAJBTFBIJgAAAAEPMP8REUJRJCkOQQASkLLSsIqMcOl5FiL6H2XbL178Ly62l6UC
+VlA4INIAAAAwBQCdASoPABEAPtFUo0uoJKMhsAgBABoJbACdLwCfMyU+eJREAH2FMsJZum6ByDll
+gAD+tVetAdqNs1idjIusCDjAQQDQ8eXvY1VVh9XXsjKn3XNADo/Cruewi3/n9/ey0z7OrPqc22sD
+0ffF4ODShXLkv7hm4kkDNWKcYKeRoAyoRnysKd69bPk64aTO/BoCZThsfoPE0ItnoD380CctJOpO
+ufeZfZUz+q7bIbPvWFnqbUZ/pmsn0GhlIhqRiCZjuf+t9bsXdej/8lNbOPDAAABBTk1GYAAAAAIA
+AAUAAAYAAAIAAMgAAABWUDggSAAAADQCAJ0BKgcAAwAAAEwlsAJ0ugADN5mt8lkAAP5b+3bPUGQF
+sBWinFpzfQ2vqf/n7fMIpL8Br/E1/8aR8XD+8rUt45WXK4AAAEFOTUaEAAAAAQAAAgAACgAACAAA
+yAAAAFZQOCBsAAAAdAIAnQEqCwAJAAAATCWwAnS6AAMaH+nNiAN2oAD+x4NbVxd+uT7IHxK9s8N7
+fzYh1zyNqsIimMCkvJQojTBt//TBXyRVXleX/zvLZH96P5tr8l/z7eai2b/Gz68V43x8geiIQdEH
+wnRvaeAAQU5NRl4AAAACAAAFAAAGAAACAAAsAQAAVlA4IEYAAAA0AgCdASoHAAMAAABMJbACdLoA
+AzeZrfJZAAD+W/t2z1BkBbAVopxac30DM/+ft8wikvwGv8TX/xpHxcP7ytS3jlZcsYAAQU5NRhYB
+AAAAAAAAAAAOAAAQAAAsAQACQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCKjHDpeRYi+h9l2y9e
+/C8utpelAlZQOCDQAAAAUAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A4P++IiVI+JFEAH2F
+MsJZuloC/yywAP61V50B30970yRv8tPWp5QZKFCbzF0IdtWH1deyNFkX80AQX7T3/RkqJ+f397LT
+Ps6s+p9wADAjgy1K4NGay+WWdaJPVHFdVW9f1JQ4k7p8E3P94/WHTtJ9qBCCq3tUjSKMd1RPyBnI
+1Zv5oE5k/ervsbrqeIJ9VW79f9qmR9U++maZEYCUQWYZQR4N9b/631uxd16P/yU1s48MAEFOTUZQ
+AAAAAQAABQAACQAAAAAALAEAAFZQOCA4AAAAtAEAnQEqCgABAAAATCWoAnQA9If6XAD+50aO+bao
+/87267p72R/+Nn62IOv6v4l1lr5Ov9u4AABBTk1GZAAAAAEAAAQAAAkAAAMAACwBAABWUDggTAAA
+ADQCAJ0BKgoABAAAAEwlsAJ0OIABG+3YKiPAAP6x8+cvD7aonYS998r3vnvTDSDEWDetGQUH/i0V
+/5X/4N/zEOEYvzXWcXXwRv1AAABBTk1GSAAAAAEAAAUAAAkAAAAAACwBAABWUDggMAAAAJQBAJ0B
+KgoAAQAAAEwlqAJ0ugADmAD+7cbLPgev/9NI/4Yf/jSPi4f3B1t5v2UAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s20.gif
+
+R0lGODlhDwARAOZjAP6sDf61Dv7KENfW0+rp6O/v7lVLM5pwG/7CD//tG/69D/65DvnuIn1yXmNW
+M3FjOv7ZFfzhGP7SE25hRuubD7WWI9eMEVFELmNXQO+9EoiAbmlcO5KMeLq4svb29puYjVtILF9U
+OoBdJv/kGHlgIXlbIMJ/EtbGMObUOZWQfNmYEnVoRXluWcCBEu3VHYdjJO6qEJiDQ4qEc+i/Fodm
+JFdNM0xMTP7cFv6wDvzgGO2vEe2wEf7BD/vgGP7AD//sG//pGv/iGP7YFf7EEP7JEHliIv/pG//k
+GXpiIvzfGHliIf7RE//xHP6+D/7aFvzhGf7+/kY7Jv/bF/7ZFv/hGP66DuyvEfrfGP60Dv7TFf7F
+EP/pGf6kDP6oDf/yHP6xDkY6J////wAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/
+C05FVFNDQVBFMi4wAwEAAAAh+QQFCgBjACwAAAAADwARAAAHzYBjgh4pKxsPGxMcHoKNAw8oDF4J
+Wy4VGAONHzGSXl5bWxEQMw4fYwUGnZ5bIxBEAhlgBRwnCV5gYJQ9uAhaBzIhEVtgYWFgI8TGCjsX
+DhHJxdDGVRcPEMRiYsZh2cY4IAYSEjXZYFpg5V9fYAYZAgIkJAgKXyUlXwAUBhoVWv4IAdQB6NKF
+ywENAxwsUABQIMGCIDI1OLAgAI1sYl5wMdhAUAEwMAIOLMiFgqxGBMCoGLnRAhgCjQQRwCCihQUT
+IkLAjNmoQ4MJLDrwDAQAIfkEBQoAYwAsAQADAA0ABQAABxqAY4KDgwKEh4iCQImEPYNiYo+RC4eR
+j2NfgQAh+QQFCgBjACwBAAMADQAGAAAHI4BjgoOCU4SHiINbgmJjUoyDEZCDjYhhhJeCOEuCYZlj
+noOBACH5BAUeAGMALAEAAwANAAYAAAcigGOCg4IQRISIYxGJgmKCI2OOgjqIYYSWlZhjYZZfEoyI
+gQAh+QQFFABjACwBAAMADQAJAAAHG4BjgoODAoSHhDyIgkGHOzmLkZKTlJWWg2KDgQAh+QQFCgBj
+ACwEAAMACgAGAAAHJIBjTGOEhYaEV4QIhGFhY1RjjYQ6YTaFNo6ENmKWm5aXl1CFgQAh+QQFAABj
+ACwBAAMADQAHAAAHPoBjgmNgg4WDiF4/YzkQYz6IWwkJRiM3Elo8gklBYJ5gN59gC2NCgmJjYalj
+qGM4g0hFg0okiIJaWoNfX4OBACH5BAUAAGMALAEAAwANAAcAAAdAgGOCY16DQoOIggljT4I8g0Bg
+P2NbY05jQ1FNVjlHI1tAR2NLAgoKghA3YKtgWaxgWIMSswJjPgoBX4lDiDiIgQAh+QQFAABjACwB
+AAMADQAHAAAHOoBjgmNgg4WDiGM/YzmCPoNbWwljRmM3Y1o8CjpJQWCfhaCHQmBhYmJhpaepgzVI
+RaFKJIeDWohfiIEAOw==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s21.gif
+
+UklGRiQBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDYAAAA0AUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+wADeTSVGeNlMA/UAfYVFaXxgeQKGVkOWIAD+tVhAl3ZPnN0gdI8F7a8bx1cEG4EswTLhnoHa+aUk
+ZGqquMFJ19aFYVwbc9T9Lncl8uxG8Jd8qoBRF2gzX56MpVzbKGgGfp+nCK0LYChq77SmJ9qpXwts
+IfOPUoZBl+QbHnJT/0YvfMX9oH9mhXaWu+rOY3+ezgpG61TVLu8VeA4e3o2nLL4Ovr7cFN9b/63w
+fm8x3mYiXLSKBrhm0AAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s22.gif
+
+UklGRhQBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDIAAAAkAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+wAAeeVnU+YdIAH2FRWm5hnkkrk1KbQAA/rVYUeBTy8UW6utRoB+y5bCMQs/ENw4w3WHsfD3QnV1g
+qipvKpfjo0nuQTl2klWKCqVdhlC7CwjUy5h29rbsvVUQoqQ16m6A5yeVFlmd1mbwwTlnP204Dqbj
+bKzf+40xW5mFUqQVw9tBGVV3/mEQPeZvCoGTWPX5o0SjpyaZKc3oOf9b8zlvMeBTemC0FQuAAAA=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s23.gif
+
+UklGRgwBAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDAAAAAEAUAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8A
+FXv5gH6gD7CpT/H/kRJ44e0TgAD+tViXO8I2v3KSsMZ/sLGo3nB+g0LRAXs1YKqJPR/g/WCgDJdO
+Ouvce616GU4kMYeLR/9x0vRgESrlox2mXUgbTy1ZcRSUI8kLG06itIQX5zk6KXhrSH/oxBM9j3rS
+ru9V/zQlG++QNfA0Z0W1ZJPECy27p6X5tW6VbNfYULz/1vg/N5jwKb0wWgqFwAAA
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.equestionanswers.com/images/forum/s24.gif
+
+UklGRi4BAABXRUJQVlA4WAoAAAAQAAAADgAAEAAAQUxQSCYAAAABDzD/ERFCUSQpDkEAEpCy0rCK
+jHDpeRYi+h9l2y9e/C8utpelAlZQOCDiAAAAUAYAnQEqDwARAD7RVKNLqCSjIbAIAQAaCWwAnS8B
+cf54A4ADpRiVCeK9Md/SAfYVFRcAtOh1ztG9/kAA/rVX31dgOfXJI3+WxlGTpi4cY/nQFoNTaTkX
+4fhc/n0po/0uYLDfdPPY6/ot4D+ovNaX1jQi3oQV64vmLr9L4TETzep1yql6qlN+VMW9JE643hSw
+SH2mhaxj3h3DRsa72ttwZZMN9oeyiz40Yjy/kjT2k93vHGN03su2BuO/72H8c6ItAt9h2foWOkFb
+6JkTq25QmRY+g5/1sr6/3nihG8kp0HtAAA==
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/html
+Content-ID: <frame-1969-869b2612-05c8-4709-bffb-1f2ee2886dc7@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&annotation=inline&origin=http%3A%2F%2Fwww.equestionanswers.com&url=http%3A%2F%2Fwww.equestionanswers.com%2Fvcpp%2Fdrag-n-drop-operation.php&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.ObRaN5ubc6I.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOO9YEgfnoYIi0Gbv0M7Vfy2lTzYA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&id=I0_1501401804325&parent=http%3A%2F%2Fwww.equestionanswers.com&pfname=&rpctoken=38593985
+
+<!DOCTYPE html><html lang=3D"en" dir=3D"ltr"><head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3DUTF-8"><base href=3D"https://apis=
+.google.com/u/0/se/0/wm/1/"><style></style></head><body class=3D"kv8eNc " m=
+arginwidth=3D"0" marginheight=3D"0" style=3D""><div id=3D"root"><style>
+    .ozWidgetRioButton_ {
+        border: 1px solid #d5d5d5;
+        border: 1px solid rgba(0,0,0,.17);
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+        box-shadow: 0 1px 0 rgba(0,0,0,.05);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: background-color .218s,border-color .218s,box-s=
+hadow .218s;
+        transition: background-color .218s,border-color .218s,box-shadow .2=
+18s;
+        -webkit-user-select: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        background-image: none;
+        color: #262626;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: auto
+    }
+
+    .ozWidgetRioButton_:hover {
+        border: 1px solid #aaa;
+        border: 1px solid rgba(0,0,0,.25);
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 1px 0 rgba(0,0,0,0.1)
+    }
+
+    .ozWidgetRioButton_:active {
+        background-color: #e5e5e5;
+        border: 1px solid #aaa;
+        border: 1px solid rgba(0,0,0,.25);
+        -webkit-box-shadow: inset 0 1px 0 #ddd;
+        box-shadow: inset 0 1px 0 #ddd;
+        color: #262626
+    }
+
+    .ozWidgetRioButtonIcon_ {
+        float: left
+    }
+
+    .ozWidgetRioButtonSvg_ {
+        display: block
+    }
+
+    .ozWidgetRioButtonContentWrapper_ {
+        height: 100%;
+        width: 100%
+    }
+
+    .ozWidgetRioPlusOneButton_,.ozWidgetRioPlusOneButton_:hover,.ozWidgetRi=
+oPlusOneButton_:active {
+        color: #db4437
+    }
+
+    .ozWidgetRioButtonPlusOne_ {
+        fill: #db4437
+    }
+
+    .ozPlusoneStarholder_ {
+        float: left;
+        white-space: nowrap
+    }
+
+    .ozPlusonePublisherButton_ {
+        cursor: pointer;
+        display: block;
+        outline: 0;
+        position: relative;
+        text-decoration: none
+    }
+
+    .ozWidgetRioButtonPlusOneSvgFallback {
+        position: absolute;
+    }
+    </style><a href=3D"https://plus.google.com/share?app=3D110&amp;url=3Dht=
+tp%3A%2F%2Fwww.equestionanswers.com%2Fvcpp%2Fdrag-n-drop-operation.php" tar=
+get=3D"_blank"><div id=3D"plusone" dir=3D"ltr"><span id=3D"widget_bounds"><=
+div class=3D"ozPlusoneStarholder_"><div style=3D"height:24px;width:38px;" c=
+lass=3D"ozWidgetRioButton_ ozWidgetRioButtonPlusOne_" id=3D"button" title=
+=3D"G+" role=3D"button" tabindex=3D"0"><div class=3D"ozWidgetRioButtonConte=
+ntWrapper_"><div style=3D" margin:0px 0px 0 0px;" class=3D"ozWidgetRioButto=
+nIcon_"><style>
+        .ozWidgetRioButtonPlusOneSvgFallback-22 {
+          background: OZ_SPRITE_GPLUS_BUTTON_SVG_GPLUS_22_BG;
+          width: OZ_SPRITE_GPLUS_BUTTON_SVG_GPLUS_22_WIDTH;
+          height: OZ_SPRITE_GPLUS_BUTTON_SVG_GPLUS_22_HEIGHT;
+        }
+      </style><svg version=3D"1.1" xmlns=3D"http://www.w3.org/2000/svg" pre=
+serveAspectRatio=3D"xMidYMid meet" width=3D"36px" height=3D"22px" viewBox=
+=3D"-14 -8 72 44" class=3D"ozWidgetRioButtonSvg_ ozWidgetRioButtonPlusOne_"=
+><path d=3D"M32 8.2h-3v4h-4V15h4v4h3v-4h4v-2.9h-4V8.2z"></path><path d=3D"M=
+11.4 11.3v4.5h6c-.4 2.6-2.7 4.5-6 4.5-3.6 0-6.6-3.1-6.6-6.7s2.9-6.7 6.6-6.7=
+c1.7 0 3.1.5 4.3 1.7l3.2-3.2c-2-1.8-4.5-2.9-7.5-2.9C5.3 2.5.3 7.5.3 13.6s5 =
+11.1 11.1 11.1c6.5 0 10.7-4.6 10.7-10.9 0-.8-.1-1.7-.2-2.5H11.4z"></path></=
+svg><div class=3D"ozWidgetRioButtonPlusOneSvgFallback_ ozWidgetRioButtonPlu=
+sOneSvgFallback_-22"></div></div></div></div></div></span></div></a></div><=
+/body></html>
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/html
+Content-ID: <frame-1970-7472f197-027f-4008-9105-7f0b58794587@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://staticxx.facebook.com/connect/xd_arbiter/r/XBwzv5Yrm_1.js?version=42#channel=f335830e55fd55&origin=http%3A%2F%2Fwww.equestionanswers.com
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><title>Facebook Cross-Domain Messaging helper</tit=
+le></head><body style=3D""><b id=3D"warning" style=3D"display: none; color:=
+red"> SECURITY WARNING: Please treat the URL above as you would your passwo=
+rd and do not share it with anyone. See the <a href=3D"http://l.facebook.co=
+m/l.php?u=3Dhttp%3A%2F%2Fon.fb.me%2F1mXNHhm&amp;h=3DATMNPIP8FQSKx6dkxK7cA90=
+Pe3O_jmsU6Ao27ui4BwOKw4Fo6QToqbotsUuaTWv9twfs7fhbMQ0uVc_pOP2v-eGSnr9Mkrxrsj=
+Z9BXXzfJ08F-6uBCqFzT2tfqvZaqwElw&amp;s=3D1" target=3D"_blank" rel=3D"nofoll=
+ow noopener">Facebook Help Center</a> for more information. </b></body></ht=
+ml>
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/html
+Content-ID: <frame-1971-86d208d2-9793-4be0-b925-7e851fd4f05d@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://staticxx.facebook.com/connect/xd_arbiter/r/XBwzv5Yrm_1.js?version=42#channel=f335830e55fd55&origin=http%3A%2F%2Fwww.equestionanswers.com
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><title>Facebook Cross-Domain Messaging helper</tit=
+le></head><body style=3D""><b id=3D"warning" style=3D"display: none; color:=
+red"> SECURITY WARNING: Please treat the URL above as you would your passwo=
+rd and do not share it with anyone. See the <a href=3D"http://l.facebook.co=
+m/l.php?u=3Dhttp%3A%2F%2Fon.fb.me%2F1mXNHhm&amp;h=3DATMNPIP8FQSKx6dkxK7cA90=
+Pe3O_jmsU6Ao27ui4BwOKw4Fo6QToqbotsUuaTWv9twfs7fhbMQ0uVc_pOP2v-eGSnr9Mkrxrsj=
+Z9BXXzfJ08F-6uBCqFzT2tfqvZaqwElw&amp;s=3D1" target=3D"_blank" rel=3D"nofoll=
+ow noopener">Facebook Help Center</a> for more information. </b></body></ht=
+ml>
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/html
+Content-ID: <frame-1972-f42b6112-2ecb-4bbc-9ea9-a49e1279635f@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://accounts.google.com/o/oauth2/postmessageRelay?parent=http%3A%2F%2Fwww.equestionanswers.com&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.ObRaN5ubc6I.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCOO9YEgfnoYIi0Gbv0M7Vfy2lTzYA#rpctoken=294035199&forcesecure=1
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><title></title><meta http-equiv=3D"X-UA-Compatible=
+" content=3D"IE=3Dedge"><meta name=3D"viewport" content=3D"width=3Ddevice-w=
+idth, initial-scale=3D1, minimum-scale=3D1, maximum-scale=3D1, user-scalabl=
+e=3D0"><style></style></head><body style=3D""></body></html>
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: text/html
+Content-ID: <frame-1976-b739c7a9-4cd7-4c98-ac58-d046e9ce37ca@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.facebook.com/plugins/like.php?app_id=&channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Df111c61aaed5488%26domain%3Dwww.equestionanswers.com%26origin%3Dhttp%253A%252F%252Fwww.equestionanswers.com%252Ff335830e55fd55%26relation%3Dparent.parent&container_width=639&href=http%3A%2F%2Fwww.equestionanswers.com%2Fvcpp%2Fdrag-n-drop-operation.php&locale=en_US&sdk=joey&send=true&show_faces=false&width=450
+
+<!DOCTYPE html><html lang=3D"en" id=3D"facebook" class=3D"svg no_js"><head>=
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><m=
+eta name=3D"referrer" content=3D"origin-when-crossorigin" id=3D"meta_referr=
+er"><title>Facebook</title><style>._32qa button{opacity:.4}._59ov{height:10=
+0%;height:910px;position:relative;top:-10px;width:100%}._5ti_{background-si=
+ze:cover;height:100%;width:100%}._5tj2{height:900px}._2mm3 ._5a8u .uiBoxGra=
+y{background:#fff;margin:0;padding:12px}._2494{height:100vh}._2495{margin-t=
+op:-10px;top:10px}body.plugin{background:transparent;font-family:Helvetica,=
+ Arial, sans-serif;line-height:1.28;overflow:hidden;-webkit-text-size-adjus=
+t:none}.plugin,.plugin button,.plugin input,.plugin label,.plugin select,.p=
+lugin td,.plugin textarea{font-size:11px}body{background:#fff;color:#1d2129=
+;direction:ltr;line-height:1.34;margin:0;padding:0;unicode-bidi:embed}body,=
+button,input,label,select,td,textarea{font-family:Helvetica, Arial, sans-se=
+rif;font-size:12px}h1,h2,h3,h4,h5,h6{color:#1d2129;font-size:13px;margin:0;=
+padding:0}h1{font-size:14px}h4,h5,h6{font-size:12px}p{margin:1em 0}a{color:=
+#365899;cursor:pointer;text-decoration:none}button{margin:0}a:hover{text-de=
+coration:underline}img{border:0}td,td.label{text-align:left}dd{color:#000}d=
+t{color:#777}ul{list-style-type:none;margin:0;padding:0}abbr{border-bottom:=
+none;text-decoration:none}hr{background:#d9d9d9;border-width:0;color:#d9d9d=
+9;height:1px}.clearfix:after{clear:both;content:".";display:block;font-size=
+:0;height:0;line-height:0;visibility:hidden}.clearfix{zoom:1}.datawrap{word=
+-wrap:break-word}.word_break{display:inline-block}.ellipsis{overflow:hidden=
+;text-overflow:ellipsis;white-space:nowrap}.aero{opacity:.5}.column{float:l=
+eft}.center{margin-left:auto;margin-right:auto}#facebook .hidden_elem{displ=
+ay:none !important}#facebook .invisible_elem{visibility:hidden}#facebook .a=
+ccessible_elem{clip:rect(1px 1px 1px 1px);clip:rect(1px, 1px, 1px, 1px);hei=
+ght:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}.dir=
+ection_ltr{direction:ltr}.direction_rtl{direction:rtl}.text_align_ltr{text-=
+align:left}.text_align_rtl{text-align:right}.pluginFontArial,.pluginFontAri=
+al button,.pluginFontArial input,.pluginFontArial label,.pluginFontArial se=
+lect,.pluginFontArial td,.pluginFontArial textarea{font-family:Arial, sans-=
+serif}.pluginFontLucida,.pluginFontLucida button,.pluginFontLucida input,.p=
+luginFontLucida label,.pluginFontLucida select,.pluginFontLucida td,.plugin=
+FontLucida textarea{font-family:Lucida Grande, sans-serif}.pluginFontSegoe,=
+.pluginFontSegoe button,.pluginFontSegoe input,.pluginFontSegoe label,.plug=
+inFontSegoe select,.pluginFontSegoe td,.pluginFontSegoe textarea{font-famil=
+y:Segoe UI, sans-serif}.pluginFontTahoma,.pluginFontTahoma button,.pluginFo=
+ntTahoma input,.pluginFontTahoma label,.pluginFontTahoma select,.pluginFont=
+Tahoma td,.pluginFontTahoma textarea{font-family:Tahoma, sans-serif}.plugin=
+FontTrebuchet,.pluginFontTrebuchet button,.pluginFontTrebuchet input,.plugi=
+nFontTrebuchet label,.pluginFontTrebuchet select,.pluginFontTrebuchet td,.p=
+luginFontTrebuchet textarea{font-family:Trebuchet MS, sans-serif}.pluginFon=
+tVerdana,.pluginFontVerdana button,.pluginFontVerdana input,.pluginFontVerd=
+ana label,.pluginFontVerdana select,.pluginFontVerdana td,.pluginFontVerdan=
+a textarea{font-family:Verdana, sans-serif}.pluginFontHelvetica,.pluginFont=
+Helvetica button,.pluginFontHelvetica input,.pluginFontHelvetica label,.plu=
+ginFontHelvetica select,.pluginFontHelvetica td,.pluginFontHelvetica textar=
+ea{font-family:Helvetica, Arial, sans-serif}._2phz{padding:4px}._2ph-{paddi=
+ng:8px}._2ph_{padding:12px}._2pi0{padding:16px}._2pi1{padding:20px}._40c7{p=
+adding:24px}._2o1j{padding:36px}._2pi2{padding-bottom:4px;padding-top:4px}.=
+_2pi3{padding-bottom:8px;padding-top:8px}._2pi4{padding-bottom:12px;padding=
+-top:12px}._2pi5{padding-bottom:16px;padding-top:16px}._2pi6{padding-bottom=
+:20px;padding-top:20px}._2o1k{padding-bottom:24px;padding-top:24px}._2o1l{p=
+adding-bottom:36px;padding-top:36px}._2pi7{padding-left:4px;padding-right:4=
+px}._2pi8{padding-left:8px;padding-right:8px}._2pi9{padding-left:12px;paddi=
+ng-right:12px}._2pia{padding-left:16px;padding-right:16px}._2pib{padding-le=
+ft:20px;padding-right:20px}._2o1m{padding-left:24px;padding-right:24px}._2o=
+1n{padding-left:36px;padding-right:36px}._2pic{padding-top:4px}._2pid{paddi=
+ng-top:8px}._2pie{padding-top:12px}._2pif{padding-top:16px}._2pig{padding-t=
+op:20px}._2owm{padding-top:24px}._2pih{padding-right:4px}._2pii{padding-rig=
+ht:8px}._2pij{padding-right:12px}._2pik{padding-right:16px}._2pil{padding-r=
+ight:20px}._31wk{padding-right:24px}._2phb{padding-right:32px}._2pim{paddin=
+g-bottom:4px}._2pin{padding-bottom:8px}._2pio{padding-bottom:12px}._2pip{pa=
+dding-bottom:16px}._2piq{padding-bottom:20px}._2o1p{padding-bottom:24px}._2=
+pir{padding-left:4px}._2pis{padding-left:8px}._2pit{padding-left:12px}._2pi=
+u{padding-left:16px}._2piv{padding-left:20px}._2o1q{padding-left:24px}._2o1=
+r{padding-left:36px}._51mz{border:0;border-collapse:collapse;border-spacing=
+:0}._5f0n{table-layout:fixed;width:100%}.uiGrid .vTop{vertical-align:top}.u=
+iGrid .vMid{vertical-align:middle}.uiGrid .vBot{vertical-align:bottom}.uiGr=
+id .hLeft{text-align:left}.uiGrid .hCent{text-align:center}.uiGrid .hRght{t=
+ext-align:right}._51mx:first-child>._51m-{padding-top:0}._51mx:last-child>.=
+_51m-{padding-bottom:0}._51mz ._51mw{padding-right:0}._51mz ._51m-:first-ch=
+ild{padding-left:0}._5f0v{outline:none}._3oxt{outline:1px dotted #3b5998;ou=
+tline-color:invert}.webkit ._3oxt{outline:5px auto #5b9dd9}.win.webkit ._3o=
+xt{outline-color:#e59700}._4qba{font-style:normal}._4qbb,._4qbc,._4qbd{back=
+ground:none;font-style:normal;padding:0;width:auto}._4qbd{border-bottom:1px=
+ solid #f99}._4qbb,._4qbc{border-bottom:1px solid #999}._4qbb:hover,._4qbc:=
+hover,._4qbd:hover{background-color:#fcc;border-top:1px solid #ccc;cursor:h=
+elp}.uiLayer{outline:none}form{margin:0;padding:0}label{cursor:pointer;colo=
+r:#666;font-weight:bold;vertical-align:middle}label input{font-weight:norma=
+l}textarea,.inputtext,.inputpassword{border:1px solid #bdc7d8;margin:0;padd=
+ing:3px;-webkit-appearance:none;-webkit-border-radius:0}textarea{max-width:=
+100%}select{border:1px solid #bdc7d8;padding:2px}.inputtext,.inputpassword{=
+padding-bottom:4px}.inputtext:invalid,.inputpassword:invalid{box-shadow:non=
+e}.inputradio{padding:0;margin:0 5px 0 0;vertical-align:middle}.inputcheckb=
+ox{border:0;vertical-align:middle}.inputbutton,.inputsubmit{border-style:so=
+lid;border-width:1px;border-color:#dddfe2 #0e1f5b #0e1f5b #d9dfea;backgroun=
+d-color:#3b5998;color:#fff;padding:2px 15px 3px 15px;text-align:center}.inp=
+utsubmit_disabled{background-color:#999;border-bottom:1px solid #000;border=
+-right:1px solid #666;color:#fff}.inputaux{background:#e9ebee;border-color:=
+#e9ebee #666 #666 #e7e7e7;color:#000}.inputaux_disabled{color:#999}.inputse=
+arch{background:#ffffff url(https://www.facebook.com/rsrc.php/v3/yL/r/unHwF=
+9CkMyM.png) no-repeat left 4px;padding-left:17px}.inlineBlock{display:inlin=
+e-block;zoom:1}._2tga{background:#4267b2;border:1px solid #4267b2;color:#ff=
+f;cursor:pointer;font-family:Helvetica, Arial, sans-serif;-webkit-font-smoo=
+thing:antialiased;margin:0;-webkit-user-select:none;white-space:nowrap}._2t=
+ga.active{background:#4080ff;border:1px solid #4080ff}._2tga._4kae.active,.=
+_2tga._4kae.active:hover{background:#577fbc;border:1px solid #577fbc}._2tga=
+._49ve{border-radius:3px;font-size:11px;height:20px;padding:0 0 0 2px}.chro=
+me ._2tga._49ve{padding-bottom:1px}._2tga._3e2a{border-radius:4px;font-size=
+:13px;height:28px;padding:0 4px 0 6px}._2tga._5n6f{border-top-left-radius:0=
+;border-top-right-radius:0}._2tga:hover{background:#365899;border:1px solid=
+ #365899}._2tga:active{background:#577fbc;border:1px solid #577fbc}._2tga:f=
+ocus{outline-color:transparent;outline-style:none}._2tga.active:hover{backg=
+round:#4080ff;border:1px solid #4080ff}._11qm{background:#fff;border:1px so=
+lid #ced0d4;color:#4267b2}._11qm:hover{background:#f6f7f9;border:1px solid =
+#ced0d4}._11qm.active{border:1px solid #4080ff;color:#fff}._3oi2{background=
+:#0084ff;border:1px solid #0084ff;color:#fff}._3oi2:hover{background:#0077e=
+5;border:1px solid #0077e5}._3e2a ._3jn-{position:relative;top:-1px}._3jn-{=
+height:16px;vertical-align:middle;width:16px}._3jn_{background:none;display=
+:none;height:28px;left:-6px;position:absolute;top:-6px;width:28px}@-webkit-=
+keyframes burst{from{background-position:0 0}to{background-position:-616px =
+0}}._2tga.is_animating ._3jn_{-webkit-animation:burst .24s steps(22) forwar=
+ds;background:url(https://www.facebook.com/rsrc.php/v3/ys/r/B4-pzLJTRP0.png=
+) no-repeat;background-position:0 0;background-size:616px 28px;display:inli=
+ne-block;zoom:1}._49ve._2tga.is_animating ._3jn_{left:-6px;position:relativ=
+e;top:-6px}._49vg,._5n2y{vertical-align:middle}._2tga ._5n2y,._2tga.active =
+._49vg,._2tga.active.is_animating ._5n2y{display:none}._2tga ._49vg,._2tga.=
+active ._5n2y,._2tga.active:hover ._4kag{display:inline-block;zoom:1}#faceb=
+ook ._2tga span._49vh,#facebook ._2tga span._5n6h,._49vh,._5n6h{font-family=
+:Helvetica, Arial, sans-serif;vertical-align:middle}._49vh{font-weight:bold=
+}._5n6h{font-weight:normal}._5n6j{border-radius:3px;height:20px;line-height=
+:20px}._5n6k{border-radius:4px;height:30px;line-height:30px}._5n6l{backgrou=
+nd:#fff;border:1px solid #90949c;border-bottom:none;border-bottom-left-radi=
+us:0;border-bottom-right-radius:0;box-sizing:border-box;color:#1d2129;text-=
+align:center;width:100%}._2tga ._1pbq{height:16px;width:16px}.no_svg ._2tga=
+ ._1pbq,.svg ._2tga ._1pbs{display:none}._2n-v ._49vh{padding-left:2px}._4m=
+r9{-webkit-touch-callout:none;-webkit-user-select:none}._4mra{-webkit-touch=
+-callout:default;-webkit-user-select:auto}._li._li._li{overflow:initial}._4=
+2ft{cursor:pointer;display:inline-block;text-decoration:none;white-space:no=
+wrap}._42ft:hover{text-decoration:none}._42ft+._42ft{margin-left:4px}._42fr=
+,._42fs{cursor:default}.textMetrics{border:none;height:1px;overflow:hidden;=
+padding:0;position:absolute;top:-9999999px}.textMetricsInline{white-space:p=
+re}._1f8a{display:inline;float:left}._1f8b{float:left}</style></head><body =
+dir=3D"ltr" class=3D"plugin _4mr9 chrome webkit x1-5 Locale_en_US" style=3D=
+""><div class=3D"_li"><div class=3D"pluginSkinLight pluginFontHelvetica"><d=
+iv><table class=3D"uiGrid _51mz" cellspacing=3D"0" cellpadding=3D"0" id=3D"=
+u_0_0" style=3D"width: 450px;"><tbody><tr class=3D"_51mx"><td class=3D"_51m=
+- _51mw"><table class=3D"uiGrid _51mz" cellspacing=3D"0" cellpadding=3D"0">=
+<tbody><tr class=3D"_51mx"><td class=3D"_51m- vTop hCent"><div><form rel=3D=
+"async" ajaxify=3D"/plugins/like/connect" method=3D"post" action=3D"https:/=
+/www.facebook.com/plugins/like/connect" id=3D"u_0_1"><button type=3D"submit=
+" class=3D"inlineBlock _2tga _49ve" title=3D"Like" id=3D"u_0_5" disabled=3D=
+""><div class=3D""><span class=3D"_3jn- inlineBlock"><span class=3D"_3jn_">=
+</span><span class=3D"_49vg"><svg xmlns=3D"http://www.w3.org/2000/svg" view=
+Box=3D"0 0 16 16" class=3D"_1pbq" color=3D"#ffffff"><path fill=3D"#ffffff" =
+fill-rule=3D"evenodd" d=3D"M4.55,7 C4.7984,7 5,7.23403636 5,7.52247273 L5,1=
+3.4775273
+          C5,13.7659636 4.7984,14 4.55,14 L2.45,14 C2.2016,14 2,13.7659636
+          2,13.4775273 L2,7.52247273 C2,7.23403636 2.2016,7 2.45,7 L4.55,7 =
+Z
+          M6.54470232,13.2 C6.24016877,13.1641086 6.01734614,12.8982791
+          6,12.5737979 C6.01734614,12.5737979 6.01344187,9.66805666 6,8.143=
+98693
+          C6.01344187,7.61903931 6.10849456,6.68623352 6.39801308,6.2738427=
+8
+          C7.10556287,5.26600749 7.60281698,4.6079584 7.89206808,4.22570082
+          C8.18126341,3.8435016 8.52813047,3.4708734 8.53777961,3.18572676
+          C8.55077527,2.80206854 8.53655255,2.79471518 8.53777961,2.3555566=
+6
+          C8.53900667,1.91639814 8.74565444,1.5 9.27139313,1.5 C9.52544997,=
+1.5
+          9.7301456,1.55690094 9.91922413,1.80084547 C10.2223633,2.15596568
+          10.4343097,2.71884727 10.4343097,3.60971169 C10.4343097,4.5005761=
+2
+          9.50989975,6.1729303 9.50815961,6.18 C9.50815961,6.18
+          13.5457098,6.17908951 13.5464084,6.18 C14.1635544,6.17587601
+          14.5,6.72543196 14.5,7.29718426 C14.5,7.83263667 14.1341135,8.278=
+97346
+          13.6539433,8.3540827 C13.9452023,8.49286263 14.1544715,8.82364675
+          14.1544715,9.20555417 C14.1544715,9.68159617 13.8293011,10.078268=
+7
+          13.3983805,10.1458495 C13.6304619,10.2907572 13.7736931,10.551684=
+5
+          13.7736931,10.847511 C13.7736931,11.2459343 13.5138356,11.5808619
+          13.1594388,11.6612236 C13.3701582,11.7991865 13.5063617,12.054394=
+5
+          13.5063617,12.3429843 C13.5063617,12.7952155 13.1715421,13.165684=
+4
+          12.7434661,13.2 L6.54470232,13.2 Z"></path></svg><img class=3D"_1=
+pbs inlineBlock img" src=3D"https://www.facebook.com/rsrc.php/v3/y9/r/KkQTS=
+UzuEkO.png" alt=3D"" width=3D"16" height=3D"16"></span><span class=3D"_5n2y=
+"><svg xmlns=3D"http://www.w3.org/2000/svg" viewBox=3D"0 0 16 16" class=3D"=
+_1pbq" color=3D"#ffffff"><path fill=3D"none" stroke=3D"#ffffff" stroke-widt=
+h=3D"2" stroke-linecap=3D"round" stroke-linejoin=3D"round" d=3D"M2.808 8.35=
+4l3.135 3.195 7.383-7.2"></path></svg><img class=3D"_1pbs inlineBlock img" =
+src=3D"https://www.facebook.com/rsrc.php/v3/yk/r/0FwgLGi25wG.png" alt=3D"" =
+width=3D"16" height=3D"16"></span></span><span class=3D"_49vh _2pi7">Like</=
+span></div></button></form></div></td><td class=3D"_51m- vTop _2pir"><div><=
+a class=3D"_2vmz" href=3D"https://www.facebook.com/sharer/sharer.php?u=3Dht=
+tp%3A%2F%2Fwww.equestionanswers.com%2Fvcpp%2Fdrag-n-drop-operation.php&amp;=
+display=3Dpopup&amp;ref=3Dplugin&amp;src=3Dlike&amp;kid_directed_site=3D0" =
+target=3D"_blank" id=3D"u_0_2"><button type=3D"submit" class=3D"inlineBlock=
+ _2tga _49ve" id=3D"u_0_6" disabled=3D""><div class=3D"_2n-v"><span class=
+=3D"_49vh _2pi7">Share</span></div></button></a></div></td><td class=3D"_51=
+m- _2pir _51mw"><div><span class=3D"hidden_elem" id=3D"u_0_3">You like this=
+.</span><span id=3D"u_0_4">Be the first of your friends to like this.</span=
+></div></td></tr></tbody></table></td></tr></tbody></table></div></div></di=
+v></body></html>
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.facebook.com/rsrc.php/v3/y9/r/KkQTSUzuEkO.png
+
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAANlBMVEVMaXH/////////////////
+//////////////////////////////////////////////////+kpd7DAAAAEXRSTlMAEqwuIUls
++t7hXuYGuIyWxnOtdT0AAABkSURBVHhexc9LDoAwCEVRrLbU+r3736wT05BAE2e+6QnwkE+ZyhJD
+ou4h3JAj2DcoEVzEEw3QycOsQAqqVnrWt3WFKic9vQKAbBayAUx09uBXKe64hySjiRHkETQLh7v9
+fv5HHnN7DSY31C4/AAAAAElFTkSuQmCC
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.facebook.com/rsrc.php/v3/yk/r/0FwgLGi25wG.png
+
+iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAM1BMVEVMaXH/////////////////
+///////////////////////////////////////////////x7/yuAAAAEHRSTlMACXzZA5WtyQ+K
+FXS9SaJY0nX8VAAAAFVJREFUeNrNyjkSgDAMQ1GRfSFE9z8txhVMPEObXz4JmxV6tz2RzfBDPFl+
+igfbr38ftUArmYyvn2culsNRlyZe8ak+S/Pq6yLusBRJdXPpMJsD+3QDEfYDmnm/3NkAAAAASUVO
+RK5CYII=
+------MultipartBoundary--liZhLkwF1OQvn93ZbhusBMR5pv8iUZ5mpnagjZ5gOl------

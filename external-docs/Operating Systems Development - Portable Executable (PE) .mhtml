@@ -1,0 +1,1671 @@
+From: <Saved by Blink>
+Subject: Operating Systems Development Series
+Date: Thu, 16 Aug 2017 08:03:37 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm----"
+
+------MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm----
+Content-Type: text/html
+Content-ID: <frame-2629-07a40c2d-5e86-4652-a1b0-7e3b9bf91819@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.brokenthorn.com/Resources/OSDevPE.html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!-- saved fr=
+om url=3D(0056)http://www.gamedev.net/reference/articles/article290.asp -->=
+<html class=3D"gr__brokenthorn_com"><head><meta http-equiv=3D"Content-Type"=
+ content=3D"text/html; charset=3Dwindows-1252"><title>Operating Systems Dev=
+elopment Series</title>=20
+<link href=3D"http://www.brokenthorn.com/Resources/Files/reference.css" typ=
+e=3D"text/css" rel=3D"stylesheet">=20
+<meta content=3D"MSHTML 6.00.6000.16441" name=3D"GENERATOR"></head>=20
+<body text=3D"#000000" vlink=3D"#666699" alink=3D"#000000" link=3D"#666699"=
+ bgcolor=3D"#ffffff" leftmargin=3D"0" background=3D"http://www.brokenthorn.=
+com/Resources/Files/watermark.gif" topmargin=3D"0" marginheight=3D"0" margi=
+nwidth=3D"0" style=3D"" data-gr-c-s-loaded=3D"true">=20
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=20
+<tbody><tr>=20
+     <td width=3D"60%">=20
+	<a href=3D"http://www.brokenthorn.com/"><img src=3D"http://www.brokenthorn=
+.com/Resources/site/5.png" border=3D"0"></a>=20
+     </td>=20
+     <td width=3D"40%">=20
+        <div id=3D"ad_main">=20
+
+=20
+=20
+        </div>=20
+     </td>=20
+  </tr>=20
+
+</tbody></table>=20
+
+<table cellspacing=3D"0" cellpadding=3D"3" width=3D"100%" border=3D"0">=20
+  <tbody>=20
+  <tr>=20
+    <td class=3D"tblhdr">Operating Systems Development Series</td>=20
+</tr>=20
+  <tr>=20
+=20
+    <td align=3D"middle" colspan=3D"2"></td></tr></tbody></table>=20
+<table cellspacing=3D"0" cellpadding=3D"5" width=3D"100%" border=3D"0">=20
+  <tbody>=20
+  <tr>=20
+    <td>=20
+=20
+=20
+<!-- Title -->=20
+=20
+      <center><span class=3D"title">Operating Systems Development - Portabl=
+e Executable (PE)</span>=20
+=20
+<br><span class=3D"author">by Mike, 2011</span></center>=20
+=20
+      <p>This series is intended to demonstrate and teach operating system =
+development from
+	the ground up.</p>
+
+<!-- note: Google translator causes page to mess up; need to look into!! --=
+>
+
+      <h1>Introduction</h1>=20
+	<p>
+	Welcome!
+	</p>
+	<p>
+	Yey, this is going to be a long one.
+	</p>
+	<p>
+	This chapter is going to cover an advanced topic - the PE executable file =
+format. We will be looking
+	at covering PE resources, dynamic linking, and more. This chapter is also =
+planned for an update to
+	include more information to make the information as complete as possible.
+	</p>
+
+	<p>
+	Most of what is included in this chapter is for information purposes only =
+and are only included
+	both for completness and in case any of our readers would like to provide =
+support for them. Also
+	please note that a lot of the information provided can also be found in th=
+e official PE specification.
+	</p>
+	<p>
+	After this chapter, we will have everything we need to develop a loader an=
+d support a single tasking environment.
+	</p>
+	<p>
+	<i>Lets get started!</i>
+	</p>
+
+	<h1>File Format</h1>
+
+	<h2>Abstract</h2>
+
+	<p>
+	The <b>Portable Executable (PE)</b> file format is the standard executable=
+ file format used
+	in several operating systems, including Windows and Windows-like OSs, such=
+ as ReactOS. It is also
+	the standard file format used with booting on <b>Extensable Firmware Inter=
+face (EFI)</b> machines.
+	</p>
+
+	<p>
+	The PE executable file format is a complex format, supporting relocations,=
+ symbol tables, resources,
+	dynamic binding, and more.
+	</p>
+
+	<h2>Terms</h2>
+
+	<h3>VA (Virtual Address)</h3>
+
+	<p>
+	A <b>Virtual Address (VA)</b> is a linear address in the <b>Virtual Addres=
+s Space (VAS)</b> of
+	the current program. All addresses in the PE executable format are virtual=
+ addresses. These addresses
+	are 32 bit linear addresses.
+	</p>
+
+	<h3>RVA (Relative Virtual Address)</h3>
+
+	<p>
+	A <b>Relative Virtual Address (RVA)</b> is a VA that is relative to the <b=
+>base address</b> of the
+	executable program. The PE executable format uses RVAs in a lot of areas, =
+so it is important to know
+	what RVAs are and how to obtain linear addresses from them. RVAs are just =
+offsets from the base address,
+	thats all. So to obtain its linear address, just add the RVA to the base:
+	</p>
+	<blockquote><pre><div class=3D"code">Linear address =3D Base address + RVA=
+</div></pre></blockquote>
+
+	<p>
+	This one is important as we will need to perform this calculation in a lot=
+ of areas when parsing.
+	</p>
+
+	<h3>Sections and the Section Table</h3>
+
+<p><b>Sections</b></p>
+<p>
+Advanced executable file formats typically use <b>program sections</b> to s=
+implify the linking process
+and provide structure to the software.
+
+Sections simplifies the linking process by providing a standard method for =
+instructions and data to be
+stored within the executable image or object file.
+</p>
+<p>
+A section typically has a name associated with what elements are inside of =
+the section. For example, <b>.data</b>
+is a common section name that contains variable, uninitialized data. Other =
+section names have historical
+backgrounds. For example, <b>.text</b> is a typical name of a section conta=
+ining executable or object code.
+<b>.bss</b> is typically used for global, program-wide initialized data.
+</p>
+<p>
+Using the C++ toolchain, for an example, variables defined in the global na=
+mespace or as <b>static</b>
+are stored in <b>.bss</b>. The resulting bytecode generated after compilati=
+on is stored in <b>.text</b>.
+</p>
+<p>
+The PE executable file format typically includes one or more
+of the following section names:
+</p>
+<ul>
+
+<li>.text</li>
+<li>.data</li>
+<li>.bss</li>
+<li>.arch</li>
+<li>.edata</li>
+<li>.idata</li>
+<li>.pdata</li>
+<li>.rdata</li>
+<li>.reloc</li>
+
+<li>.rsrc</li>
+<li>.sbss</li>
+<li>.sdata</li>
+<li>.srdata</li>
+<li>.xdata</li>
+</ul>
+<p><b>Section Table</b></p>
+<p>
+Program files and object files contain multiple sections. The base location=
+ of each section,
+and the name of that section, is typically stored in a <b>section table</b>=
+. In some implimentations,
+a section table can be a simple linked list of structures or a hash table -=
+ different implimentations exist.
+</p>
+
+	<h3>Symbols and the Symbol Table</h3>
+
+<p><b>Symbols</b></p>
+<p>
+	While programming in C++, you most likley have encountered the unfamous <b=
+>Undefined symbol</b> linker
+errors (or in some implimentations of C, warnings. Thats right, fully compi=
+ling and linking without error *ahem* old MSVC). This happens do to calling=
+ a function or referencing a variable
+by name whose definition could not be resolved during the linking stage.
+</p>
+<p>
+Functions and variables are referred to as <b>symbols</b> by the linker. A =
+<b>symbol</b> contains the name, and
+information about what it is: such as a data type and value, for example. D=
+uring compiling, the compilier
+must keep track of these symbols to insure that the final program can be li=
+nked. If a symbol is used that is not
+defined in the current <b>translation unit</b>, but is an EXTERN symbol, th=
+e compilier will need to mark it
+as an EXTERN symbol when writing the symbols to the object file.
+</p>
+<p>
+	If, during the linking stage, a symbol marked EXTERN still has no value as=
+sociated with it (the symbol
+has no definition), the linker issues the above error.
+</p>
+<p>
+	Symbols are what allows programmers to define variables or functions acros=
+s modules, translation units,
+or libraries.
+</p>
+<p>
+	There can only be one symbol with the same name through the entire program=
+, and any libraries that it links with.
+	Because of this, and the high probability of naming collisions with the us=
+e of high level languages, variable and
+	function names typically have <b>name mangling</b> applied. This, of cours=
+e, does not apply to assembly language.
+	The name mangling applied depends on multiple factors, and differ between =
+toolchains.
+</p>
+<p>
+	Lets take a look. Here are some C function declarations, and their mangled=
+ symbolic
+	name on the right. The number in the mangled name is the number of bytes f=
+or the paramaters.
+</p>
+<blockquote><pre><div class=3D"code">void _cdecl function (int i);   -&gt; =
+  _function
+void _stdcall function(int i);  -&gt;   _function@4
+void _fastcall function(int i); -&gt;   @function@4
+</div></pre></blockquote>
+<p>
+	Notice that functions with the _cdecl call convention only have an undersc=
+ore prepended. This allows
+C functions to be easily defined using assembly language, and allows C code=
+ to easily call those functions.
+</p>
+<p>
+	There isnt any standard for C++ name mangling. Some compiliers might produ=
+ce a symbolic name
+like <b>?h@@YAXH@Z</b>, while others can produce <b>__7h__Fi</b> or <b>W?h$=
+n(i)v</b> for the <b>same</b>
+function of <b>void h(int)</b>. This makes it impractical to use with assem=
+bly language. It is still possible,
+however.
+</p>
+
+<p><b>Symbol table</b></p>
+<p>
+	Simular to the section table there exists a <b>symbol table</b>. The symbo=
+l table allows a way for
+the software to look up symbolic names and information about the symbol, su=
+ch as if its an exported symbol,
+its data type, properties, etc. Symbol tables are typically a linked list o=
+f information or implimented
+in hash tables.
+</p>
+
+	<h2>Structure</h2>
+
+	<h3>Abstract</h3>
+	<p>
+	We have taken a look at the structure of the PE executable format in our M=
+SVC++ chapter.
+	When we load a PE executable in memory, that memory would contain an exact=
+ copy of
+	our loaded file. This means the first byte within the first structure of t=
+he PE
+	file format is actually located at the first byte from where the file was =
+loaded in
+	memory.
+	</p>
+
+	<p>
+	For example, if we load a PE file to 1MB, the in-memory footprint might lo=
+ok like this:
+	</p>
+
+	<center><img src=3D"http://www.brokenthorn.com/Resources/images/PEload.jpg=
+"></center>
+
+	<p>
+	The above image should look famailier to our readers who have read the MSV=
+C chapter. Looking at the above
+	image, if the PE file was loaded to 1MB, then the first on-disk structure,=
+ IMAGE_DOS_HEADER, begins at
+	that location in memory, followed by the rest of the structures in the fil=
+e (including padding).
+	</p>
+	<p>
+	The above image is also an oversimplification - it does not, by any means,=
+ show the complete PE file format.
+	The structure of the PE file format is fairly large, composed of a lot of =
+structures and tables.
+	</p>
+
+	<p>
+	Here is the complete format:
+	</p>
+
+	<ol>
+		<li>IMAGE_DOS_HEADER structure <b>(Important)</b></li>
+		<li>STUB program</li>
+		<li>IMAGE_FILE_HEADER structure [COFF Header] <b>(Important)</b></li>
+
+		<li>IMAGE_OPTIONAL_HEADER structure <b>(Important)</b></li>
+		<li>Segment Table</li>
+		<li>Resource Table</li>
+		<li>Resident Name Table</li>
+		<li>Module Reference Table</li>
+		<li>Imported Names Table</li>
+
+		<li>Entry Table</li>
+		<li>Non Resident Name Table</li>
+		<li>Segments</li>
+			<ol>
+			<li>Data</li>
+			<li>Info</li>
+
+			</ol>
+	</ol>
+	<p>
+	The above table lists the complete file format - from beginning to end. It=
+ems marked <b>important</b>
+	are required to know how to parse in order to just execute the program. Al=
+l of the other information
+	if provided for information purposes only. The only important members in <=
+b>IMAGE_OPTIONAL_HEADER</b>
+	structure are the member that contains the address of the entry point, and=
+ image base address.
+	</p>
+	<p>
+	We will cover parsing each section of this file in detail in the upcoming =
+sections. We will also introduce the other structures
+	used when parsing tables and directories as well.
+	</p>
+
+	<h3>IMAGE_DOS_HEADER structure</h3>
+
+<p>
+<b>IMAGE_DOS_HEADER</b> is the first structure of the PE file. It contains =
+global information
+about the program file and how to load it. Most of the information containe=
+d in this structure
+were more relivant to DOS software, and are only supported for backward com=
+patability.
+</p>
+<p>
+The structure follows the format:
+</p>
+
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_DOS_HEADER {  //=
+ DOS .EXE header
+    uint16_t e_magic;		// must contain "MZ"
+    uint16_t e_cblp;		// number of bytes on the last page of the file
+    uint16_t e_cp;		// number of pages in file
+    uint16_t e_crlc;		// relocations
+    uint16_t e_cparhdr;		// size of the header in paragraphs
+    uint16_t e_minalloc;	// minimum and maximum paragraphs to allocate
+    uint16_t e_maxalloc;
+    uint16_t e_ss;		// initial SS:SP to set by Loader
+    uint16_t e_sp;
+    uint16_t e_csum;		// checksum
+    uint16_t e_ip;		// initial CS:IP
+    uint16_t e_cs;
+    uint16_t e_lfarlc;		// address of relocation table
+    uint16_t e_ovno;		// overlay number
+    uint16_t e_res[4];		// resevered
+    uint16_t e_oemid;		// OEM id
+    uint16_t e_oeminfo;		// OEM info
+    uint16_t e_res2[10];	// reserved
+    uint32_t   e_lfanew;	// address of new EXE header
+} IMAGE_DOS_HEADER, *PIMAGE_DOS_HEADER;</div></pre></blockquote>
+<p>
+Alright, a lot of interesting things in this structure. The initial CS:IP a=
+nd initial SS:SP members should be
+ignored as the operating system normally allocates a stack space and code d=
+escriptor value for CS. These members
+were more prominent during the DOS area and software requiring v8086 mode.
+</p>
+
+	<h3>STUB Program</h3>
+<p>
+Okay then! Lets look back up at the PE file image structure again (The abov=
+e picture.)
+Notice how a DOS stub program is right after the <b>IMAGE_DOS_HEADER</b> st=
+ructure.
+This is a useful program, actually. This is the program that displays "This=
+ program cannot
+be run in DOS Mode", if you try to execute a Windows program from within DO=
+S.
+</p>
+<p>
+We can change the stub program by using the <b>/STUB</b> linker option:
+</p>
+<blockquote><pre><div class=3D"code">/stub=3Dmyprog.exe</div></pre></blockq=
+uote>
+<p>
+	When DOS attempts to load the executable, it will parse the IMAGE_DOS_HEAD=
+ER structure and attempt
+to execute the DOS stub program because it is a valid DOS program. When run=
+ning under the Win32 subsystem,
+the Windows loader will ignore the stub program.
+</p>
+
+	<h3>IMAGE_NT_HEADERS</h3>
+
+<p>
+	Following the STUB program is a structure, <b>IMAGE_NT_HEADERS</b> that co=
+ntains the
+	format of the PE header structures. Here is the structure:
+</p>
+
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_NT_HEADERS {
+  DWORD                 Signature;
+  IMAGE_FILE_HEADER     FileHeader;
+  IMAGE_OPTIONAL_HEADER OptionalHeader;
+} IMAGE_NT_HEADERS, *PIMAGE_NT_HEADERS;</div></pre></blockquote>
+
+<p>
+	The signiture must match with "PE\0\0", where \0\0 are null characaters. T=
+he <b>IMAGE_FILE_HEADER</b>
+
+	contains additional information used by the loader and the complete size o=
+f the <b>IMAGE_OPTIONAL_HEADER</b>
+	structure. The <b>IMAGE_OPTIONAL_HEADER</b> is the largest and most import=
+ant structure in the file.
+	It also does not have a defined size.
+</p>
+<p>
+	In order to locate this structure, the OS loader must use the <b>e_lfanew<=
+/b> member of IMAGE_DOS_HEADER.
+	<b>e_lfanew</b> is an RVA to this structure in memory, so in order to loca=
+te this structure, the loader
+	needs to perform the following:
+</p>
+<blockquote><pre><div class=3D"code">IMAGE_DOS_HEADER* pFile =3D (IMAGE_DOS=
+_HEADER*) imageBase;
+IMAGE_NT_HEADERS* pHeaders =3D (IMAGE_NT_HEADERS*) (pFile-&gt;e_lfanew + im=
+ageBase);</div></pre></blockquote>
+<p>
+	This assumes <b>imageBase</b> referres to the location where the program f=
+ile was loaded into
+	memory. Because older operating systems, such as DOS are not aware of this=
+ member of the header,
+	it will be ignored by these OSs.
+</p>
+<p>
+	This structure contains the format for the other two header structures. Le=
+ts look at the first of these structures.
+</p>
+
+	<h3>IMAGE_FILE_HEADER</h3>
+
+<p>
+	The <b>IMAGE_FILE_HEADER</b> is the <b>Common Object File Format (COFF)</b=
+> header structure. It follows
+the following format:
+</p>
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_FILE_HEADER {
+    USHORT  Machine;
+    USHORT  NumberOfSections;			// Number of sections in section table
+    ULONG   TimeDateStamp;			// Date and time of program link
+    ULONG   PointerToSymbolTable;		// RVA of symbol table
+    ULONG   NumberOfSymbols;			// Number of symbols in table
+    USHORT  SizeOfOptionalHeader;		// Size of IMAGE_OPTIONAL_HEADER in byte=
+s
+    USHORT  Characteristics;
+} IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER;</div></pre></blockquote>
+<p>
+	This structure isnt too complex. Most of the above is only useful for debu=
+ggers (symbol table parsing).
+<b>SizeOfOptionalHeader</b> is important - because IMAGE_OPTIONAL_HEADER do=
+es not have a defined size, this member
+lets you know the size of the structure.
+
+</p>
+<p>
+<b>Machine</b> can be one of the following values:
+</p><ul>
+<li>0x014c for x86 machines</li>
+<li>0x0200 for x64 machines</li>
+<li>0x8664 for AMD64 machines</li>
+</ul>
+<p></p>
+<p>
+In the usual case, it should be <b>0x014c</b> as we are developing for the =
+x86 architecture.
+
+</p>
+<p>
+<b>Characteristics</b> is composed of bit flags that can be bitwise-ORd by =
+the linker to let the loader
+know different properties of the type of executable image this is. Heres th=
+e format:
+</p>
+<ul>
+<li><b>Bit 0</b>: If set, image has no relocation information</li>
+<li><b>Bit 1</b>: If set, File is executable</li>
+<li><b>Bit 2</b>: If set, image has no COFF line numbers</li>
+<li><b>Bit 3</b>: If set, image has no COFF symbol table entries</li>
+
+<li><b>Bit 4</b>: If set, trim the working set for image. (Windows memory m=
+anagement specific. Obsolete)</li>
+<li><b>Bit 5</b>: If set, loader assumes executable can handle &gt;2GB VAs<=
+/li>
+<li><b>Bit 6</b>: If set, loader assumes image supports 32 bit words</li>
+<li><b>Bit 7</b>: If set, image has no debug information</li>
+<li><b>Bit 8</b>: If set, image wont run directly from network drive (Windo=
+ws specific)</li>
+<li><b>Bit 9</b>: If set, image is treated as a SYSTEM file</li>
+
+<li><b>Bit 10</b>: If set, image is treated as a DLL file</li>
+<li><b>Bit 11</b>: If set, image will only run on single-processor machines=
+</li>
+<li><b>Bit 12</b>: If set, big-endian. obsolete flag</li>
+</ul>
+<p>
+	The Windows headers use defined constants, such as IMAGE_FILE_RELOCS_STRIP=
+PED and
+IMAGE_FILE_EXECUTABLE_IMAGE that can be used when setting these flags.
+</p>
+<p>
+As you can see, most of this structure is for information only for the load=
+er on how to load
+the image. But wait! What about resources, symbol tables, debug info ... wh=
+ere is this at? Ah,
+behold the reason why <b>IMAGE_OPTIONAL_HEADER</b> does not have a defined =
+size. Lets take a look!
+
+</p>
+
+	<h3>IMAGE_OPTIONAL_HEADER</h3>
+<p>
+	Ugh, here we go. This is the most complex structure in the file. The good =
+news is that you
+	probably have seen this structure before:
+</p>
+<blockquote><pre><div class=3D"code">struct _IMAGE_OPTIONAL_HEADER {
+
+    USHORT  Magic;				// not-so-magical number
+    UCHAR   MajorLinkerVersion;			// linker version
+    UCHAR   MinorLinkerVersion;
+    ULONG   SizeOfCode;				// size of .text in bytes
+    ULONG   SizeOfInitializedData;		// size of .bss (and others) in bytes
+    ULONG   SizeOfUninitializedData;		// size of .data,.sdata etc in bytes
+    ULONG   AddressOfEntryPoint;		// RVA of entry point
+    ULONG   BaseOfCode;				// base of .text
+    ULONG   BaseOfData;				// base of .data
+    ULONG   ImageBase;				// image base VA
+    ULONG   SectionAlignment;			// file section alignment
+    ULONG   FileAlignment;			// file alignment
+    USHORT  MajorOperatingSystemVersion;	// Windows specific. OS version re=
+quired to run image
+    USHORT  MinorOperatingSystemVersion;
+    USHORT  MajorImageVersion;			// version of program
+    USHORT  MinorImageVersion;
+    USHORT  MajorSubsystemVersion;		// Windows specific. Version of SubSyst=
+em
+    USHORT  MinorSubsystemVersion;
+    ULONG   Reserved1;
+    ULONG   SizeOfImage;			// size of image in bytes
+    ULONG   SizeOfHeaders;			// size of headers (and stub program) in bytes
+    ULONG   CheckSum;				// checksum
+    USHORT  Subsystem;				// Windows specific. subsystem type
+    USHORT  DllCharacteristics;			// DLL properties
+    ULONG   SizeOfStackReserve;			// size of stack, in bytes
+    ULONG   SizeOfStackCommit;			// size of stack to commit
+    ULONG   SizeOfHeapReserve;			// size of heap, in bytes
+    ULONG   SizeOfHeapCommit;			// size of heap to commit
+    ULONG   LoaderFlags;			// no longer used
+    ULONG   NumberOfRvaAndSizes;		// number of DataDirectory entries
+    IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
+} IMAGE_OPTIONAL_HEADER, *PIMAGE_OPTIONAL_HEADER;</div></pre></blockquote>
+<p>
+	First, take a look at that last member, <b>DataDirectory</b>. The constant=
+, <b>IMAGE_NUMBEROF_DIRECTORY_ENTRIES</b>
+
+can, and has, changed through the years. This is that member that could cha=
+nge the size of this structure. We will
+look closer at that member a little later though as thats where all the fun=
+ stuff is at.
+</p>
+<p>
+You might be interested in why this is called an "optional" header even tho=
+ugh its clearly not optional. This is
+due to it being optional for COFF object files. While its not optional for =
+executable images, it is for object
+files :)
+</p>
+<p>
+<b>magic</b> can be one of the following:
+</p><ul>
+	<li>0x10b: 32bit executable image</li>
+	<li>0x20b: 64bit executable image</li>
+	<li>0x107: ROM image</li>
+
+</ul>
+In the usual case, it should be <b>0x10b</b>.
+<p></p>
+<p>
+A lot of the members in this structure really arent that complex.
+</p>
+<p>
+The <b>subsystem</b> member is Windows-specific. It tells Windows what subs=
+ystem the program requires
+in order to execute properly. It can be one of the following values (posted=
+ here for completness only)
+</p><ul>
+<li>0: Unknown</li>
+<li>1: Native SubSystem</li>
+
+<li>2: GUI SubSystem</li>
+<li>3: CUI SubSystem</li>
+<li>5: OS/2 CUI SubSystem</li>
+<li>7: POSIX CUI SubSystem</li>
+<li>9: Windows CE GUI SubSystem</li>
+<li>10: EFI</li>
+<li>11: EFI Boot Driver</li>
+<li>12: EFI Runtime Driver</li>
+<li>13: EFI ROM</li>
+
+<li>14: XBox</li>
+<li>16: Boot application</li>
+</ul>
+<p></p>
+<p>
+The <b>DllCharacteristics</b> member contains bit flags that gives the load=
+er information about
+the DLL. It follows the following format:
+
+</p><ul>
+<li><b>Bit 0-3</b>: reserved</li>
+<li><b>Bit 4</b>: If set, DLL is relocatable</li>
+
+<li><b>Bit 5</b>: If set, force code integrity checks</li>
+<li><b>Bit 6</b>: If set, image is <b>Data Execution Prevention (DEP)</b> c=
+ompatable</li>
+<li><b>Bit 7</b>: If set, image should not be isolated</li>
+<li><b>Bit 8</b>: If set, image does not use <b>Structured Exception Handli=
+ng (SEH)</b></li>
+<li><b>Bit 9</b>: If set, image wont be binded</li>
+
+<li><b>Bit 10</b>: reserved</li>
+<li><b>Bit 11</b>: If set, image is a <b>Windows Driver Model (WDM)</b> dri=
+ver</li>
+<li><b>Bit 12</b>: reserved</li>
+<li><b>Bit 13</b>: image is terminal server aware</li>
+</ul>
+<p></p>
+
+<p>
+<b>AddressOfEntryPoint</b> is an important one. This member contains the RV=
+A of the entry point function of
+the image (for DLLs this can be null as DLLs dont need entry points.) This =
+is what our bootloader uses to
+call our entry point function in our kernel.
+</p>
+
+<p>
+Thats about all there is to it. You might be interested in what those other=
+ members are - for <b>.text</b>,
+<b>.data</b>, <b>.bss</b> etc. There is also that nasty looking <b>DataDire=
+ctory</b> member that we havnt looked
+at.
+
+</p>
+<p>
+We will look at those members closly later on. For now, lets look at execut=
+ing a program!
+</p>
+
+<h3>Executing a program</h3>
+
+<p>
+At this stage, <b>if all that you would like to do is execute a program</b>=
+, all of the information has
+been provided. After loading a program, all that the loader needs to do is =
+locate the <b>AddressOfEntryPoint</b>
+member from the optional header, and call that address. Remember that this =
+is an RVA, meaning the loader needs
+to add this address to the <b>ImageBase</b> to obtain the linear address to=
+ the entry point function.
+
+</p>
+Here is an example:
+<blockquote><pre><div class=3D"code">//! loadedProgram is where the image w=
+as loaded to
+IMAGE_DOS_HEADER* pImage =3D (IMAGE_DOS_HEADER*) loadedProgram;
+
+//! go to NT HEADERS
+IMAGE_NT_HEADERS* pHeaders =3D (IMAGE_NT_HEADERS*)(loadedProgram + pImage-&=
+gt;e_lfanew);
+
+//! get image base and entry point address from optional header
+int base =3D pHeaders-&gt;OptionalHeader.ImageBase;
+int entryPoint =3D pHeaders-&gt;OptionalHeader.AddressOfEntryPoint;
+
+//! entry point function is at base+entryPoint
+void (*entryFunction) () =3D (entryPoint + base);
+
+//! call program entry point
+entryFunction();</div></pre></blockquote>
+<p>
+Thats all that is needed to execute a PE executable :)
+</p>
+
+<h2>Data Directories</h2>
+
+	<h3>Abstract</h3>
+
+	<p>
+	Resources, symbol tables, debugging information, import, export tables etc=
+ are accessable
+	from that nifty <b>DataDirectory</b> member of the optional header. This m=
+ember is an array
+	of <b>IMAGE_DATA_DIRECTORY</b>'s that can be used to access other structur=
+es containing
+	this information. <b>IMAGE_DATA_DIRECTORY</b> has the format:
+	</p>
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_DATA_DIRECTORY {
+  DWORD VirtualAddress;		// RVA of table
+  DWORD Size;			// size of table
+} IMAGE_DATA_DIRECTORY, *PIMAGE_DATA_DIRECTORY;</div></pre></blockquote>
+	<p>
+
+	Remember that <b>DataDirectory</b> is an <b>array</b> of <b>IMAGE_DATA_DIR=
+ECTORY</b>'s. Each entry
+in this array allows us to access the different data that we want to access=
+.
+	</p>
+	<p>
+	Here are the index entries:
+	</p>
+	<ul>
+
+	<li>0: Export directory</li>
+	<li>1: Import directory</li>
+	<li>2: Resource directory</li>
+	<li>3: Exception directory</li>
+	<li>4: Security directory</li>
+	<li>5: Base relocation table</li>
+
+	<li>6: Debug directory</li>
+	<li>7: Description string</li>
+	<li>8: Machine value (MIPS GP)</li>
+	<li>9: TLS directory</li>
+	<li>10: Load configuation directory</li>
+	<li>14: COM+ data directory</li>
+
+	</ul>
+	<p>
+	For example, if you need to read the export table, reference <b>DataDirect=
+ory[0]</b>. If you
+	want to read a resource, reference <b>DataDirectory[2].VirtualAddress</b>:
+	</p>
+	<p>
+	Each of these sections contains their own structures that are required to =
+parse the specific data.
+	Lets take a look at some of the more useful ones.
+	</p>
+
+	<h3>Reading the export table</h3>
+	<p>
+	The export table contains all functions exported from libraries or DLLs, i=
+ncluding their function
+	addresses within that DLL, their names, and ordinal number. The Win32 API =
+function <b>GetProcAddress()</b>
+	works by parsing the modules export table by ordinal number or name and re=
+turning the address from it.
+	This is one way reading the export table can be useful.
+	</p>
+	<p>
+	To parse the export table, you need to first get the export directory stru=
+cture. This is done by
+	getting <b>DataDirectory[0]</b>.
+	</p>
+
+<blockquote><pre><div class=3D"code">PIMAGE_DATA_DIRECTORY DataDirectory =
+=3D &amp;OptionalHeader-&gt;DataDirectory [0];
+PIMAGE_EXPORT_DIRECTORY exportDirectory =3D (PIMAGE_EXPORT_DIRECTORY) (Data=
+Directory-&gt;VirtualAddress + ImageBase);
+</div></pre></blockquote>
+
+<p>
+Remember that <b>VirtualAddress</b> in the <b>IMAGE_DATA_DIRECTORY</b> stru=
+cture is an RVA, so must be added
+to the image base. Now <b>exportDirectory</b> points to this nice structure=
+:
+</p>
+
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_EXPORT_DIRECTORY=
+ {
+  uint32_t Characteristics;
+  uint32_t TimeDateStamp;
+  uint16_t MajorVersion;
+  uint16_t MinorVersion;
+  uint32_t Name;
+  uint32_t Base;
+  uint32_t NumberOfFunctions;
+  uint32_t NumberOfNames;
+  uint32_t** AddressOfFunctions;
+  uint32_t** AddressOfNames;
+  uint16_t** AddressOfNameOrdinal;
+}IMAGE_EXPORT_DIRECTORY,*PIMAGE_EXPORT_DIRECTORY;</div></pre></blockquote>
+<p>
+	This one is an easy one. <b>AddressOfFunctions</b> is an RVA that points t=
+o an array of function addresses.
+The function addresses, however are also RVAs. <b>AddressOfNames</b> is a p=
+ointer to a list of function names.
+All of these addresses are RVAs however so must be added to the image base =
+in order to properly obtain the
+function name and address.
+</p>
+<p>
+<b>AddressOfNameOrdinal</b> is an RVA to a list of ordinals. The ordinals, =
+being just numbers representing the
+exported functions and not addresses, arent RVAs.
+
+</p>
+<p>
+To properly parse the export table must be done in a loop. For example:
+</p>
+<blockquote><pre><div class=3D"code">PDWORD	FunctionNameAddressArray =3D ((=
+DWORD)ExportDirectory-&gt;AddressOfNames) + ((PBYTE)imageBase);
+PWORD	FunctionOrdinalAddressArray =3D (DWORD)ExportDirectory-&gt;AddressOfN=
+ameOrdinal + (PBYTE)imageBase;
+PDWORD	FunctionAddressArray =3D (DWORD)ExportDirectory-&gt;AddressOfFunctio=
+ns + (PBYTE)imageBase;
+
+//! search for function in exports table
+for ( i =3D 0; i &lt; ExportDirectory-&gt;NumberOfFunctions; i++ )
+{
+	LPSTR	FunctionName =3D FunctionNameAddressArray [i] + (PBYTE)imageBase;
+
+	if (strcmp (FunctionName, funct) =3D=3D 0) {
+
+		WORD Ordinal =3D FunctionOrdinalAddressArray [i];
+		DWORD FunctionAddress =3D FunctionAddressArray [Ordinal];
+		return (PBYTE) (FunctionAddress + (PBYTE)imageBase);
+	}
+}</div></pre></blockquote>
+<p>
+	This can be used to impliment <b>GetProcAddress()</b> which can be useful =
+in supporting DLLs.
+</p>
+
+	<h3>Reading the import table</h3>
+
+	<p>
+	So... reading the export table wasnt hard enough, huh? Reading the import =
+table isnt too hard,
+	but is a little more involved then the export table. Ok, ok, whats the use=
+ for reading the
+	import table? Its not so much the reading, but the <b>writing</b>. By writ=
+ing entries into
+	a programs inport table, you can allow function calls across libraries and=
+ DLLs without the
+	need of a GetProcAddress() call. Windows performs this with delayed loaded=
+ DLLs and system DLLs.
+	</p>
+	<p>
+	In order to read the import table, you need to locate the import directory=
+ structure. This is at <b>DataDirectory[1]</b>:
+
+
+</p><blockquote><pre><div class=3D"code">PIMAGE_DATA_DIRECTORY DataDirector=
+y =3D &amp;OptionalHeader-&gt;DataDirectory [1];
+PIMAGE_IMPORT_DESCRIPTOR importDirectory =3D (PIMAGE_IMPORT_DESCRIPTOR) (Da=
+taDirectory-&gt;VirtualAddress + ImageBase);
+</div></pre></blockquote>
+
+	<p></p>
+<p>
+It is important to note that <b>importDirectory</b> points to an <b>array</=
+b> of descriptor entries. Each of these
+entries represents a module that was imported, such as an import DLL. Lets =
+take a look at this structure:
+</p>
+
+
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_IMPORT_DESCRIPTO=
+R {
+    union {
+        uint32_t   Characteristics;		// 0 for terminating null import descr=
+iptor
+        uint32_t   OriginalFirstThunk;		// RVA to INT
+    };
+    uint32_t   TimeDateStamp;			// Time/Date of module, or other properties=
+ (see below)
+    uint32_t   ForwarderChain;			// Forwarder chain ID
+    uint32_t   Name;				// Module name
+    uint32_t   FirstThunk;			// RVA to IAT (if bound this IAT has actual ad=
+dresses)
+} IMAGE_IMPORT_DESCRIPTOR;
+typedef IMAGE_IMPORT_DESCRIPTOR *PIMAGE_IMPORT_DESCRIPTOR;</div></pre></blo=
+ckquote>
+
+<p>
+
+Its important to note that <b>Name, OriginalFirstThunk</b> and <b>FirstThun=
+k</b> are RVAs. This means you will
+need to add the addresses (these are pointers) to the image base in order t=
+o properly parse the data. <b>Name</b>
+is an RVA that points to the imported module name, such as <b>kernel32.dll<=
+/b>. It is null terminated.
+</p>
+<p>
+Remember that we are working with an array of import descriptors? How can w=
+e tell how many import descriptors
+that is in this array? The array ends with a null IMAGE_IMPORT_DESCRIPTOR, =
+so an easy way to loop through
+each entry is this:
+</p>
+
+<blockquote><pre><div class=3D"code">IMAGE_IMPORT_DESCRIPTOR* lpImportDesc;
+while (! lpImportDesc-&gt;FirstThunk) {
+
+	//! work with lpImportDesc here
+
+	lpImportDesc++; // move to next entry
+}</div></pre></blockquote>
+<p>
+<b>TimeDateStamp</b> can be either the proper time/date or one of the follo=
+wing values:
+</p><ul>
+<li>0: module not bound</li>
+<li>-1: image is bound. Real time/date stamp stored</li>
+</ul>
+<p></p>
+<p>
+<b>ForwarderChain</b> is only used when supporting <b>DLL Forward Referenci=
+ng</b>, which allows calls
+across DLLs to be forwarded to other DLLs. For example, some calls in Windo=
+ws <b>kernel32.dll</b> are forwarded
+to other DLLs.
+
+</p>
+<p>
+<b>FirstThunk</b>
+points to the IAT, <b>OriginalFirstThunk</b> points to an array of structur=
+es representing all imported functions.
+This is the <b>Import Name Table (INT)</b>. Both of these members are RVAs.
+</p>
+<p>
+<i>Thunk?</i> right, Im sure you know another structure is coming up. Lets =
+take a look:
+</p>
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_THUNK_DATA {
+	union {
+		uint32_t* Function;				// address of imported function
+		uint32_t  Ordinal;				// ordinal value of function
+		PIMAGE_IMPORT_BY_NAME AddressOfData;		// RVA of imported name
+		DWORD ForwarderStringl				// RVA to forwarder string
+	} u1;
+} IMAGE_THUNK_DATA, *PIMAGE_THUNK_DATA;</div></pre></blockquote>
+
+<p>
+<b>OriginalFirstThunk</b> are RVAs that point to an array of <b>IMAGE_THUNK=
+_DATA</b> structures.
+</p>
+<p>
+Ugh, yey, another structure. This one is a small one though:
+</p>
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_IMPORT_BY_NAME {
+	uint16_t  Hint;		// Possible ordinal number to use
+	uint8_t   Name[1];	// Name of function, null terminated
+} IMAGE_IMPORT_BY_NAME, *PIMAGE_IMPORT_BY_NAME;</div></pre></blockquote>
+<p>
+Thats all there is to it. The first paramater can be 0, but it just hints t=
+he loader what ordinal number
+the function might be using. <b>Name</b> is an array of characters represen=
+ting the name of the function.
+
+</p>
+
+<p>
+Heres the deal: The IAT is just a list of addresses representing functions.=
+ What functions? The functions
+within this IMAGE_THUNK_DATA array. Look back at that IMAGE_THUNK_DATA stru=
+cture and notice that its just an
+union representing a function name. This is the <b>Import Name Table (INT)<=
+/b>.
+</p>
+<p>
+For example, lets say we want to get the current address
+of the function thats in IMAGE_THUNK_DATA[3]. Its address will be the 3rd d=
+word in the IAT, which
+can be read using <b>IMAGE_IMPORT_DESCRIPTOR-&gt;FirstThunk</b>.
+</p>
+<p>
+So, lets try to obtain the function name and address:
+</p>
+
+<blockquote><pre><div class=3D"code">unsigned int count=3D0;
+while (lpThunk-&gt;u1.Function) {
+
+	//! get the function name
+	char* lpFunctionName =3D (char*)((uint8_t*)imageBase + (uint32_t)lpThunk-&=
+gt;u1.AddressOfData.Name);
+
+	//! go into the IAT to get this functions address
+	uint32_t* addr =3D (uint32_t*)((uint8_t*)imageBase + lpImportDesc-&gt;Firs=
+tThunk) + count;
+
+	// lpFunctionName now points to the null terminated function name
+	// addr now points to the address of this function
+
+	count++;
+	lpThunk++;
+}</div></pre></blockquote>
+
+<p></p>
+<p><b>Image binding</b></p>
+<p>
+This is where things get interesting. The IAT can be filled with the addres=
+ses of the imported functions
+either during <b>runtime</b> or <b>building</b> time. A <b>bounded image</b=
+> is an image that has its IAT
+bounded to the functions during build time. An <b>unbounded</b> image is an=
+ image whose IAT is filled in
+by the OS loader during loading time.
+
+</p>
+<p>
+If the image is bounded, you can do the following to call a function in an =
+external DLL:
+</p>
+<blockquote><pre><div class=3D"code">__declspec (dllimport) void function (=
+);
+function (); // calls myDll:function()</div></pre></blockquote>
+<p>
+If the image is not bounded, the IAT contains junk. <b>It is then the respo=
+nsbility of the OS loader
+to update the IAT</b> in order for the above code to work. This can be perf=
+ormed by reading the export table
+of the loaded DLL module (calling GetProcAddress(), and overwriting the IAT=
+ entry of that import function. Overwriting
+the IAT can be done by following the above - when you get the functions IAT=
+ entry, just overwrite it :)
+</p>
+<p>
+This method can also be useful for installing <b>hooks</b> in DLLs and othe=
+r modules.
+
+</p>
+	<h3>Supporting resources</h3>
+
+	<p><b>Introduction</b></p>
+
+	<p>
+	Have you ever wondered how the Windows kernel can display an image and wor=
+k with an XML configuation file
+	without loading anything from disk? Have you ever worked with adding resou=
+rces but wondered if it was
+	possible to support them in an OS? The answer is a "yes, of course!"
+	</p>
+	<p>
+	Parsing resources is a bit more complex then the other directory types, ho=
+wever. Like the other sections,
+	there is a base <b>IMAGE_RESOURCE_DIRECTORY</b> structure that can be obta=
+ined from the <b>DataDirectory</b>
+
+	member of the optional header:
+	</p>
+<blockquote><pre><div class=3D"code">PIMAGE_DATA_DIRECTORY DataDirectory =
+=3D &amp;OptionalHeader-&gt;DataDirectory [2];
+PIMAGE_RESOURCE_DIRECTORY resourceDirectory =3D (PIMAGE_RESOURCE_DIRECTORY)=
+ (DataDirectory-&gt;VirtualAddress + ImageBase);</div></pre></blockquote>
+<p>
+Notice the pattern with how to access these sections? Oh, right, onto the n=
+ew structure:
+</p>
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_RESOURCE_DIRECTO=
+RY {
+    uint32_t                       Characteristics;
+    uint32_t                       TimeDateStamp;
+    uint16_t                       MajorVersion;
+    uint16_t                       MinorVersion;
+    uint16_t                       NumberOfNamedEntries;
+    uint16_t                       NumberOfIdEntries;
+    IMAGE_RESOURCE_DIRECTORY_ENTRY DirectoryEntries[1];
+} IMAGE_RESOURCE_DIRECTORY, *PIMAGE_RESOURCE_DIRECTORY;</div></pre></blockq=
+uote>
+<p>
+This structure doesnt have much of any interesting fields, except the last =
+three.
+</p>
+<p>
+If you have worked
+with Win32 resources, you might know that resources can be idenitified by I=
+D or name. Two of the members
+in this structure will let us know the number of these entries, and the tot=
+al amount of entries
+(NumberOfNamedEntries + NumberOfIdEntries), which is useful in looping thro=
+ugh all of the entries.
+As you can probably guess, the entries are in the DirectoryEntries array. <=
+b>DirectoryEntries</b>
+
+consists of an array of <b>IMAGE_RESOURCE_DIRECTORY_ENTRY</b> structures, w=
+hich follow the format:
+</p>
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_RESOURCE_DIRECTO=
+RY_ENTRY {
+    union {
+        struct {
+            DWORD NameOffset:31;
+            DWORD NameIsString:1;
+        };
+        DWORD   Name;
+        WORD    Id;
+    };
+    union {
+        DWORD   OffsetToData;
+        struct {
+            DWORD   OffsetToDirectory:31;
+            DWORD   DataIsDirectory:1;
+        };
+    };
+} IMAGE_RESOURCE_DIRECTORY_ENTRY, *PIMAGE_RESOURCE_DIRECTORY_ENTRY;</div></=
+pre></blockquote>
+<p>
+Alright, this is an ugly structure. This structure represents a single reso=
+urce, or resource directory.
+</p><p>
+	</p><p><b>Resource directory structure</b></p>
+<p>
+<i>resource or resource directory?</i> Lets stop for a moment. (*grabs a cu=
+p of coffee*) ok, it is important
+to know that resources are stored as a <b>tree</b>. This tree is structured=
+ like this:
+
+</p><ul>
+<li>Root directory</li>
+ <ul>
+  <li>Resource group 1 Directory</li>
+    <ul>
+      <li>Resource 1</li>
+      <li>Resource 2</li>
+    </ul>
+
+  <li>Resource group 2 Directory</li>
+    <ul>
+      <li>Resource 1</li>
+      <li>Resource 2</li>
+    </ul>
+  <li>Resource group 3 Directory</li>
+    <ul>
+
+      <li>Resource 1</li>
+      <li>Resource 2</li>
+    </ul>
+  <li>...etc...</li>
+ </ul>
+</ul>
+<p></p>
+<p>
+There are a number of different resource groups which let us know the type =
+of resources are in this group.
+Here are the group IDs:
+
+</p><ul>
+<li>1 - Cursor</li>
+<li>2 - Bitmap</li>
+<li>3 - Icon</li>
+<li>4 - Menu</li>
+<li>5 - Dialog</li>
+<li>6 - String</li>
+<li>7 - Font directory</li>
+<li>8 - Font</li>
+
+<li>9 - Accelerator</li>
+<li>10 - RcData</li>
+<li>11 - Message table</li>
+<li>16 - Version</li>
+<li>17 - DlgInclude/li&gt;
+</li><li>19 - Plug and Play</li>
+<li>20 - VXD</li>
+<li>21 - Animated Cursor</li>
+<li>22 - Animated Icon</li>
+
+<li>23 - HTML</li>
+<li>24 - Manifest</li>
+</ul>
+
+In order to locate a resource, you will need to traverse this tree. The goo=
+d news is that this isnt hard if
+you assume there is only 3 layers in the tree.
+<p></p>
+<p>
+First, lets look at looping through all of the entries in a resource direct=
+ory:
+</p>
+
+
+<blockquote><pre><div class=3D"code">//! get first entry in directory
+IMAGE_RESOURCE_DIRECTORY_ENTRY* lpResourceEntry =3D lpResourceDir-&gt;Direc=
+toryEntries;
+
+//! loop through all entries
+int entries =3D lpResourceDir-&gt;NumberOfIdEntries + lpResourceDir-&gt;Num=
+berOfNamedEntries;
+while (entries-- !=3D 0) {
+
+	//! look for bitmap resource (id=3D2)
+	if (lpResourceEntry-&gt;Id =3D=3D 2) {
+		//! see below
+	}
+	lpResourceEntry++;
+}</div></pre></blockquote>
+<p>
+	This is simple enough, huh? The <b>Id</b> member of <b>IMAGE_RESOURCE_DIRE=
+CTORY_ENTRY</b>
+
+	is used to store the group ID. If we were looking for a bitmap, it would b=
+e in the bitmap
+	group of the root directory, so look for the entry with ID=3D2.
+</p>
+<p>
+	Because IMAGE_RESOURCE_DIRECTORY_ENTRY represents both resource entries an=
+d directories,
+	how can we tell what it is? Why, the <b>DataIsDirectory</b> member of cour=
+se: If this member
+	is set, its a directory. Ah, but if its a directory, how can you read the =
+directory? Lets take
+	a look:
+</p>
+<blockquote><pre><div class=3D"code">if (lpResourceEntry-&gt;DataIsDirector=
+y) {
+	lpResourceEntry =3D lpResourceEntry-&gt;OffsetToDirectory;
+	lpResourceEntry +=3D startOfResourceSection;
+}</div></pre></blockquote>
+<p>
+	This one isnt to bad. If the entry is a directory, the above obtains the o=
+ffset to the new directory
+from the <b>OffsetToDirectory</b> and adds it to .. what? the <i>startOfRes=
+ourceSection</i>!? Thats right...
+this is an offset, but not an RVA. I know ... <i>Why Microsoft, Why!?</i>
+
+</p>
+<p>
+	The start of the resource section is actually the address of the first mem=
+ber of the IMAGE_RESOURCE_DIRECTORY_ENTRY array.
+So by adding this address to the offset obtained from <b>OffsetToDirectory<=
+/b> you can obtain the pointer to the
+<b>IMAGE_RESOURCE_DIRECTORY</b> structure for this directory. Yes, then the=
+ whole process of reading those directory
+entries begins :)
+</p>
+<p>
+	If you are in the process of parsing the directory for your specific resou=
+rce, just loop through
+all of the resource entries in the directory. If the resourceEntry ID field=
+ matches that of the resource
+ID you are trying to find (program specific ID here), then you have found t=
+he resource data.
+</p>
+<p>
+The resource data is stored in a ... zomg! structure! It can be obtained fr=
+om the <b>OffsetToData</b> member
+of the directory entry structure. Simular to the <b>OffsetToDirectory</b> m=
+ember, this too is an offset
+from the start of the resource section.
+
+</p>
+<p>
+Once you obtained the pointer, you can extract the resource data. Lets take=
+ a look at that structure:
+</p>
+
+<blockquote><pre><div class=3D"code">typedef struct _IMAGE_RESOURCE_DATA_EN=
+TRY {
+	uint32_t   OffsetToData;
+	uint32_t   Size;
+	uint32_t   CodePage;
+	uint32_t   Reserved;
+} IMAGE_RESOURCE_DATA_ENTRY, *PIMAGE_RESOURCE_DATA_ENTRY;</div></pre></bloc=
+kquote>
+<p>
+Thats it! <b>OffsetToData</b> is an RVA to the real resource data, and <b>S=
+ize</b> is the size
+of that data, in bytes. For example, if we were looking for a bitmap resour=
+ce, <b>OffsetToData</b>
+
+would be the RVA pointing to the bitmaps <b>BITMAPINFOHEADER</b> structure,=
+ which can be handled by
+any bitmap loader.
+</p>
+
+	<h1>Conclusion</h1>=20
+ 	<p>
+	Thats all for this chapter. There are some planned updates to including co=
+vering additional
+	sections (debug data and COMDATS) as well.
+	</p><p>
+	There is no demo for this chapter - it is primarily released for anyone th=
+at is interested
+	in the internal workings of the PE executable file format and working with=
+ it. For the main series,
+	we might only be loading and executing the program, so all of the other in=
+formation is provided
+	for completeness only. All code provided in text for demenstration has bee=
+n tested (slightly modified)
+	to work.
+	</p>
+	<p>
+
+	In the upcoming chapters, we will be using the PE executable file format a=
+nd building
+	a loader for supporting user mode programs. After that, on to multitasking=
+!
+	</p>
+	<p>
+	Until next time,
+	</p><p>
+	~Mike<br>
+	<i>BrokenThorn Entertainment. Currently developing DoE and the <a href=3D"=
+http://www.brokenthorn.com/mos/site2/">Neptune Operating System</a></i>
+
+	<br><br>
+
+	<i>Questions or comments? Feel free to <a href=3D"mailto:neon6000@aol.com"=
+>Contact me</a>.</i>
+
+	<br><br>
+	Would you like to contribute and help improve the articles? If so, please =
+<a href=3D"mailto:neon6000@aol.com">let me know!</a>
+
+<br><br>=20
+<table width=3D"100%" border=3D"0">=20
+<tbody><tr>=20
+<td><p align=3D"left">=20
+
+<a class=3D"anchor" href=3D"http://www.brokenthorn.com/Resources/OSDev23.ht=
+ml">=20
+<img src=3D"http://www.brokenthorn.com/Resources/images/left.jpg" border=3D=
+"0"></a>=20
+&nbsp;&nbsp;
+<a class=3D"anchor" href=3D"http://www.brokenthorn.com/Resources/OSDev23.ht=
+ml">=20
+<font size=3D"4">Chapter 23</font>=20
+</a>=20
+=20
+</p></td>=20
+<td>=20
+<p align=3D"center">=20
+<font size=3D"4"><a class=3D"anchor" href=3D"http://www.brokenthorn.com/Res=
+ources/OSDevIndex.html">Home</a></font>=20
+</p>=20
+</td>=20
+</tr>=20
+</tbody></table>=20
+=20
+=20
+
+</p></td></tr></tbody></table></body></html>
+------MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.brokenthorn.com/Resources/Files/reference.css
+
+@charset "windows-1252";
+
+.mozilladummy { font-size: 12pt; }
+
+.title { font-weight: bold; font-size: 19pt; color: rgb(0, 62, 152); font-f=
+amily: Verdana; }
+
+.subtitle { font-weight: bold; font-size: 16pt; color: rgb(0, 62, 152); fon=
+t-family: Verdana; }
+
+.author { font-weight: bold; font-size: 13px; color: rgb(0, 0, 0); font-fam=
+ily: Verdana; }
+
+.code { font-size: 13px; color: rgb(0, 0, 136); font-family: "Courier New";=
+ }
+
+.vbcode { font-size: 11px; color: rgb(0, 0, 136); font-family: "Courier New=
+"; }
+
+.codecomment { font-size: 13px; color: rgb(0, 136, 0); font-family: "Courie=
+r New"; }
+
+.codekeyword { font-size: 13px; color: rgb(0, 0, 255); font-family: "Courie=
+r New"; }
+
+body { font-size: 13px; color: rgb(0, 0, 0); background: rgb(255, 255, 255)=
+; font-family: Verdana; }
+
+dir { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+blockquote { font-size: 13px; color: rgb(0, 0, 0); background: rgb(204, 221=
+, 221); border: 1px dashed rgb(153, 153, 153); font-family: Verdana; }
+
+p { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+ol { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+td { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+dl { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+ul { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+dd { font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+.tblhdr { font-weight: bold; font-size: 10pt; background: rgb(102, 102, 153=
+); color: rgb(255, 255, 255); font-family: Verdana; }
+
+.maintext-1 { font-size: 12px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+.maintext-2 { font-size: 11px; color: rgb(0, 0, 0); font-family: Verdana; }
+
+.caption { font-weight: bold; font-size: 11px; color: rgb(0, 0, 0); font-fa=
+mily: Verdana; }
+
+.inlinebox { border-width: 1px; border-style: solid; border-color: rgb(0, 0=
+, 0); padding: 10px; background: rgb(204, 221, 238); }
+
+h1 { font-weight: bold; font-size: 22px; color: rgb(0, 152, 62); font-famil=
+y: Verdana; }
+
+h2 { font-weight: bold; font-size: 18px; color: rgb(62, 0, 152); font-famil=
+y: Verdana; }
+
+h3 { font-weight: bold; font-size: 15px; color: rgb(128, 0, 64); font-famil=
+y: Verdana; }
+
+a:link { color: rgb(102, 102, 153); text-decoration: underline; }
+
+a:visited { color: rgb(102, 102, 153); text-decoration: underline; }
+
+a:active { color: rgb(0, 0, 0); text-decoration: none; }
+
+a:hover { color: rgb(170, 170, 221); text-decoration: none; }
+
+.anchor { }
+
+.anchor:link { text-decoration: none; font-weight: normal; }
+
+.anchor:visited { text-decoration: none; font-weight: normal; }
+
+.anchor:hover { text-decoration: none; font-weight: normal; }
+
+.anchor:active { text-decoration: none; font-weight: normal; }
+------MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.brokenthorn.com/Resources/site/5.png
+
+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
+------MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.brokenthorn.com/Resources/images/PEload.jpg
+
+UklGRtYaAABXRUJQVlA4IMoaAADQbwCdASoHA3gAPtFkqE+oJb+iJPXr+/AaCWlu/CoX2+tQv/GH
+86/jf9d/dfH3yz/Ic83MH2bamXf3nu/c/+74E/H/UFucdhtq/+k9AL1c+weYt7t/0/8r6hfY72AP
+KX/ueDf90/1H7UfAH/Q/7h6JGf9699hP8/v3u7sHpQfuAaUTX+eSg4Oajmo5qOajmo5qOajmo5qO
+ajmo5qOajgHI7ZG/SN9VcET3BfKelxjHyq7tjFbmiTBP4a9AeeMOzs/A1JcVxyuyKi6beEwPo/BS
+n7+8eP0sfgpVqlj9LH6WMW9fqyICdocvT1JQrH8+FciQ5VK+du2Pn+N23qzfFsqV7hb5MFh8+O21
+XlpN+UlX9tMXt8/+DrfhCdYBhPxskvkGKK9knAdaisaKXGAjmAZNZLTz3VajErWoLsW4VbLw7O3M
+AJYCmkWX5HqI3knolRn6SOuZLfqvTe89B6mOQhFPLQQQcalPzebiAiKn4GXn1i1TPBShQQwbYxU+
+8cjY7rc0ECJ58eOlkpPH4mRMqQtr65OoE3n/HNQyd4TYxUVJ857e/2k+etoV0vswaHkF/zjqcCFk
+gBr7FKbdbgF12WkaHh7Ci6UMy4ucF8cW22vi5KSGhtX4Qi2ndpOGzR+wFDJ9YVzDb02bU9RxhmwV
+l/on/OpO8lP6yFh9LD5NafziRsLG5vheKdECPHNRvvfRBIHwr9QofsU6nWs9YgejfHxHRXteXNWy
+6I3WYB9ZC2BxFCADdxo+ZB1f8W/xzUc1HNRzUc1HNRzUc1HNRzUFb0+/Q2t7QpHMk50/OIMlretS
+yrVBmAPNW36RzEQLE/mKstcZ2AsCu+eESN86kg+QIxMLokUxTKSynL0G8SEp08ZeRdAgmIkW8aFa
+4zajmo5qOajmafxi4D1k9s5pEoId2zmKAB2P048Y8eyTmQ5StgtS44LbdSDOukFUWXHEm3FCXUID
+u8EZTNY2ZAkZLUQrflNeTaoZ7l/ee4Dj65YSGhrF6tYbck4dIbPjSDO7PBV7Jf53fK9slt31shG+
+2qT5kH4/CFV5J1STg8+IUdK160neuLF50L1ILBkPvFekI61K5wzXBChV12TEODmo5qOajmo5qOZu
+/NvdFCytRLk9OEJBJ59JWvw4IEqVegkLkf9yfkmhQY1pFNDBsZgjqQ8c92/Yg3ASkUPaUJLJ7cO8
+S88lBwc1HNRzJAAA/vzD4AAw/eJCGGmiAGjmvUfGHC6CPErJ644vsdMtcNZxGHOM9hGtNd5AGMhI
+WxS1Xs7MjCfKNU19WMc+C3x8VbVUpm5HQw1iITkvZo4C4nxBwrmPsDqMuN7CZ7mm4J/EEb2FSu/q
+c3Ieps9acXss6yErJi9oYK2JpjwP+BsLW9R8/VzemvLDO3DAxTyXWSrKR1TlVJwmiGfGHtBBBY4H
+HpPZViViq/hoz0QsLc7NsqIXOL8PJPhrrY+y86FdeI+ppYTdrxQAkFaTdr0cHEcoSNEUIMNUWGU5
+acYKWUHh9YSy4eRZJ89BSBZ9T7uUb/XeEXYh4/0iWsHpxPvJxieIpjZy/C4/zFVJNzj2m/0MZ49g
+ycca1isqlnYqIr+fvygsKJKLifrgRCvBf7G5yfEHCgBIK0m7Xu8lqp2izhlak2ehD1d8DO5gp+iV
+ZKx7GACRB9aB/dSFmr9fcQVrcfrgkfZh5u87VK7riFjIYE+IOLJl35acGEwfNldCk7zy1/LZw9ub
+3MfP+Vb8qPCfm/xqn2+CNLhn4M/Dd3O/pyARieJKy2FgtbpsZoFc0so8h1WOvGhqlhkF87acwgdI
+Ui4uoAaZX5IwrOh0TpdK3yBB6OgKwM6U+CMjCD28rg5XTmuFJUwfcRVO6USuPH2E0b31t18DMMut
+3uBce29As7kgfmL5X+ihCtKh2to3R59Xozevw88n7q60y9l9eeQPRuBDjK7Q6GAFdi69zTYyllbB
+zNPR6whMYfJddICvLGPE3JA/fImAFMiYnYQ/1RUzEc5SSHQNQ+RmU9KudvAMIoH+tiUkqfmYSSqR
+yLdDatNphpyYfBNZ9KQl8eBtL5j2QrhLfodfMu2tqq/1+l8ZAZf088Hh+y9+R4+GSC545rSI5/ts
+eIF/zw6CKCQ+VyQSutkX0WLFrBTt0kS+jE6MlUUyw8sYnMzexLWkCIGtgeUfkU4RKY1Kh5Kvpv5w
+z9H8EqJ6IkVs9XfuWFNDh9aBDmu2MnsRAvdFACpUf8g494vVFIDVjzjDEAXpSab/h/gEcMx5BTmU
+NTPoTAtBDRk2bf8n9YYSbm6D/wHm7eZwMaDR4XHz3kPGh+zM5vZ9pqP+Qv3SoFPLGgYLMWT7dlbQ
+qMeHcx/V3d0N0V+odKP/cefoyTzePGh9vb/OXHuBOw9Y0Jk9ogDLRV6bOTzYtPFV11NRx6vD4A9u
+rmk04NOWgGVEnaXyXes1o6QthWp1sZCLX+3qsf97zKr6VeT/6tRZmEi+/1h3VLaS5rPvLh3TmknP
+kUBGIW2W2xGD7n79mSOpEXEvxEA1cNLdKTIB8uZRnIQJbdL14RooaD0GMYCBkb5nTDv4WR9AsQ1b
+6rRF9TRjaVrQlnLH69TRNF4YQ97MAWwARFAJL4+jSzk/DTXgNd0QGcNVqI1Eh7kc8H0PjDv2fyDn
+nPVxQPboKcIw/2YOQ4uNlDz2HwdY8FUuwFJM1mZt0Bia/MbDS9JXUld77fvm/95Oslz34T83XT1Q
+QyJXHSY1/1EpE9lDGcEyclTigP8xi29NxpP/eNdX26p033RLe/6fkGDEh2+49eJGCdUg/O08paOm
+LX9XzYRFkJ9FVujniq2u6DrFjLd4+vpUTmuAMS88yvVRxHdHbCNb7IM+0TVqgBuRZPDpnokkXkKx
+by1EnWfJdWvDpA46QwORSlsZus48Az0PiiF7fV2vkd1wBVVAGf+T9g3uyOj7S+PCQ5zbLwT6Lsqm
+ANiPBpd4wViGKPEhZqHRZm0a0E8pX7ls73IEIYJNWYZ8lVA1Sirn3qUFgCWlM867KOYy2lbQqDlz
+giANCOcZai8CWG6O4DVqb8uxHJ0bmXyZoyVdde+jsor2eC7HPNMIG6okZ1pxksJQeJcrgnNdqjA5
+RWZs7AjLGfkVQNm00OMc99IL61DMMCk0PtTi+zvEdrLe8wTslOOJjyel8li7YSZavzq35dBpLQXh
+96h7719Hm9eQddqmDwo06VxssL5X2andk4l5aCMG2Ir1+zrIG5kdrOE1sGw4FOVrnDvKaNbHq0G/
+bcjodNmEe+T05HS2In2ZcVJciJkeFaRNrZ9+/KZRxJsFoAHpGX8W2ifQAAr2C4IrJYvvWbMhMwqN
+WEtK174aQ0bJTYKJqXO7J5hygkKNa9n7BmI+lxOBoKnK0TwltQGHRHtZ2UTGfJU4RSeYMYQ9sNoI
+85E3vanPjlz1v6VsAtyLXnCD1QTK56vROJLvelpnQy2GNMrdnz2hhZcvNgKWpnf9va0P9cCRI25g
+Wi2sZFSLK2sg6RZ+6jYkpT/KY6UHGyXQuORpGRbNcMNPznVceGeIMGjQbZD2aZSF5A6SLkDobvwF
+0rrWrVmWh1BnqrDF344PxnYrEwwCMyIgaSlBvtwbUrntficgiOD6/fYMuDneMh4XWblBMJ8n9G1F
+6XEwAENlaUkAjSYHgzB5tRbt8Lw8O5Ug7dWADULU2Xu0KJJ4n9HR1guTRosxQeXUhhpiMFGZpsqR
+F+18l9zPxRbIQO1fb7cNTEPfGoIt6KL+FuZ2fwClOTQp+xe9K8jQ+nqVGkShEqCilX/1ounSeTkQ
+oO9K4MSUvtTHuxJIFe4qKCwEKRL5spujPiLYUOd5hFO2ZDbPqQakOepDD+GQ+LQBSEh9UCAmCXnn
+BOV1pOZah1ZFWwXMGx6uY52KCyNXTu0DfY9oDxiHktJ6pbbRiL8Ap5vN5kcTZd7disF9Cfa+7lgK
+2595cAcPZPSolLd1yGRzKFJ1MfVx4teB+r2/8dQFAH/WMGwfrEVW+ybPn3hYQxSUxTKbbVgJ5eIt
+ogeHOIW9pejRn/KA8lZE4XX/bRvZIBUSaVng/tfCo6cr8yJLEDnDPxwBR4TcGkghp+OgMDU2EuEa
+GIS0a9XBaQ47wQoSuMapQ7wjerRhT1g+xypi/5nOLlixha2IJpOWbJwuKG4iRSW8ubX75o31VRzZ
+s49OfErDz3vUUYIAT+HUb6Y/8txbhvzlA5MN2RX9M78HM6Dm3yL/btSBFnY+9XcVt5plHgggWgfT
+f1/C3e1mm5tAbdA+2jsGMCpe9faJskGDS21ui1kzltToomzUZbkaH7OgEqLqtFaH4hSYxeExMUAa
+M6r/VAGNgfM+pibtm/rmW5CyvOhnl2h+k0w3eycKUE5v0cYtVBdNQVWt8/oiA7qa1n06B3HW2Stg
+IxhDqY+smKgidUBA1QeBJVwjW31Y5goSZHCXbzJb8UHXHGdxn850dnEy3ES7rWcWBAHsKFXDxWcP
+A+XG2n3jr0fYupHh6OkqL6e0BJRpyMSAByKH2eyofZQHGHVa4X07xerwn55vo+rMJu4hNlYPPqia
+OqdOrPsIbcUC4RKdkONZG8TA+L97/OAwuja0fYKVATiUYGOpjAXlQDT5Y4MarOeGPTtoSh54xFxe
+EJ+UV/b0GlX10GxTUHLwz+N3kCVC4kebW1w6V9YB8SFJAV6nXMeF2zagYCMNGKm67vjAu4JquYTF
+wkJIBl/pgSkSjJwMmMx1f2KnngjblKdyrK33/1qS1+6t7Pu6InsQgtsqPZNiC9nRT6JETpfF8qHG
+emKSMjlp4QugjcvY/RkTRjbXyctw9IBOjMIvb1clbFeD+seNmEsxJGJybkZ86AE/UHYeBkU02fKH
+Ssl2p7VyYFsb8SBiVCaF8VuuylW8czmruiq8eQiE+8Xvsy1pEmMdqWt353JKX88z+MlWJW1pqN8M
+DUQiRJPS8n4bUIvZuKP2J+POC+SFxUKwaZM39k4yFYrLJ/1Drx9JxP1RI2uFdQaDpXEuF1LqfP/M
+xaoTuPLKDhYpgIz3tgQGAA8x+wh/g/tvMIJOkoz3ld2eojtibgvMbyO2h3a1KGWwc9MU2Lo96SXQ
+im/MWbq13BEbVKmKczBrPVjiewmS9G4fWSWcrUSAjU5/BT/wqn1fsfYnS7MV5PUHP2fLx6ZKDSsD
+fhd/Ya+G2ZYtm98AQ6gZn6b94xklUKBAM5f84O4WP38/qJVoItR4AB4VsGAkmNOs/UKbTQFBf+Nn
+Os/v/Bz3uMxHLw+nrEvWX35um8J7Mxd/YNjJGQM3zygVtMSgLEdJlE974OlpeOXFnbvdr3lCL6tz
+5gBFqYUxGOWrMRRvqmeYOgg3PXO0mutzg+6VBbMVMcJTpP5LpUpewpqZe8RF/T2ZpydJd4Iq/e94
+vW8zLd4gVnHBuXjoR0tTDwA+34zOXKrNFi5aLwAACvslyVk5GbNK9TGIeI11Lh93xc5Hc+WelGAk
+5poYd8l/u5+ED38IS3//8CRL8Xx+JCSqRAXPNl5oUVN0ZQFM+0ji0CLN8WY++NtIGocLgmeUjJus
+9emyE/tmIckjG+s6QQNZpIFt1qELo6ty1dlmzdkaa4pprAALe4DIjZmeJuyzk82R+jdurJcPiAgb
+RocD1Hu4WlfkmH7c0w5iF1S/wc85aRy0xLFweAk48iH2zVHuchogvuwYDhlI7EgTHjbsRbUaQnfo
+rmIfik68eJuiKUSzvBYWkgVnunP7ROeoYcZFiy73az23PCX2At9fGP+H2RnfD/SLtwCE7f+jp+Y6
+fi7KBywLPOYCwMYx2vtfhueM82irFL6/HHe+tRlcCUkY2itCIo4fwAm3XmRWnbR1GKdE1Df9iUcQ
+eqUnjbd7vs1jXYs3uqvTCFa0ywoQLJJT3Kjt+iaYQ7n/6uN6LJTQlm2FA4A24rg0iDGKEer1gTyP
+T9smGbkEoe6a4s4FdRGKT75kX51euHjCrm66d888nwSKPYsePh9/QX/to+52asA65Y8UJUkQFKD2
+JI22PlqLcnAgohAeIAb2POz5M2xRtUN/U9BC1i+oaTPrhu1x3Eq+r1HjLMvGAyYgg0Yg65yMD7+7
+A+9kj3HR174FHU9xscpOwNfTxbjBol/fR5PUUR43S+Zu+RYU0pmrWulfKIAWlDqdUNSuF/P2X1X2
+d4tYOIHonk35cH5xKkpKCdvX73cAmqqFtGvQwE4XeJ+AiQyc7pAfus8CIgTY7G0+jYrHN5y8MsHf
+SdB4zFBZsgrCi0ZLr2KBPRPhrS+tMnXG5RkIPhezJU9Hg7OzcB/fUFX53Wy7LSs3S4AlGoneBUoo
+BwshIvDGUSRjfyqWdSjDJfXyp5AODivp6nnS7rFxKaBw1Urlmme1bkETpiZfiJpzYE2g0WAA8jtt
+7p5W7C0Sd+R6//8+97aQwXBsr4/6VGyrwcxlg6pzZT7oq00ovATJETNETrB6GBmgf/9ApPiow8sN
+KI19ESgDURRX72SsUzC42C/zqGrw5cxrEw2nej2X2FXYjJL6zpRr7O63lJc8YAZ1L9j9V13nADi9
++1eeMJndmp5Rs3xKrNqq6mMTegtrvkJ/SFThwph+KzCRzlBR4mT+S2Hw+0cX6UvUe9oxNp4mBnAM
+bEti03P0o2vKtW0TNJGd7yTk+wIFwMgnurFP3JqHXqHaG++h6tJmPKBOnMvku9rga84GdRIEJAPs
+tI5rPONB3wf/EllN+ys3gqZ6yIUSGnUJ1IhFIuM+PUjpqxOgBoGTrLCHA/649b7pnXyYqRRMySJd
+/g+8VWy54QTK255SKlzSFd9rV+kPgoX/IP+R8xJmQgTjMp0m0rgXDDu+zkfVwJyNaC6KeSEY18pv
+1v6R5ZZ5d35/v6uyL7dGbXSyraCaccYVud+ufS53AiAYAVpU0Mz564fRqDOdeebAkKe9sw7Uwr9l
+8AwhdKzurvAvVKBInkbCO8cia98luJYxcRFcf9PVTQ1ygSo9y13g/mNxi9/nvglLCkdt03IB5r+v
+gPnrmGvBKAL9Aef0QOLyDI+JLWrJctGzl+k8n+bNF7/F8GKUicZGS1aAKdGLFdgMO+6vcacZgCZl
+2s6VcAbugD0d898CBkhTzBXBw0Ns2iuqPXpyuW9B7HILsGVpy9z939skAeOr4GNiPzcgFsMsmjtd
+SJ4OWkctTfgTV2hrPgYTijIBxHgWy7rs5d1pyrVBYBIxY8Ov8lGR/mQvF4p4LdAQsTRAfXeetSgm
+08a11av0vBVdKOeEmdUy259Vq/BUxpFHEWPopIXR4+gHWMOZSOMoThyfZBd0EAp7e6L1LS/EjIOP
+GYqZAj0TJNT3h308aT7tOKdMq+5fa5E+jBcYe856ob6kwA3dFFJBQbhR6oxWPAgl3j9aQF7hzWaD
+4Q0ik0K0ZyDtrwTlgzq7+yI+Q4ObiCk4ynJwYVlnhLd6Dfl31SckQJ4fhzJMv2Ibsgsyr/CpYOl+
+ghQCxq0XnD63LglxkvylbYJNGUqwfApTyRqKTHdJJFwsyekKRvf/9ZSjTZWLuAePx6olUxS1AqU/
+gjb9mcmdFL3VvcTj56VgCVRqk8MEki7wb8GdIRU4l3Tfbj7jKnlJeX/tpq6a4IjGNfQ0gF1Y9L4P
+a9qwea4abse+hI7rrWwI6AKypUy16IhpIfexT/jqhUP1KpTxt1rNbk7nO+x3Y9SCOjFIAQo2kmiV
+QXSchgOJp+NtImLiB2b2OXPZWFxCYO+DWohSW4xYwNYZniafv5hlHMb3MtFIj6Jv4E8kGKEgCsez
+8P+fEXPXluFhm6yV1DVqObPFmYHKXbXewjsw21W7Ev5AAtu3khGP2PS25G1yv2P+X0vBUovxfUzQ
+3xDsJk7/bqPYs9JTXNHH/Hf9iAygV0vBGGxlO4jj21d92Mk5l//iESMF3QESnk/6zd5cBeVmULwS
+uoocA7yGyNk1zvUJ9txAydSvep6Xw1LnLfBs5rDjuc5pFRgWVOFO7pvQwjFvFWn1tCwxJH5/QNkp
+O7MP386CK4JcZLfZrbpvvt3Zm5BVM4jpb8Fpg9mf76wwThTSvo2lis1WdxjQu40zNIA7FgdSprmx
++ele+n9ZGmtOWYZFSwKgo6x5VdyGspCe7gGMMfeqzfl5+ltDjCjawz5DFhfFviUJukLMrHHZVlJR
+qZaKQVdoDLJCVvAn1yE3re3qYjBPEHQ8nz0X45eSVJ0ZG3yxG29vbjWTFKi9/6FzK+yFy6kFdAuQ
+yjDskoJMVfBG+yaDIeKb1cYLwEoPBmhgHvyfS0xA0ZAEmzcToo3ceqeOGwdRqZL3fpROkvPeRmgc
+cdgZTD0msE4AasY6EBlA2A5jtv0DFcAhz1QvOulqJ/ProvdWSF7VQYf6TdCDD2BopS7e2r0+T4U1
+3CgOaK54xNVXv8OTXPV7aiY2pFdqEMYBvpd2HY30bcln8j9iUCppZ1RX0czLAyt3GtO6CPuWIzoE
+SKYow4i/N3cNdz1TO0Q6l+D4pXp7FurUORmQVQqc8ApNnNMNxPUlZsaO2/PzwIiWi3dC7p6z7y/F
+SFgTad2v9vUoXMZeWIhFPa7Mp9u4Zq/OSsqypaOchxqh3JI8fk/Z5mXQSpQM66h8bLxnZCwDwpvm
+s9QFiDYBLQTSPz5dMLdNX2ZLXNtVyHOndzMg7qm2GYiKPaWUi5/bSDnzo4HVVUC/6QAOErnTh/Ed
+pf+MKtBTsQ41IhPqk4u/XR3Jy3ggKvwEYGASEIlSaSGQOrSoD4EmRlPAbeTJ2mL2tGgVfMgd4Cs1
+GqDNTtGWVZeFU2PI3QTBLr8VgGHIXBt0P4HN854a2UMYh1n4vdJhyEboABViEwTtkg1sosqvxRyo
+zoGE6xruvJ8TMT3XYEOKn8LkpC27XYE4JZcBPy5lfypae3VNUMEVHxqADezkP9+irT+45PFWKQv4
+Wae5TXN+03Xrbt+AbT8LD28gzRL7h9deEg5M6oZz89q/sqr+OyYJq/+v+PsKQgLWwAvK8ViVI4yv
+pQPzf1r28AT+ul7tUZBz8S5yHy5RNNSKybcbQhNk/QMhewSuuudK+DJekojEd5EhQU/P1BJKNhag
+STnh1Dg7S9TU87mlcgYakfSTSvfR9cw84RCe0ALRtiIOnTQjE4RfgwPJlcMP5NzQV8Z8+bIodg+q
+bTEW6vK+rvCIKPARlAYsNvV4tdH8XBf9HXkYkmd2jIgegfGAAAA=
+------MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm----
+Content-Type: image/webp
+Content-Transfer-Encoding: base64
+Content-Location: http://www.brokenthorn.com/Resources/images/left.jpg
+
+UklGRu4BAABXRUJQVlA4IOIBAABwCgCdASobACkAPtFYpEyoJSOiKqwBABoJbAC2+ADA5FxhVnhY
+BW24LJNMx8XH1N7Av8c6d37Vew9+oh6wMykyXDNULAyRAX+Pi2KsQAIO+mCQeE1Y7n5TyeVOIAD+
++6XMZAwQEe7GZ9uGnaq824b5kEDANkentzV1rIVTRNpLEt1pzH0Vcb8cYBDgr7AkQs5dv80IyKqo
+JmeI0dGfjf8Qk31Z1PbyhWMYU5qd9PcwvcCZvhgbKKkugnLCpdFTgV97MsECVEsSuBfv+/RoFoC2
+zJd808y34yoLOzz5AxQ8xBCG1Wcwg3z3dykQNpQZDdFIfjVs0oINjx1JLinwGdynCTXy3MTyJvdZ
+nJoGZ0K6nxbJ23KkyMN3fvSVPn6ZbYb/OlEdVfF2NLrS04SAXc0c29uesrZLP1HS3tuW5NNQ6vbQ
+SmShkG09JAJwOYH+/ig4ClKqnunV/zgNmmANaqA6dxbDdf1jQfsOlau3kR/DjnmB9z5Kw7Hh0f1b
+9Ct2gJIS2nllfYtzrHmzzxUqiALh0wDYmEc3COAl8CdNwbb4Dv4AvHzIYBQbmSzwLjwO9OOg0M/7
+R4L/uYRkD+DKhPFzD/ead//Nx//aSco98R/8TH/6XUb7Nb+tqf5wfD03YAAAAA==
+------MultipartBoundary--6w5cjOAlthadfUI25DiJoDRgfT0h7xQ2qJNfKqCjlm------

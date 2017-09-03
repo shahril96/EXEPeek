@@ -1,0 +1,18 @@
+
+create final standing executable.
+
+references:
+
+1) https://stackoverflow.com/questions/1653047/avoid-linking-to-libstdc
+2) https://stackoverflow.com/questions/329059/what-is-gxx-personality-v0-for
+3) https://stackoverflow.com/questions/30825151/is-there-a-meaningful-distinction-between-freestanding-and-hosted-implementation
+4) https://stackoverflow.com/questions/17692428/what-is-ffreestanding-option-in-gcc
+5) http://www.embedded.com/electronics-blogs/programming-pointers/4027541/Freestanding-vs-hosted-implementations
+6) http://wiki.osdev.org/C%2B%2B
+
+C-map:
+
+1) http://attractivechaos.awardspace.com/khash.h.html
+
+Note: when we want to have final standing executable, then
+we need to changes all unique_ptr to RAW ptr.
