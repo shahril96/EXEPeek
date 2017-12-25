@@ -6,6 +6,10 @@ My goal was to create a PE structure viewer, that more or less same as [PEview](
 
 _**Please keep in mind that this project is half-finished, and at current rate is very unstable!**_
 
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/2675341/34339403-924c13aa-e9ae-11e7-8d82-0d75da08892a.png)
+
 ## Checklist
 
 Here is the list of things that I had in mind when developing this project:
@@ -36,10 +40,6 @@ This is not the case for me, as I'm relying 100% on open-source toolkits such as
 Once you installed all required things, go to main EXEPeek directory and run `./build.sh`, which will automagically build the software for you.
 
 The compiled executable will be inside `build-win/`. You can use Wine in order to run the program.
-
-## Screenshot
-
-![image](https://user-images.githubusercontent.com/2675341/34339403-924c13aa-e9ae-11e7-8d82-0d75da08892a.png)
 
 ## What I've Learned?
 
